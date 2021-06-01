@@ -15,6 +15,7 @@ Roadmap :
 
 - Building the website with OSM integration
 - Creating sections for each sports (with subcategories)
+- Creating a logo for the project
 - Creating the option of adding new spots (with GPS coordinates, pictures, links to videos)
 - Adding the option of commenting under the spots and adding informations (with an account ?)
 - Adding the posssibility to export the data to make it accessible offline
