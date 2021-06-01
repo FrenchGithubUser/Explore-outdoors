@@ -19,3 +19,4 @@ Roadmap :
 - Adding the option of commenting under the spots and adding informations (with an account ?)
 - Adding the posssibility to export the data to make it accessible offline
 - Creating sections with informations related to each sport (safety measures, general informations, links to useful documentation etc...)
+- Communicate about the app (as it's highly based on community's spots !)
