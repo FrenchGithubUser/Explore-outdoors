@@ -18,4 +18,4 @@ Roadmap :
 - Creating the option of adding new spots (with GPS coordinates, pictures, links to videos)
 - Adding the option of commenting under the spots and adding informations (with an account ?)
 - Adding the posssibility to export the data to make it accessible offline
-- Creating sections with informations related to each sport (safety measures, general informations etc...)
+- Creating sections with informations related to each sport (safety measures, general informations, links to useful documentation etc...)
