@@ -5,7 +5,7 @@ The start of this would be creating a website (as it's relatively easy and cross
 
 Sports that are currently in mind : cliff diving/jumping, street workout/calisthenics, climbing, biking
 
-The website will be fully open source and has as only goal to be convenient to use and not relying on any non FOSS service (no google maps etc)
+The website will be fully open source and has as only goal to be convenient to use, nice but simple design and not relying on any non FOSS service
 
 Making money out of this is NOT a goal of mine, so the website will NEVER contain ads, nor the apps that will come in the future. Although, donations are welcomed as it helps improving the code, and shows your support and the fact that you enjoy what has been made !
 
