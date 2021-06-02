@@ -3,7 +3,7 @@
 The goal of this project is to provide a solution to gather spots for various sports in a simple and intuitive way.
 The start of this would be creating a website (as it's relatively easy and cross platform) and afterwards, apps that would rely on the same database.
 
-Sports that are currently in mind : cliff diving/jumping, street workout/calisthenics, climbing, biking
+Sports that are currently in mind : cliff diving/jumping, street workout/calisthenics, climbing, biking, football, basketball, handball, volleyball, parkour, children playgrounds
 
 The website will be fully open source and has as only goal to be convenient to use, nice but simple design and not relying on any non FOSS service
 
