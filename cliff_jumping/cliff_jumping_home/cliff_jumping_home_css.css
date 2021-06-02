@@ -1,1 +1,17 @@
-#mapid { height: 180px; }
+.topHeader
+{
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: 0px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.topHeader h1{
+  color: #CE4D24;
+}
+
+#mapid {
+  height: 400px;
+}
