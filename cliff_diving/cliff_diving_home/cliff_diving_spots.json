@@ -1,10 +1,3 @@
 {
-
-
-  
-  "spot" : {"lat":48.85, "long":2.35}
-
-
-
-
-};
+  "spot" : {"name":"testSpot", "lat":48.85, "long":2.35}
+}

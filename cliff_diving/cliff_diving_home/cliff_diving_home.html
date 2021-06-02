@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="utf-8"/>
   <title>Outdoor spots</title>
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
@@ -20,6 +22,7 @@
 
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 
+
   <script>
     var mymap = L.map('mapid').setView([48.85, 2.35], 10);
 
@@ -27,26 +30,22 @@
     attribution: '© <a href= "https://osm.org/copyright"> OpenStreetMap </a> contributors',
     minZoom: 1,
     maxZoom: 20,
-  }).addTo(mymap);
+    }).addTo(mymap);
 
 
-
-    let requestSpots = new Request("./cliff_diving_spots.json")
-
-    fetch(requestSpots)
-      .then(function(resp){
-        return resp.json();
-      })
-      .then(function(data){
-        console.log(data)
-      })
+    // creating spots list (temporary method, the goal will be to use a json file)
+    cliffDivingSpots = {
+      "spot" : {"name":"spotTest", "lat":48.85, "long":2.35},
+      "spot2" : {"name":"testSpot2", "lat":48.852, "long":2.35}
+    }
 
 
 
     //display the spots on the map
     for(spot in cliffDivingSpots){
       var marker = L.marker([cliffDivingSpots[spot].lat, cliffDivingSpots[spot].long]).addTo(mymap);
-      marker.bindPopup("<p>"+cliffDivingSpots[spot].name+"</p>")
+      var spotName = cliffDivingSpots[spot].name
+      marker.bindPopup("<p><a href='../cliff_diving_spots/"+spotName+"/"+spotName+".html'>"+spotName+"</a></p>")
     }
 
 
