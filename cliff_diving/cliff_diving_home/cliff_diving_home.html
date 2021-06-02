@@ -6,7 +6,6 @@
 
   <link rel="stylesheet" href="./cliff_diving_home_css.css" type="text/css"/>
 
-
 </head>
 
 <body>
@@ -22,18 +21,53 @@
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 
   <script>
-    var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+    var mymap = L.map('mapid').setView([48.85, 2.35], 10);
 
     L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
     attribution: '© <a href= "https://osm.org/copyright"> OpenStreetMap </a> contributors',
     minZoom: 1,
     maxZoom: 20,
   }).addTo(mymap);
+
+
+
+    let requestSpots = new Request("./cliff_diving_spots.json")
+
+    fetch(requestSpots)
+      .then(function(resp){
+        return resp.json();
+      })
+      .then(function(data){
+        console.log(data)
+      })
+
+
+
+    //display the spots on the map
+    for(spot in cliffDivingSpots){
+      var marker = L.marker([cliffDivingSpots[spot].lat, cliffDivingSpots[spot].long]).addTo(mymap);
+      marker.bindPopup("<p>"+cliffDivingSpots[spot].name+"</p>")
+    }
+
+
   </script>
 
 
+
+
+
+
+  <div style="margin-top:30px;"></div>
+
+  <p class="relatedLinksTitle">Related links :</p>
+
+
+  <div style="margin-top:30px;"></div>
+
   <ul class="relatedLinks">
     <li><a href="">What is cliff diving ?</a></li>
+    <li><a href="">Safety measures</a></li>
+    <li><a href="">How to cliff dive ?</a></li>
   </ul>
 
 
@@ -51,4 +85,3 @@
 
 
 </footer>
-

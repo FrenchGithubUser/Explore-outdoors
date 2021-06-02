@@ -49,6 +49,21 @@ body
   color: #1ab9bc;
 }
 
+.relatedLinksTitle{
+  text-decoration: underline;
+  float: left;
+}
+
+.relatedLinks{
+  float: none;
+}
+
+.relatedLinks li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
 
 .footerLinks{
   list-style: none;
