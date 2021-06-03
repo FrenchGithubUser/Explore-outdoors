@@ -8,5 +8,17 @@
     "name":"testSpot2",
     "lat":48.852,
     "long":2.35
+  },
+  {
+    "name":"testSpot3",
+    "lat":45,
+    "long":2.8
+  },
+  {
+    "name":"testSpot4",
+    "lat":42,
+    "long":2.8
   }
+
+
 ]
