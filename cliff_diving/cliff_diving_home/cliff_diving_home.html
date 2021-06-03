@@ -36,10 +36,12 @@
 
 
     //Getting the spots from the json file
-    $(function(){
-       $.getJSON("https://thomastraineau.github.io/Outdoor-spots/cliff_diving/cliff_diving_home/cliff_diving_spots.json",function(data)
-       {console.log(data)});
-    })();
+    var ourRequest = new XMLHttpRequest();
+    ourRequest.open('GET', 'https://thomastraineau.github.io/Outdoor-spots/cliff_diving/cliff_diving_home/cliff_diving_spots.json');
+    ourRequest.onload = function() {
+      console.log(ourRequest.responseText);
+    };
+    ourRequest.send();
 
 
 /*
