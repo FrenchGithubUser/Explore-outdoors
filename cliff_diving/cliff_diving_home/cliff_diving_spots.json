@@ -1,3 +1,13 @@
-{
-  "spot" : {"name":"testSpot", "lat":48.85, "long":2.35}
-}
+cliffDivingSpots = [
+  {
+    "name":"spotTest",
+    "lat":48.85,
+    "long":2.35
+  },
+
+  {
+    "name":"testSpot2",
+    "lat":48.852,
+    "long":2.35
+  }
+]
