@@ -4,8 +4,15 @@
   <meta charset="utf-8"/>
   <title>Outdoor spots</title>
 
+  <!-- Importing the leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
 
+  <!-- Importing the cluster addon CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+
+  <!-- Importing the website CSS -->
   <link rel="stylesheet" href="./cliff_diving_home_css.css" type="text/css"/>
 
 </head>
@@ -20,43 +27,14 @@
 
   <div id="mapid"></div>
 
+  <!-- Importing the leaflet js -->
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 
+  <!-- Importing the markercluster js -->
+  <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 
-  <script>
-    var mymap = L.map('mapid').setView([48.85, 2.35], 10);
-
-
-    //creating and displaying the map
-    L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
-    attribution: '© <a href= "https://osm.org/copyright"> OpenStreetMap </a> contributors',
-    minZoom: 1,
-    maxZoom: 20,
-    }).addTo(mymap);
-
-
-    //Getting the spots from the json file
-    var ourRequest = new XMLHttpRequest();
-    ourRequest.open('GET', 'https://thomastraineau.github.io/Outdoor-spots/cliff_diving/cliff_diving_home/cliff_diving_spots.json');
-    ourRequest.onload = function() {
-      console.log(ourRequest.responseText);
-    };
-    ourRequest.send();
-
-
-/*
-    //display the spots on the map
-    for(spot in cliffDivingSpots){
-      var marker = L.marker([cliffDivingSpots[spot].lat, cliffDivingSpots[spot].long]).addTo(mymap);
-      var spotName = cliffDivingSpots[spot].name
-      marker.bindPopup("<p><a href='../cliff_diving_spots/"+spotName+"/"+spotName+".html'>"+spotName+"</a></p>")
-    }
-
-*/
-  </script>
-
-
-
+  <!-- Importing the js to use the map and markers -->
+  <script src="main.js"></script>
 
 
   <div style="margin-top:30px;"></div>
