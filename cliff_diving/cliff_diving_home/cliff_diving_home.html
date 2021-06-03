@@ -26,6 +26,8 @@
   <script>
     var mymap = L.map('mapid').setView([48.85, 2.35], 10);
 
+
+    //creating and displaying the map
     L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
     attribution: '© <a href= "https://osm.org/copyright"> OpenStreetMap </a> contributors',
     minZoom: 1,
@@ -33,14 +35,14 @@
     }).addTo(mymap);
 
 
-    // creating spots list (temporary method, the goal will be to use a json file)
-    cliffDivingSpots = {
-      "spot" : {"name":"spotTest", "lat":48.85, "long":2.35},
-      "spot2" : {"name":"testSpot2", "lat":48.852, "long":2.35}
-    }
+    //Getting the spots from the json file
+    $(function(){
+       $.getJSON("https://github.com/ThomasTraineau/Outdoor-spots/blob/main/cliff_diving/cliff_diving_home/cliff_diving_spots.json",function(data)
+       {console.log(data)});
+    })();
 
 
-
+/*
     //display the spots on the map
     for(spot in cliffDivingSpots){
       var marker = L.marker([cliffDivingSpots[spot].lat, cliffDivingSpots[spot].long]).addTo(mymap);
@@ -48,9 +50,8 @@
       marker.bindPopup("<p><a href='../cliff_diving_spots/"+spotName+"/"+spotName+".html'>"+spotName+"</a></p>")
     }
 
-
+*/
   </script>
-
 
 
 
