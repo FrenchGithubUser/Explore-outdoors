@@ -19,6 +19,11 @@ function addSpotsToMap(spots) {
     var marker = L.marker([spots[spot].lat, spots[spot].long]);
     var spotName = spots[spot].name;
     var spotDescription = spots[spot].description;
+    var spotPictures = ""
+    for(i = 0; i<spots[spot].pictureAmount; i++ ){
+      spotPictures += "../cliff_diving_spots/"+spotName+"Picture"+i+".jpg";
+    }
+    console.log(spotPictures)
     marker.bindPopup("<p><a href='javascript:displaySpotInfo(\""+spotName+"\", \""+spotDescription+"\")'>"+spotName+"</a></p>");
     markers.addLayer(marker);  //add the marker to the cluster group
   }
@@ -34,7 +39,7 @@ var spotInfoContainer = document.getElementById("testtttt");
 function displaySpotInfo(name, description, pictures) {
   spotName = "<div class='spotNameTitle'>"+name+"</div>";
   spotDescription = "<div class='spotDescription'>"+description+"</div>";
-  spotPictures = "<div class='spotDescription'>"+pictures+"</div>";//add pictures handling
+  spotPictures = "<div class='spotPictures'>"+pictures+"</div>";//add pictures handling
   spotInfoContainer.insertAdjacentHTML("beforeend", spotName);
   spotInfoContainer.insertAdjacentHTML("beforeend", spotDescription);
 }
