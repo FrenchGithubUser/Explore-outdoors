@@ -19,12 +19,11 @@ function addSpotsToMap(spots) {
     var marker = L.marker([spots[spot].lat, spots[spot].long]);
     var spotName = spots[spot].name;
     var spotDescription = spots[spot].description;
-    var spotPictures = ""
+    var spotPictures = []
     for(i = 0; i<spots[spot].pictureAmount; i++ ){
-      spotPictures += "../cliff_diving_spots/"+spotName+"Picture"+i+".jpg";
+      spotPictures.push("../cliff_diving_spots/"+spotName+"/"+spotName+"Picture"+i+".jpg");
     }
-    console.log(spotPictures)
-    marker.bindPopup("<p><a href='javascript:displaySpotInfo(\""+spotName+"\", \""+spotDescription+"\")'>"+spotName+"</a></p>");
+    marker.bindPopup("<p><a href='javascript:displaySpotInfo(\""+spotName+"\", \""+spotDescription+"\",\""+spotPictures+"\")'>"+spotName+"</a></p>");
     markers.addLayer(marker);  //add the marker to the cluster group
   }
   mymap.addLayer(markers);
@@ -39,9 +38,17 @@ var spotInfoContainer = document.getElementById("testtttt");
 function displaySpotInfo(name, description, pictures) {
   spotName = "<div class='spotNameTitle'>"+name+"</div>";
   spotDescription = "<div class='spotDescription'>"+description+"</div>";
-  spotPictures = "<div class='spotPictures'>"+pictures+"</div>";//add pictures handling
+  spotPictures = "<div class='spotPictures'>"
+  picturesList = pictures.split(','); //because the function addSpotsToMap gives a long string as an argument
+  for(i=0; i<picturesList.length; i++){
+    spotPictures += "<img src='"+picturesList[i]+"' width='400px' alt=''>"
+  }
+  spotPictures += "</div>";
   spotInfoContainer.insertAdjacentHTML("beforeend", spotName);
   spotInfoContainer.insertAdjacentHTML("beforeend", spotDescription);
+  spotInfoContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>')
+  spotInfoContainer.insertAdjacentHTML("beforeend", spotPictures);
+  console.log(spotPictures);
 }
 
 
