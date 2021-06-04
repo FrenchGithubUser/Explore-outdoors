@@ -18,7 +18,6 @@ function addSpotsToMap(spots) {
   for(spot in spots){
     var marker = L.marker([spots[spot].lat, spots[spot].long]);
     var spotName = spots[spot].name;
-    console.log(spotName)
     marker.bindPopup("<p><a href='javascript:displaySpotInfo(\""+spotName+"\")'>"+spotName+"</a></p>");
     markers.addLayer(marker);  //add the marker to the cluster group
   }
@@ -30,12 +29,12 @@ function addSpotsToMap(spots) {
 var spotInfoContainer = document.getElementById("testtttt");
 
 
-//displays the spot's info (description, pics) on the current page
-function displaySpotInfo(name) {
+//displays the spot's info (description, pics etc...) on the current page
+function displaySpotInfo(name, description) {
   spotName = "<div class='spotNameTitle'>"+name+"</div>"
-  spotDescription = ""
+  spotDescription = "<div class='spotDescription'>"+description+"</div>"
   spotInfoContainer.insertAdjacentHTML("beforeend", spotName);
-
+  spotInfoContainer.insertAdjacentHTML("beforeend", spotDescription);
 }
 
 
