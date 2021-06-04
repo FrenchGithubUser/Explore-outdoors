@@ -18,7 +18,8 @@ function addSpotsToMap(spots) {
   for(spot in spots){
     var marker = L.marker([spots[spot].lat, spots[spot].long]);
     var spotName = spots[spot].name;
-    marker.bindPopup("<p><a href='javascript:displaySpotInfo(\""+spotName+"\")'>"+spotName+"</a></p>");
+    var spotDescription = spots[spot].description;
+    marker.bindPopup("<p><a href='javascript:displaySpotInfo(\""+spotName+"\", \""+spotDescription+"\")'>"+spotName+"</a></p>");
     markers.addLayer(marker);  //add the marker to the cluster group
   }
   mymap.addLayer(markers);
