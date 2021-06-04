@@ -49,14 +49,21 @@ body
   color: #1ab9bc;
 }
 
-.relatedLinksTitle{
-  text-decoration: underline;
-  float: left;
+.spotNameTitle{
+  font-size: 30px;
+  color: #c98510;
 }
 
-.relatedLinks{
-  float: none;
+
+
+
+
+
+
+.relatedLinksTitle{
+  text-decoration: underline;
 }
+
 
 .relatedLinks li{
   list-style: none;
