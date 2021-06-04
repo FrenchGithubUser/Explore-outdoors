@@ -31,9 +31,10 @@ var spotInfoContainer = document.getElementById("testtttt");
 
 
 //displays the spot's info (description, pics etc...) on the current page
-function displaySpotInfo(name, description) {
-  spotName = "<div class='spotNameTitle'>"+name+"</div>"
-  spotDescription = "<div class='spotDescription'>"+description+"</div>"
+function displaySpotInfo(name, description, pictures) {
+  spotName = "<div class='spotNameTitle'>"+name+"</div>";
+  spotDescription = "<div class='spotDescription'>"+description+"</div>";
+  spotPictures = "<div class='spotDescription'>"+pictures+"</div>";//add pictures handling
   spotInfoContainer.insertAdjacentHTML("beforeend", spotName);
   spotInfoContainer.insertAdjacentHTML("beforeend", spotDescription);
 }
