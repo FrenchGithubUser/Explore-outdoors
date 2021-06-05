@@ -1,8 +1,3 @@
-// to do : look for a way to delete the injected html to display a new spot
-//add a text file for the description of the spots instead of putting it in the json
-
-
-
 
 //creating the map variable
 var mymap = L.map('mapid').setView([46.94760, 4.53473,], 5);
@@ -46,7 +41,7 @@ var spotCoordinatesContainer = document.getElementById("spotCoordinatesContainer
 //displays the spot's info (description, pics etc...) on the current page
 function displaySpotInfo(name, pictureAmount, lat, long) {
   //clears the div containers in case of a previous spot was already being displayed
-  spotNameContainer.innerHTML = "";
+  spotNameContainer.innerHTML = '<div style="margin-top:30px;"></div>';
   spotPicturesContainer.innerHTML = "";
   spotDescriptionContainer.innerHTML = "";
   spotCoordinatesContainer.innerHTML = "";
@@ -69,15 +64,13 @@ function displaySpotInfo(name, pictureAmount, lat, long) {
 //function to request and display the spot description when clicked on
 function displaySpotDescription(name) {
   var descriptionRequest = new XMLHttpRequest();
-  descriptionRequest.open('GET', 'https://thomastraineau.github.io/Outdoor-spots/cliff_diving/cliff_diving_spots/'+name+'/description.txt'); //not making the request asynchronusly so we can execute the next code after this function has finished (is it better to do that with a promise ?)
+  descriptionRequest.open('GET', 'https://thomastraineau.github.io/Outdoor-spots/cliff_diving/cliff_diving_spots/'+name+'/description.txt');
   descriptionRequest.onload = function() {
     var description = descriptionRequest.responseText;
     spotDescriptionContainer.insertAdjacentHTML("beforeend", "<p>"+description+"</p>");
   };
   descriptionRequest.send();
 }
-
-
 
 
 //Getting the spots from the json file

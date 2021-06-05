@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   color: white;
+  font-family: open sans;
 }
 
 * a:link{
@@ -78,6 +79,16 @@ body
   text-align: left;
 }
 
+#newSpot{
+  background-color: #973a0f;
+  padding: 5px;
+  color: white;
+  border-radius: 6px;
+}
+
+#newSpot:hover{
+  background-color: #782c09;
+}
 
 
 .relatedLinksTitle{

@@ -18,6 +18,10 @@
   line-height: 20px;
 }
 
+.returnToSpots{
+  float: right;
+}
+
 body
 {
   background-color: #232528;
@@ -46,26 +50,8 @@ body
   color: #1ab9bc;
 }
 
-.betaVersion{
-  color: red;
-  font-size: 20px;
-  text-decoration: underline;
-}
-
-#topics{
-  list-style: none;
-}
-
-
-#topics li{
-  display: inline-block;
-  float: none;
-  background-color: #3d3a35;
-  padding: 8px;
-}
-
-#topics li:a{
-  color:white;
+.topMessage{
+  line-height: 20px;
 }
 
 .footerLinks{

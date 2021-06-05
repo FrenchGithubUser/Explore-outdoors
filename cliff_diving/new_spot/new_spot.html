@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+  <title>Outdoor spots</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="./new_spot_css.css" type="text/css"/>
+
+</head>
+
+<body>
+
+  <p class="returnToSpots"><a href="../cliff_diving_home/cliff_diving_home.html">Back to the spots</a></p>
+
+  <div class="topHeader">
+    <h1>Adding a new cliff diving spot</h1>
+  </div>
+
+  <p class="topMessage">
+
+    Adding new spots to the map helps everyone finding new nice places to go to, thank you for your contribution !<br>
+    Please try to describe the spot accurately : the variety of heights, if there's a better way to reach it than another, if people need to watch out about something etc..
+
+  </p>
+
+  <div style="margin-top:30px;"></div>
+
+  <form class="newSpotForm" action="results.html" method="post">
+    <div>
+      <label>
+        Name of the spot :
+        <input type="text" name="spotName" required>
+      </label>
+    </div>
+
+    <div style="margin-top:20px;"></div>
+
+    <div>
+      <label>
+        Maximum height :
+        <input type="number" name="spotMaxHeight" required>
+      </label>
+    </div>
+
+    <div style="margin-top:20px;"></div>
+
+    <div>
+      <label>
+        Minimum height :
+        <input type="number" name="spotMinHeight" required>
+      </label>
+    </div>
+
+    <div style="margin-top:20px;"></div>
+
+    <div>
+      <label for="legality">Legality : </label>
+      <select name="legality">
+        <option value="Legal">Legal</option>
+        <option value="Illegal">Illegal</option>
+        <option value="Unknown">Unknown</option>
+      </select>
+    </div>
+    
+    <div style="margin-top:20px;"></div>
+
+    <div>
+      <label>Provide a description of the spot : </label>
+      <textarea name="spotDescription" rows="8"></textarea>
+    </div>
+
+    <div style="margin-top:30px;"></div>
+
+    <p>Providing some pictures of the place really gives a better idea of how it is in real life, please add some if have some !</p>
+
+    <div style="margin-top:20px;"></div>
+
+    <div>
+      <input type="file" name="spotPictures">
+    </div>
+
+    <div style="margin-top:30px;"></div>
+
+    <div>
+      <button type="submit" name="submitSpotButton">Submit my spot</button>
+    </div>
+
+  </form>
+
+
+
+  <div style="margin-top:30px;"></div>
+
+<footer>
+
+  <ul class="footerLinks">
+    <li><a href="./footer/contact.html">Contact</a></li>
+    <li><a href="./footer/donate.html">Donate</a></li>
+    <li><a href="https://github.com/ThomasTraineau/Outdoor-spots" target="_blank">Source</a></li>
+  </ul>
+
+
+</footer>
