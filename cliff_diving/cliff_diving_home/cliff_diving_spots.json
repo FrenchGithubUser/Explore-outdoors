@@ -22,6 +22,12 @@
     "lat":42,
     "long":2.8,
     "pictureAmount":1
+  },
+  {
+    "name":"pont_du_gard",
+    "lat":43.94760,
+    "long":4.53473,
+    "pictureAmount":2
   }
 
 

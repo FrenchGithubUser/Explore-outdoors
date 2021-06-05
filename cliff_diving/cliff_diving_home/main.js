@@ -4,7 +4,6 @@
 
 
 
-
 //creating the map variable
 var mymap = L.map('mapid').setView([48.85, 2.35], 10);
 
@@ -51,9 +50,10 @@ function displaySpotInfo(name, pictureAmount) {
   spotPictures += "</div>";
   console.log(spotPictures)
   spotInfoContainer.insertAdjacentHTML("beforeend", "<p>"+spotName+"</p>");
-  displaySpotDescription(name);
-  spotInfoContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:100px;"></div>');
+  spotInfoContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
   spotInfoContainer.insertAdjacentHTML("beforeend", spotPictures);
+  spotInfoContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
+  displaySpotDescription(name);
 }
 
 
