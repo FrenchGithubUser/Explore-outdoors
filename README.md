@@ -1,5 +1,7 @@
 # Outside-spots
 
+Note : the design of the website is temporary and WILL change in the future
+
 The goal of this project is to provide a solution to gather spots for various sports in a simple and intuitive way.
 The start of this would be creating a website (as it's relatively easy and cross platform) and afterwards, apps that would rely on the same database.
 
