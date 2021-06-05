@@ -49,6 +49,13 @@ body
   color: #1ab9bc;
 }
 
+#mapid{
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 500px;
+}
+
 #spotInfoContainer{
   max-width: 1000px;
   margin: auto;
@@ -94,8 +101,4 @@ body
   float: none;
   margin-right: 30px;
   color: #1e82bc;
-}
-
-#mapid {
-  height: 400px;
 }
