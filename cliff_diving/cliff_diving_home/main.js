@@ -22,12 +22,14 @@ var markers = L.markerClusterGroup();
 //displays the spots on the map
 function addSpotsToMap(spots) {
   for(spot in spots){
-    var marker = L.marker([spots[spot].lat, spots[spot].long]);
+    var lat = spots[spot].lat;
+    var long = spots[spot].long;
+    var marker = L.marker([lat, long]);
     var spotName = spots[spot].name;
     var spotDescription = spots[spot].description;
     var pictureAmount = spots[spot].pictureAmount;
     //binds a popup on the map for each spot and clicking on it will call the displaySpotInfo function
-    marker.bindPopup("<p><a href='javascript:displaySpotInfo(\""+spotName+"\",\""+pictureAmount+"\")'>"+spotName+"</a></p>");
+    marker.bindPopup("<p><a href='javascript:displaySpotInfo(\""+spotName+"\",\""+pictureAmount+"\",\""+lat+"\",\""+long+"\")'>"+spotName+"</a></p>");
     markers.addLayer(marker);  //add the marker to the cluster group
   }
   mymap.addLayer(markers);
@@ -35,36 +37,46 @@ function addSpotsToMap(spots) {
 
 
 //finding the div where we put the spot's info
-var spotInfoContainer = document.getElementById("spotContainer");
+var spotNameContainer = document.getElementById("spotNameContainer");
+var spotPicturesContainer = document.getElementById("spotPicturesContainer");
+var spotDescriptionContainer = document.getElementById("spotDescriptionContainer");
+var spotCoordinatesContainer = document.getElementById("spotCoordinatesContainer");
 
 
 //displays the spot's info (description, pics etc...) on the current page
-function displaySpotInfo(name, pictureAmount) {
-  spotInfoContainer.innerHTML = "";
-  spotName = "<div class='spotNameTitle'>"+name+"</div>";
-  spotPictures = "<div class='spotPictures'>";
+function displaySpotInfo(name, pictureAmount, lat, long) {
+  //clears the div containers in case of a previous spot was already being displayed
+  spotNameContainer.innerHTML = "";
+  spotPicturesContainer.innerHTML = "";
+  spotDescriptionContainer.innerHTML = "";
+  spotCoordinatesContainer.innerHTML = "";
+
+  spotName = name;
+  spotPictures = "";
   for(i=0; i<pictureAmount; i++){
     spotPictures += "<img src='../cliff_diving_spots/"+name+"/picture"+i+".jpg' width='400px' alt=''>"
   }
-  spotPictures += "</div>";
-  spotInfoContainer.insertAdjacentHTML("beforeend", "<p>"+spotName+"</p>");
-  spotInfoContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
-  spotInfoContainer.insertAdjacentHTML("beforeend", spotPictures);
-  spotInfoContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
+  spotNameContainer.insertAdjacentHTML("beforeend", "<p>"+spotName+"</p>"); //is it necessary to create a p tag inside of the div ?
+  spotNameContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
+  spotPicturesContainer.insertAdjacentHTML("beforeend", spotPictures);
+  spotPicturesContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
   displaySpotDescription(name);
+  spotCoordinatesContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:40px;"></div>');
+  spotCoordinatesContainer.insertAdjacentHTML("beforeend", "Coordinates : "+lat+", "+long);
 }
 
 
-//function to request display the spot description when clicked on
+//function to request and display the spot description when clicked on
 function displaySpotDescription(name) {
   var descriptionRequest = new XMLHttpRequest();
-  descriptionRequest.open('GET', 'https://thomastraineau.github.io/Outdoor-spots/cliff_diving/cliff_diving_spots/'+name+'/description.txt');
+  descriptionRequest.open('GET', 'https://thomastraineau.github.io/Outdoor-spots/cliff_diving/cliff_diving_spots/'+name+'/description.txt'); //not making the request asynchronusly so we can execute the next code after this function has finished (is it better to do that with a promise ?)
   descriptionRequest.onload = function() {
     var description = descriptionRequest.responseText;
-    spotInfoContainer.insertAdjacentHTML("beforeend", "<p>"+description+"</p>");
+    spotDescriptionContainer.insertAdjacentHTML("beforeend", "<p>"+description+"</p>");
   };
   descriptionRequest.send();
 }
+
 
 
 
