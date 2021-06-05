@@ -3,28 +3,24 @@
     "name":"spotTest",
     "lat":48.1,
     "long":2.35,
-    "description":"This spot is pretty nice, the bars are solid and it is perfect for one leg backflips",
     "pictureAmount":2
   },
   {
     "name":"testSpot2",
     "lat":48.852,
     "long":2.35,
-    "description":"This spot is pretty cool, the bars are solid and it is perfect for one leg backflips",
     "pictureAmount":1
   },
   {
     "name":"testSpot3",
     "lat":45,
     "long":2.8,
-    "description":"This spot is pretty awesome, the bars are solid and it is perfect for one leg backflips",
     "pictureAmount":1
   },
   {
     "name":"testSpot4",
     "lat":42,
     "long":2.8,
-    "description":"This spot is pretty neat, the bars are solid and it is perfect for one leg backflips",
     "pictureAmount":1
   }
 

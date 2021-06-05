@@ -1,3 +1,16 @@
+// to do : look for a way to delete the injected html to display a new spot
+//add a text file for the description of the spots instead of putting it in the json
+
+
+
+
+
+
+
+
+
+
+
 //creating the map variable
 var mymap = L.map('mapid').setView([48.85, 2.35], 10);
 
@@ -19,11 +32,9 @@ function addSpotsToMap(spots) {
     var marker = L.marker([spots[spot].lat, spots[spot].long]);
     var spotName = spots[spot].name;
     var spotDescription = spots[spot].description;
-    var spotPictures = []
-    for(i = 0; i<spots[spot].pictureAmount; i++ ){
-      spotPictures.push("../cliff_diving_spots/"+spotName+"/"+spotName+"Picture"+i+".jpg");
-    }
-    marker.bindPopup("<p><a href='javascript:displaySpotInfo(\""+spotName+"\", \""+spotDescription+"\",\""+spotPictures+"\")'>"+spotName+"</a></p>");
+    var pictureAmount = spots[spot].pictureAmount;
+    //binds a popup on the map for each spot and clicking on it will call the displaySpotInfo function
+    marker.bindPopup("<p><a href='javascript:displaySpotInfo(\""+spotName+"\",\""+pictureAmount+"\")'>"+spotName+"</a></p>");
     markers.addLayer(marker);  //add the marker to the cluster group
   }
   mymap.addLayer(markers);
@@ -35,7 +46,7 @@ var spotInfoContainer = document.getElementById("testtttt");
 
 
 //displays the spot's info (description, pics etc...) on the current page
-function displaySpotInfo(name, description, pictures) {
+function displaySpotInfo(name, description, pictureAmount) {
   spotName = "<div class='spotNameTitle'>"+name+"</div>";
   spotDescription = "<div class='spotDescription'>"+description+"</div>";
   spotPictures = "<div class='spotPictures'>"
