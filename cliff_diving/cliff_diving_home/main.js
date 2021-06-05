@@ -5,7 +5,7 @@
 
 
 //creating the map variable
-var mymap = L.map('mapid').setView([48.85, 2.35], 10);
+var mymap = L.map('mapid').setView([46.94760, 4.53473,], 5);
 
 
 //creating and displaying the map
@@ -35,20 +35,18 @@ function addSpotsToMap(spots) {
 
 
 //finding the div where we put the spot's info
-var spotInfoContainer = document.getElementById("testtttt");
+var spotInfoContainer = document.getElementById("spotContainer");
 
 
 //displays the spot's info (description, pics etc...) on the current page
 function displaySpotInfo(name, pictureAmount) {
+  spotInfoContainer.innerHTML = "";
   spotName = "<div class='spotNameTitle'>"+name+"</div>";
-
   spotPictures = "<div class='spotPictures'>";
-
   for(i=0; i<pictureAmount; i++){
     spotPictures += "<img src='../cliff_diving_spots/"+name+"/picture"+i+".jpg' width='400px' alt=''>"
   }
   spotPictures += "</div>";
-  console.log(spotPictures)
   spotInfoContainer.insertAdjacentHTML("beforeend", "<p>"+spotName+"</p>");
   spotInfoContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
   spotInfoContainer.insertAdjacentHTML("beforeend", spotPictures);

@@ -6,24 +6,6 @@
     "pictureAmount":2
   },
   {
-    "name":"testSpot2",
-    "lat":48.852,
-    "long":2.35,
-    "pictureAmount":1
-  },
-  {
-    "name":"testSpot3",
-    "lat":45,
-    "long":2.8,
-    "pictureAmount":1
-  },
-  {
-    "name":"testSpot4",
-    "lat":42,
-    "long":2.8,
-    "pictureAmount":1
-  },
-  {
     "name":"pont_du_gard",
     "lat":43.94760,
     "long":4.53473,
