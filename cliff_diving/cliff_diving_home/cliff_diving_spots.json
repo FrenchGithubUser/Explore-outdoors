@@ -3,12 +3,10 @@
     "name":"spotTest",
     "lat":48.1,
     "long":2.35,
-    "pictureAmount":2
   },
   {
     "name":"pont_du_gard",
     "lat":43.94760,
     "long":4.53473,
-    "pictureAmount":2
   }
 ]

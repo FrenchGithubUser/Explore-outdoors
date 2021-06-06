@@ -24,7 +24,7 @@ function addSpotsToMap(spots) {
     var spotDescription = spots[spot].description;
     var pictureAmount = spots[spot].pictureAmount;
     //binds a popup on the map for each spot and clicking on it will call the displaySpotInfo function
-    marker.bindPopup("<p><a href='javascript:displaySpotInfo(\""+spotName+"\",\""+pictureAmount+"\",\""+lat+"\",\""+long+"\")'>"+spotName+"</a></p>");
+    marker.bindPopup("<p><a href='javascript:displaySpotInfo(\""+spotName+"\",\""+lat+"\",\""+long+"\")'>"+spotName+"</a></p>");
     markers.addLayer(marker);  //add the marker to the cluster group
   }
   mymap.addLayer(markers);
@@ -39,7 +39,7 @@ var spotCoordinatesContainer = document.getElementById("spotCoordinatesContainer
 
 
 //displays the spot's info (description, pics etc...) on the current page
-function displaySpotInfo(name, pictureAmount, lat, long) {
+function displaySpotInfo(name, lat, long) {
   //clears the div containers in case of a previous spot was already being displayed
   spotNameContainer.innerHTML = "";
   spotPicturesContainer.innerHTML = "";
@@ -48,43 +48,38 @@ function displaySpotInfo(name, pictureAmount, lat, long) {
 
   //goes to the spot info so people can see that it is being displayed (it should also keep the disclaimer on their sight)
   document.getElementById('spotNameContainer').scrollIntoView();
+  spotName=name;
 
-  spotName = name;
-  spotPictures = "";
-  for(i=0; i<pictureAmount; i++){
-    spotPictures += "<img src='../cliff_diving_spots/"+name+"/picture"+i+".jpg' width='400px' alt=''>"
-  }
+  //adding the name of the spot
   spotNameContainer.insertAdjacentHTML("beforeend", "<p>"+spotName+"</p>"); //is it necessary to create a p tag inside of the div ?
   spotNameContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
-  spotPicturesContainer.insertAdjacentHTML("beforeend", spotPictures);
-  spotPicturesContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
-  displaySpotDescription(name);
-  spotCoordinatesContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:40px;"></div>');
-  spotCoordinatesContainer.insertAdjacentHTML("beforeend", "Coordinates : "+lat+", "+long);
-}
 
-
-//function to request and display the spot description when clicked on
-function displaySpotDescription(name) {
-  var descriptionRequest = new XMLHttpRequest();
-  descriptionRequest.open('GET', 'https://thomastraineau.github.io/Outdoor-spots/cliff_diving/cliff_diving_spots/'+name+'/description.txt');
-  descriptionRequest.onload = function() {
-    var description = descriptionRequest.responseText;
-    spotDescriptionContainer.insertAdjacentHTML("beforeend", "<p>"+description+"</p>");
-  };
-  descriptionRequest.send();
-
-
-
-  //Getting the spot info stored in a json file
+  //getting the spot information in the json file
   var spotInfoRequest = new XMLHttpRequest();
   spotInfoRequest.open('GET', 'https://thomastraineau.github.io/Outdoor-spots/cliff_diving/cliff_diving_spots/'+name+'/spotInfo.json');
   spotInfoRequest.onload = function() {
     var spotInfo = JSON.parse(spotInfoRequest.responseText);
-    console.log(spotInfo)
+
+    //adding the description
+    spotDescriptionContainer.insertAdjacentHTML("beforeend", "<p>"+spotInfo[0].description+"</p>");
+
+    //adding the pictures
+    spotPictures = "";
+    for(i=0; i<spotInfo[0].pictureAmount; i++){
+      spotPictures += "<img src='../cliff_diving_spots/"+name+"/picture"+i+".jpg' width='400px' alt=''>"
+    }
+    spotPicturesContainer.insertAdjacentHTML("beforeend", spotPictures);
+    spotPicturesContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
+
   };
   spotInfoRequest.send();
+
+
+
+  spotCoordinatesContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:40px;"></div>');
+  spotCoordinatesContainer.insertAdjacentHTML("beforeend", "Coordinates : "+lat+", "+long);
 }
+
 
 
 //Getting the spots from the json file
