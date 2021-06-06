@@ -90,6 +90,12 @@ body
   background-color: #782c09;
 }
 
+#disclaimer{
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 
 .relatedLinksTitle{
   text-decoration: underline;

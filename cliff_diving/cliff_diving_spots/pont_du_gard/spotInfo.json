@@ -1,0 +1,7 @@
+{
+  "description":"Nice little jumps along the river around the bridge, from 10cm to approximately 8m. Jumping off the bridge is prohibited.",
+  "minHeight":0.1,
+  "maxHeight":8,
+  "legality":"legal",
+  "pictureAmount":2
+}

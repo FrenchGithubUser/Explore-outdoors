@@ -41,10 +41,13 @@ var spotCoordinatesContainer = document.getElementById("spotCoordinatesContainer
 //displays the spot's info (description, pics etc...) on the current page
 function displaySpotInfo(name, pictureAmount, lat, long) {
   //clears the div containers in case of a previous spot was already being displayed
-  spotNameContainer.innerHTML = '<div style="margin-top:30px;"></div>';
+  spotNameContainer.innerHTML = "";
   spotPicturesContainer.innerHTML = "";
   spotDescriptionContainer.innerHTML = "";
   spotCoordinatesContainer.innerHTML = "";
+
+  //goes to the spot info so people can see that it is being displayed (it should also keep the disclaimer on their sight)
+  document.getElementById('spotNameContainer').scrollIntoView();
 
   spotName = name;
   spotPictures = "";
@@ -70,6 +73,17 @@ function displaySpotDescription(name) {
     spotDescriptionContainer.insertAdjacentHTML("beforeend", "<p>"+description+"</p>");
   };
   descriptionRequest.send();
+
+
+
+  //Getting the spot info stored in a json file
+  var spotInfoRequest = new XMLHttpRequest();
+  ourRequest.open('GET', 'https://thomastraineau.github.io/Outdoor-spots/cliff_diving/cliff_diving_home/cliff_diving_spots.json');
+  ourRequest.onload = function() {
+    var cliffDivingSpots = JSON.parse(ourRequest.responseText);
+    addSpotsToMap(cliffDivingSpots);
+  };
+  ourRequest.send();
 }
 
 
