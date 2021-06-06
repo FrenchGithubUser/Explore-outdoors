@@ -20,7 +20,7 @@
 
 body
 {
-  background-color: #232528;
+  background-color: #0c5372;
   padding: 10px 50px;
   text-align: center;
 }
@@ -94,6 +94,10 @@ body
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
+}
+
+img.logo{
+  vertical-align: middle;
 }
 
 

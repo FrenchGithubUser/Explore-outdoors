@@ -21,8 +21,6 @@ function addSpotsToMap(spots) {
     var long = spots[spot].long;
     var marker = L.marker([lat, long]);
     var spotName = spots[spot].name;
-    var spotDescription = spots[spot].description;
-    var pictureAmount = spots[spot].pictureAmount;
     //binds a popup on the map for each spot and clicking on it will call the displaySpotInfo function
     marker.bindPopup("<p><a href='javascript:displaySpotInfo(\""+spotName+"\",\""+lat+"\",\""+long+"\")'>"+spotName+"</a></p>");
     markers.addLayer(marker);  //add the marker to the cluster group
@@ -35,8 +33,9 @@ function addSpotsToMap(spots) {
 var spotNameContainer = document.getElementById("spotNameContainer");
 var spotPicturesContainer = document.getElementById("spotPicturesContainer");
 var spotDescriptionContainer = document.getElementById("spotDescriptionContainer");
+var spotCoordinatesContainer = document.getElementById("spotHeights");
+var spotCoordinatesContainer = document.getElementById("spotLegality");
 var spotCoordinatesContainer = document.getElementById("spotCoordinatesContainer");
-
 
 //displays the spot's info (description, pics etc...) on the current page
 function displaySpotInfo(name, lat, long) {
@@ -44,10 +43,13 @@ function displaySpotInfo(name, lat, long) {
   spotNameContainer.innerHTML = "";
   spotPicturesContainer.innerHTML = "";
   spotDescriptionContainer.innerHTML = "";
+  spotHeights.innerHTML = "";
+  spotLegality.innerHTML = "";
   spotCoordinatesContainer.innerHTML = "";
 
-  //goes to the spot info so people can see that it is being displayed (it should also keep the disclaimer on their sight)
+  //scrolls to the spot info so people can see that it is being displayed (it should also keep the disclaimer on their sight)
   document.getElementById('spotNameContainer').scrollIntoView();
+
   spotName=name;
 
   //adding the name of the spot
@@ -60,9 +62,6 @@ function displaySpotInfo(name, lat, long) {
   spotInfoRequest.onload = function() {
     var spotInfo = JSON.parse(spotInfoRequest.responseText);
 
-    //adding the description
-    spotDescriptionContainer.insertAdjacentHTML("beforeend", "<p>"+spotInfo[0].description+"</p>");
-
     //adding the pictures
     spotPictures = "";
     for(i=0; i<spotInfo[0].pictureAmount; i++){
@@ -71,6 +70,12 @@ function displaySpotInfo(name, lat, long) {
     spotPicturesContainer.insertAdjacentHTML("beforeend", spotPictures);
     spotPicturesContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
 
+    //adding the description
+    spotDescriptionContainer.insertAdjacentHTML("beforeend", "<p>"+spotInfo[0].description+"</p>");
+    spotDescriptionContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
+
+    //adding the heights
+    spotHeights.insertAdjacentHTML("beforeend", "<p><img class='logo' src='spot_height.svg' width=50px> Heights from "+ spotInfo[0].minHeight +"m to "+spotInfo[0].maxHeight+"m</p>")
   };
   spotInfoRequest.send();
 
