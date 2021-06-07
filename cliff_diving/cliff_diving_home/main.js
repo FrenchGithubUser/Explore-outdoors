@@ -33,8 +33,7 @@ function addSpotsToMap(spots) {
 var spotNameContainer = document.getElementById("spotNameContainer");
 var spotPicturesContainer = document.getElementById("spotPicturesContainer");
 var spotDescriptionContainer = document.getElementById("spotDescriptionContainer");
-var spotCoordinatesContainer = document.getElementById("spotHeights");
-var spotCoordinatesContainer = document.getElementById("spotLegality");
+var spotMetadataContainer = document.getElementById("spotMetadata");
 var spotCoordinatesContainer = document.getElementById("spotCoordinatesContainer");
 
 //displays the spot's info (description, pics etc...) on the current page
@@ -43,8 +42,7 @@ function displaySpotInfo(name, lat, long) {
   spotNameContainer.innerHTML = "";
   spotPicturesContainer.innerHTML = "";
   spotDescriptionContainer.innerHTML = "";
-  spotHeights.innerHTML = "";
-  spotLegality.innerHTML = "";
+  spotMetadata.innerHTML = "";
   spotCoordinatesContainer.innerHTML = "";
 
   //scrolls to the spot info so people can see that it is being displayed (it should also keep the disclaimer on their sight)
@@ -75,7 +73,10 @@ function displaySpotInfo(name, lat, long) {
     spotDescriptionContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
 
     //adding the heights
-    spotHeights.insertAdjacentHTML("beforeend", "<p><img class='logo' src='spot_height.svg' width=50px> Heights from "+ spotInfo[0].minHeight +"m to "+spotInfo[0].maxHeight+"m</p>")
+    spotMetadataContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='spot_height.svg' width=50px> Heights from "+ spotInfo[0].minHeight +"m to "+spotInfo[0].maxHeight+"m<span style='margin-right:30px;'></span>")
+
+    //adding the legality
+    spotMetadataContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='spot_legality.svg' width=50px> Legality : "+ spotInfo[0].legality)
   };
   spotInfoRequest.send();
 
