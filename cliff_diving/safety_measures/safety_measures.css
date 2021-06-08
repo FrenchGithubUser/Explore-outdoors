@@ -67,3 +67,7 @@ img.logo{
   margin-right: 30px;
   color: #1e82bc;
 }
+
+.footerLinks a{
+  text-decoration: none;
+}

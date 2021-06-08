@@ -23,3 +23,5 @@ Roadmap :
 - Adding the posssibility to export the data to make it accessible offline
 - Creating sections with informations related to each sport (safety measures, general informations, links to useful documentation etc...)
 - Communicate about the app (as it's highly based on community's spots !)
+- Making some shirts/sweaters to help financing the project (possibly server costs)
+- Make some reusable bags to clean the spots of their waste
