@@ -1,9 +1,11 @@
 *
 {
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
   color: white;
   font-family: open sans;
+  max-width: 1000px;
 }
 
 * a:link{
@@ -27,7 +29,7 @@ body
 }
 
 .returnHome{
-  float: right;
+  text-align: right;
 }
 
 .topHeader
@@ -41,7 +43,7 @@ body
 }
 
 .topHeader h1{
-  color: #CE4D24;
+  color: #dd8d1c;
 }
 
 .topHeader p{
@@ -67,7 +69,7 @@ body
 
 #spotNameContainer p{
   font-size: 30px;
-  color: #c98510;
+  color: #dd8d1c;
 }
 
 

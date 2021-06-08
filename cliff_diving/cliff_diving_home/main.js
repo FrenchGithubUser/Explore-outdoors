@@ -83,7 +83,7 @@ function displaySpotInfo(name, lat, long) {
 
 
   spotCoordinatesContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:40px;"></div>');
-  spotCoordinatesContainer.insertAdjacentHTML("beforeend", "Coordinates : "+lat+", "+long);
+  spotCoordinatesContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='coordinates.svg' width='40px'> Coordinates : "+lat+", "+long);
 }
 
 

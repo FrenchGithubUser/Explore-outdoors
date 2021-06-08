@@ -25,3 +25,6 @@ Roadmap :
 - Communicate about the app (as it's highly based on community's spots !)
 - Making some shirts/sweaters to help financing the project (possibly server costs)
 - Make some reusable bags to clean the spots of their waste
+
+
+Thanks to onlinewebfonts that provided some nice svg images !

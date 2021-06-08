@@ -20,7 +20,7 @@
 
 body
 {
-  background-color: #232528;
+  background-color: #0d9d35;
   padding: 10px 50px;
   text-align: center;
 }
@@ -36,7 +36,7 @@ body
 }
 
 .topHeader h1{
-  color: #CE4D24;
+  color: black;
 }
 
 .topHeader p{
@@ -52,19 +52,26 @@ body
   text-decoration: underline;
 }
 
-#topics{
+#sports{
   list-style: none;
 }
 
 
-#topics li{
+#sports li{
   display: inline-block;
   float: none;
-  background-color: #3d3a35;
+  background-color: #0b17bb;
   padding: 8px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-#topics li:a{
+#sports li:hover{
+  background-color: #060e79;
+}
+
+#sports a:hover{
   color:white;
 }
 

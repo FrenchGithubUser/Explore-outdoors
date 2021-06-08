@@ -26,6 +26,14 @@ body
   text-align: justify;
 }
 
+.returnToSpots{
+  text-align: right;
+}
+
+.returnToSpots a{
+  text-decoration: none;
+}
+
 .topHeader
 {
   width: 100%;
@@ -38,7 +46,7 @@ body
 }
 
 .topHeader h1{
-  color: #CE4D24;
+  color: #dd8d1c;
 }
 
 .sectionTitle{
