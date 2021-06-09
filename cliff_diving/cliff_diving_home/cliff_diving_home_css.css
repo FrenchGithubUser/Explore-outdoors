@@ -24,8 +24,16 @@
 body
 {
   background-color: #0c5372;
-  padding: 10px 50px;
+  padding: 1vmin 2vmin;
   text-align: center;
+}
+
+.leaflet-control-attribution{
+  font-size: 1.2vmin;
+}
+
+.leaflet-control{
+  font-size: 1.2vmin;
 }
 
 .leaflet-control-attribution a{
