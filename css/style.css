@@ -11,7 +11,7 @@
 }
 
 * a:hover{
-  color: #c98510;
+  color: #002cdc;
 }
 
 * p{
@@ -84,4 +84,8 @@ body
   float: none;
   margin-right: 30px;
   color: #1e82bc;
+}
+
+img.logo{
+  vertical-align: middle;
 }
