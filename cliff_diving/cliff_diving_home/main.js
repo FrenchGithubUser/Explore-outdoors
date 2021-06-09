@@ -62,13 +62,22 @@ function displaySpotInfo(name, lat, long) {
   spotInfoRequest.onload = function() {
     var spotInfo = JSON.parse(spotInfoRequest.responseText);
 
-    //adding the pictures
+    //adding the pictures, displaying 2 pics by line
     spotPictures = "";
+    var picCounter = 0;
     for(i=0; i<spotInfo[0].pictureAmount; i++){
+      picCounter += 1;
+      if(picCounter>2){
+        spotPicturesContainer.insertAdjacentHTML("beforeend", spotPictures);
+        spotPicturesContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
+        spotPictures = "";
+        picCounter = 0;
+      }
       spotPictures += "<img src='../cliff_diving_spots/"+name+"/picture"+i+".jpg'  alt=''>"
     }
     spotPicturesContainer.insertAdjacentHTML("beforeend", spotPictures);
     spotPicturesContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
+
 
     //adding the description
     spotDescriptionContainer.insertAdjacentHTML("beforeend", "<p>"+spotInfo[0].description+"</p>");
@@ -81,13 +90,13 @@ function displaySpotInfo(name, lat, long) {
     spotMetadataContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='spot_legality.svg' width=50vmin> Legality : "+ spotInfo[0].legality)
 
     //adding video links
-    if(spotInfo[0]["videos"].length>0)
+    if(spotInfo[0]["videos"].length>0){
       spotVideosContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
       spotVideosContainer.insertAdjacentHTML("beforeend","<img class='logo' src='video.svg' width=40vmin><span style='margin-right:10px;'></span>Videos at the spot : ")
       for(i=0; i<spotInfo[0]["videos"].length; i++){
         v=i+1
         spotVideosContainer.insertAdjacentHTML("beforeend", "<a href ='"+spotInfo[0]["videos"][i]+"' target='_blank'>video "+v+"</a>")
-      }
+      }}
   };
   spotInfoRequest.send();
 

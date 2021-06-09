@@ -90,6 +90,7 @@ body
   padding-left: 1vw;
   vertical-align: middle;
   max-width: 45vw;
+  width: 100%;
 }
 
 #spotCoordinatesContainer{
