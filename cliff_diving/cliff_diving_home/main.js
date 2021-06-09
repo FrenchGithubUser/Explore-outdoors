@@ -35,6 +35,7 @@ var spotPicturesContainer = document.getElementById("spotPicturesContainer");
 var spotDescriptionContainer = document.getElementById("spotDescriptionContainer");
 var spotMetadataContainer = document.getElementById("spotMetadata");
 var spotCoordinatesContainer = document.getElementById("spotCoordinatesContainer");
+var spotVideosContainer = document.getElementById("spotVideosContainer");
 
 //displays the spot's info (description, pics etc...) on the current page
 function displaySpotInfo(name, lat, long) {
@@ -44,6 +45,7 @@ function displaySpotInfo(name, lat, long) {
   spotDescriptionContainer.innerHTML = "";
   spotMetadata.innerHTML = "";
   spotCoordinatesContainer.innerHTML = "";
+  spotVideosContainer.innerHTML = "";
 
   //scrolls to the spot info so people can see that it is being displayed (it should also keep the disclaimer on their sight)
   document.getElementById('spotNameContainer').scrollIntoView();
@@ -77,6 +79,11 @@ function displaySpotInfo(name, lat, long) {
 
     //adding the legality
     spotMetadataContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='spot_legality.svg' width=50px> Legality : "+ spotInfo[0].legality)
+
+    //adding video links
+    for(video in spotInfo[0][videos]){
+      spotVideosContainer.insertAdjacentHTML("beforeend",video)
+    }
   };
   spotInfoRequest.send();
 
