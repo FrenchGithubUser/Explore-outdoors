@@ -6,6 +6,7 @@
   color: white;
   font-family: open sans;
   max-width: 1200px;
+  font-size: 1.7vmin;
 }
 
 * a:link{
@@ -43,13 +44,7 @@ body
 
 .topHeader h1{
   color: black;
-}
-
-.topHeader p{
-  font-size: 30px;
-  margin-top: 20px;
-  font-weight: 600;
-  color: #1ab9bc;
+  font-size: 4.5vmin;
 }
 
 .betaVersion{

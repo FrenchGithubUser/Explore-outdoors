@@ -6,6 +6,7 @@
   color: white;
   font-family: open sans;
   max-width: 1200px;
+  font-size: 1.7vmin;
 }
 
 * a:link{
@@ -18,7 +19,6 @@
 
 * p{
   line-height: 20px;
-  font-size: 1.7vmin;
 }
 
 body
@@ -28,9 +28,14 @@ body
   text-align: center;
 }
 
-.spiderLegPolylineOptions{
-  color:"#0c5372";
+.leaflet-control-attribution a{
+  font-size: 1.2vmin;
 }
+
+.leaflet-control a{
+  font-size: 1.2vmin;
+}
+
 
 .returnHome{
   text-align: right;
@@ -48,11 +53,10 @@ body
 
 .topHeader h1{
   color: #dd8d1c;
-  font-size: 3.5vmin;
+  font-size: 4.5vmin;
 }
 
 .topHeader p{
-  font-size: 30px;
   margin-top: 20px;
   font-weight: 600;
   color: #1ab9bc;
@@ -73,7 +77,7 @@ body
 }
 
 #spotNameContainer p{
-  font-size: 30px;
+  font-size: 4.2vmin;
   color: #dd8d1c;
 }
 

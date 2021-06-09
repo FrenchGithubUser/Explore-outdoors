@@ -75,15 +75,15 @@ function displaySpotInfo(name, lat, long) {
     spotDescriptionContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
 
     //adding the heights
-    spotMetadataContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='spot_height.svg' width=50px> Heights from "+ spotInfo[0].minHeight +"m to "+spotInfo[0].maxHeight+"m<span style='margin-right:30px;'></span>")
+    spotMetadataContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='spot_height.svg' width=50vmin> Heights from "+ spotInfo[0].minHeight +"m to "+spotInfo[0].maxHeight+"m<span style='margin-right:30px;'></span>")
 
     //adding the legality
-    spotMetadataContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='spot_legality.svg' width=50px> Legality : "+ spotInfo[0].legality)
+    spotMetadataContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='spot_legality.svg' width=50vmin> Legality : "+ spotInfo[0].legality)
 
     //adding video links
     if(spotInfo[0]["videos"].length>0)
       spotVideosContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
-      spotVideosContainer.insertAdjacentHTML("beforeend","<img class='logo' src='video.svg' width=40px><span style='margin-right:10px;'></span>Videos at the spot : ")
+      spotVideosContainer.insertAdjacentHTML("beforeend","<img class='logo' src='video.svg' width=40vmin><span style='margin-right:10px;'></span>Videos at the spot : ")
       for(i=0; i<spotInfo[0]["videos"].length; i++){
         v=i+1
         spotVideosContainer.insertAdjacentHTML("beforeend", "<a href ='"+spotInfo[0]["videos"][i]+"' target='_blank'>video "+v+"</a>")
@@ -92,7 +92,7 @@ function displaySpotInfo(name, lat, long) {
   spotInfoRequest.send();
 
   spotCoordinatesContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:30px;"></div>');
-  spotCoordinatesContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='coordinates.svg' width='40px'> Coordinates : "+lat+", "+long);
+  spotCoordinatesContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='coordinates.svg' width='40vmin'> Coordinates : "+lat+", "+long);
 }
 
 

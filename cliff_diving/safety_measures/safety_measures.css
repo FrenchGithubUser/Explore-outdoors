@@ -6,6 +6,7 @@
   color: white;
   font-family: open sans;
   max-width: 1000px;
+  font-size: 1.7vmin;
 }
 
 * a:hover{
@@ -47,10 +48,11 @@ body
 
 .topHeader h1{
   color: #dd8d1c;
+    font-size: 4.5vmin;
 }
 
 .sectionTitle{
-  font-size: 25px;
+  font-size: 3.7vmin;
   color: #dd8d1c;
   margin-bottom: 20px;
   margin-top: 30px;
