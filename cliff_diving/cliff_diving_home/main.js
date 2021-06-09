@@ -81,9 +81,13 @@ function displaySpotInfo(name, lat, long) {
     spotMetadataContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='spot_legality.svg' width=50px> Legality : "+ spotInfo[0].legality)
 
     //adding video links
-    for(video in spotInfo[0][videos]){
-      spotVideosContainer.insertAdjacentHTML("beforeend",video)
-    }
+    if(spotInfo[0]["videos"].length>0)
+      spotVideosContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
+      spotVideosContainer.insertAdjacentHTML("beforeend","<img class='logo' src='video.svg' width=40px><span style='margin-right:10px;'></span>Videos at the spot : ")
+      for(i=0; i<spotInfo[0]["videos"].length; i++){
+        v=i+1
+        spotVideosContainer.insertAdjacentHTML("beforeend", "<a href ='"+spotInfo[0]["videos"][i]+"' target='_blank'>video "+v+"</a>")
+      }
   };
   spotInfoRequest.send();
 

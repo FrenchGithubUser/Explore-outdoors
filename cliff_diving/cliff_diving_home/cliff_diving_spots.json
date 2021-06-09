@@ -1,8 +1,13 @@
 [
   {
-    "name":"spotTest",
-    "lat":48.1,
-    "long":2.35
+    "name":"Plongeoirs naturels les Vans",
+    "lat":44.408731,
+    "long":4.183008
+  },
+  {
+    "name":"Mazet plage",
+    "lat":44.397087,
+    "long":4.193510
   },
   {
     "name":"Pont du gard",

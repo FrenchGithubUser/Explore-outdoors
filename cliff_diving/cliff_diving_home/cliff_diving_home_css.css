@@ -82,6 +82,10 @@ body
   text-align: left;
 }
 
+#spotVideosContainer{
+  text-align: left;
+}
+
 #newSpot{
   background-color: #973a0f;
   padding: 5px;
