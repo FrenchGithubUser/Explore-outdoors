@@ -1,9 +1,11 @@
 *
 {
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
   color: white;
   font-family: open sans;
+  max-width: 1200px;
 }
 
 * a:link{
@@ -23,6 +25,10 @@ body
   background-color: #0d9d35;
   padding: 10px 50px;
   text-align: center;
+}
+
+.returnHome{
+  text-align: right;
 }
 
 .topHeader

@@ -65,7 +65,7 @@ function displaySpotInfo(name, lat, long) {
     //adding the pictures
     spotPictures = "";
     for(i=0; i<spotInfo[0].pictureAmount; i++){
-      spotPictures += "<img src='../cliff_diving_spots/"+name+"/picture"+i+".jpg' width='400px' alt=''>"
+      spotPictures += "<img src='../cliff_diving_spots/"+name+"/picture"+i+".jpg'  alt=''>"
     }
     spotPicturesContainer.insertAdjacentHTML("beforeend", spotPictures);
     spotPicturesContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
@@ -82,6 +82,7 @@ function displaySpotInfo(name, lat, long) {
 
     //adding video links
     if(spotInfo[0]["videos"].length>0)
+      spotVideosContainer.insertAdjacentHTML("beforeend","<div style='margin-top:20px;>")
       spotVideosContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
       spotVideosContainer.insertAdjacentHTML("beforeend","<img class='logo' src='video.svg' width=40px><span style='margin-right:10px;'></span>Videos at the spot : ")
       for(i=0; i<spotInfo[0]["videos"].length; i++){
