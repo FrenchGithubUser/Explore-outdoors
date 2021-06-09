@@ -1,12 +1,12 @@
 [
   {
-    "description":"Multiple heights in between 0 and 18m. To access the spot, you have to park your car (if you have one) on the parking next to the river, and then go back, uphill and you will end up in a viniard, you just have to continue straight, and then take the little path that is next to a small house. To access the 18m spots you have to climb on the right of the 10m spot. Be careful on your way, the rocks are not always stable, don't walk on the edge.",
+    "description":"Multiple heights in between 0 and 18m. To access the spot, you have to park your car (if you have one) on the parking next to the river, and then go back, uphill and you will end up in a viniard, you just have to continue straight, and then take the little path that is next to a small house. To access the 18m spots you have to climb on the right of the 10m spot. Be careful on your way (to the 18m spot), the rocks are not always stable, don't walk on the edge.",
     "minHeight":0.1,
     "maxHeight":18,
     "legality":"legal",
     "pictureAmount":2,
     "videos":[
-      ""
+      
     ]
   }
 ]
