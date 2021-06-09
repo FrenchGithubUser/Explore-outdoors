@@ -10,7 +10,7 @@ minZoom: 1,
 maxZoom: 20,
 }).addTo(mymap);
 
-//creating the marker clusters
+  //creating the marker clusters
 var markers = L.markerClusterGroup();
 
 
@@ -82,7 +82,6 @@ function displaySpotInfo(name, lat, long) {
 
     //adding video links
     if(spotInfo[0]["videos"].length>0)
-      spotVideosContainer.insertAdjacentHTML("beforeend","<div style='margin-top:20px;>")
       spotVideosContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
       spotVideosContainer.insertAdjacentHTML("beforeend","<img class='logo' src='video.svg' width=40px><span style='margin-right:10px;'></span>Videos at the spot : ")
       for(i=0; i<spotInfo[0]["videos"].length; i++){
@@ -92,9 +91,7 @@ function displaySpotInfo(name, lat, long) {
   };
   spotInfoRequest.send();
 
-
-
-  spotCoordinatesContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:40px;"></div>');
+  spotCoordinatesContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:30px;"></div>');
   spotCoordinatesContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='coordinates.svg' width='40px'> Coordinates : "+lat+", "+long);
 }
 

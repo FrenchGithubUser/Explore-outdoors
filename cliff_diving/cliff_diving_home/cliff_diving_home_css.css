@@ -6,7 +6,6 @@
   color: white;
   font-family: open sans;
   max-width: 1200px;
-  font-size: 16px;
 }
 
 * a:link{
@@ -19,6 +18,7 @@
 
 * p{
   line-height: 20px;
+  font-size: 1.7vmin;
 }
 
 body
@@ -26,6 +26,10 @@ body
   background-color: #0c5372;
   padding: 10px 50px;
   text-align: center;
+}
+
+.spiderLegPolylineOptions{
+  color:"#0c5372";
 }
 
 .returnHome{
@@ -44,7 +48,7 @@ body
 
 .topHeader h1{
   color: #dd8d1c;
-  font-size: 30px;
+  font-size: 3.5vmin;
 }
 
 .topHeader p{
@@ -133,4 +137,5 @@ img.logo{
   float: none;
   margin-right: 30px;
   color: #1e82bc;
+  font-size: 1.7vmin;
 }
