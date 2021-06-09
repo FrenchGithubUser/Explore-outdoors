@@ -54,20 +54,13 @@ body
   width: 100%;
   height: auto;
   margin-left: auto;
-  margin-right: 0px;
-  margin-bottom: 30px;
-  margin-top: 50px;
+  margin-bottom: 3vmin;
+  margin-top: 4vmin;
 }
 
 .topHeader h1{
   color: #dd8d1c;
   font-size: 4.5vmin;
-}
-
-.topHeader p{
-  margin-top: 20px;
-  font-weight: 600;
-  color: #1ab9bc;
 }
 
 #mapid{
