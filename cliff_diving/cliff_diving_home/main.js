@@ -96,7 +96,6 @@ function displaySpotInfo(name, lat, long) {
 }
 
 
-
 //Getting the spots from the json file
 var ourRequest = new XMLHttpRequest();
 ourRequest.open('GET', 'https://thomastraineau.github.io/Outdoor-spots/cliff_diving/cliff_diving_home/cliff_diving_spots.json');

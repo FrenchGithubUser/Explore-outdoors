@@ -24,55 +24,65 @@
 
 <body>
 
-  <p class="returnHome"><a href="../../index.html">Back home</a></p>
+	<!-- Allows to display the spot pictures wider than 1200px while keeping the rest of the page at max 1200px width -->
+	<div class="maxWidthContainer">
 
-  <div class="topHeader">
-    <h1><img src="diver.svg" class="logo" width="80vmin"> Outdoor spots - Cliff diving <img src="whale.svg" class="logo" width="80vmin"></h1>
-  </div>
+	  <p class="returnHome"><a href="../../index.html">Back home</a></p>
 
-  <div id="mapid"></div>
+	  <div class="topHeader">
+	    <h1><img src="diver.svg" class="logo" width="80vw"> Outdoor spots - Cliff diving <img src="whale.svg" class="logo" width="80vmin"></h1>
+	  </div>
 
-  <!-- Importing the leaflet js -->
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+	  <div id="mapid"></div>
 
-  <!-- Importing the markercluster js -->
-  <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+	  <!-- Importing the leaflet js -->
+	  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 
-  <div style="margin-top:20px;"></div>
+	  <!-- Importing the markercluster js -->
+	  <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 
-  <p id="disclaimer"> <img src="clean.svg" class="logo" width=40vmin alt=""> Please help us protecting the nature from pollution by keeping your waste in your bags and cleaning the spots if they are dirty, thank you !</p>
+	  <div style="margin-top:20px;"></div>
 
-  <div style="margin-top:30px;"></div>
+	  <p id="disclaimer"> <img src="clean.svg" class="logo" width=40vmin alt=""> Please help us protecting the nature from pollution by keeping your waste in your bags and cleaning the spots if they are dirty, thank you !</p>
 
-  <!-- Creating containers to add info about a specific spot (with the js script) -->
-  <div id="spotInfoContainer">
+	  <div style="margin-top:30px;"></div>
+
+	  <!-- Creating containers to add info about a specific spot (with the js script) -->
+
     <div id="spotNameContainer"></div>
+	</div>
+
     <div id="spotPicturesContainer"></div>
+
+	<div class="maxWidthContainer">
+
+
     <div id="spotDescriptionContainer"></div>
     <div id="spotMetadata"></div>
     <div id="spotVideosContainer"></div>
     <div id="spotCoordinatesContainer"></div>
-  </div>
+	  
 
-  <!-- Importing the js to use the map, markers and display spots' info -->
-  <script src="main.js"></script>
+	  <!-- Importing the js to use the map, markers and display spots' info -->
+	  <script src="main.js"></script>
 
-  <div style="margin-top:30px;"></div>
+	  <div style="margin-top:30px;"></div>
 
-  <p>Found a new spot ?  <a id="newSpot" href="../new_spot/new_spot.html">Add it to the map !<a></p>
+	  <p>Found a new spot ?  <a id="newSpot" href="../new_spot/new_spot.html">Add it to the map !<a></p>
 
-  <div style="margin-top:20px;"></div>
+	  <div style="margin-top:20px;"></div>
 
-  <p class="relatedLinksTitle">Related links :</p>
+	  <p class="relatedLinksTitle">Related links :</p>
 
-  <div style="margin-top:30px;"></div>
+	  <div style="margin-top:30px;"></div>
 
-  <ul class="relatedLinks">
-    <li><a href="">What is cliff diving ?</a></li>
-    <li><a href="../safety_measures/safety_measures.html">Safety measures</a></li>
-    <li><a href="">How to cliff dive ?</a></li>
-  </ul>
+	  <ul class="relatedLinks">
+	    <li><a href="">What is cliff diving ?</a></li>
+	    <li><a href="../safety_measures/safety_measures.html">Safety measures</a></li>
+	    <li><a href="">How to cliff dive ?</a></li>
+	  </ul>
 
+	</div>
 
 </body>
 
