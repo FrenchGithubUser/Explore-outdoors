@@ -68,7 +68,7 @@ function displaySpotInfo(name, lat, long) {
     for(i=0; i<spotInfo[0].pictureAmount; i++){
       picCounter += 1;
       if(picCounter>2){
-        spotPicturesContainer.insertAdjacentHTML("beforeend", spotPictures);
+        spotPicturesContainer.insertAdjacentHTML("beforeend","<div>"+spotPictures+"</div>");
         spotPicturesContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
         spotPictures = "";
         picCounter = 0;
