@@ -17,7 +17,8 @@
 }
 
 * p{
-  line-height: 20px;
+  line-height: 50%;
+  font-size: 125%;
 }
 
 .maxWidthContainer{
@@ -63,7 +64,7 @@ body
 
 .topHeader h1{
   color: #dd8d1c;
-  font-size: 4.5vmin;
+  font-size: 300%;
 }
 
 #mapid{
@@ -132,6 +133,7 @@ img.logo{
   list-style: none;
   display: inline-block;
   margin-right: 30px;
+  font-size: 125%;
 }
 
 

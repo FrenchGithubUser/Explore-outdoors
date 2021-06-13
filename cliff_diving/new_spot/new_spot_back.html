@@ -21,9 +21,7 @@
 
   </p>
 
-  <div style="margin-top:30px;"></div>
-
-  <form class="newSpotForm" method="post" name="submit-to-google-sheet">
+  <form class="newSpotForm" action="results.html" method="post" name="name="submit-to-google-sheet"">
     <div>
       <label>
         Name of the spot :
@@ -92,30 +90,16 @@
     <div style="margin-top:20px;"></div>
 
     <div>
+      <input type="file" name="spotPictures">
+    </div>
+
+    <div style="margin-top:30px;"></div>
+
+    <div>
       <button type="submit" name="submitSpotButton">Submit my spot</button>
     </div>
 
   </form>
-
-
-
-
-
-
-
-
-
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbx9D6q4s2EYclPyt-oKb4BDPR4cXrww2bVnzeB_oHdYM__MsS0/exec'
-    const form = document.forms['submit-to-google-sheet']
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
 
 
 
