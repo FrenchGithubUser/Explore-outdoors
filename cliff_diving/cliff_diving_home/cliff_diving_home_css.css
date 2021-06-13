@@ -132,19 +132,17 @@ img.logo{
 .relatedLinks li{
   list-style: none;
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 5%;
   font-size: 125%;
 }
 
 
 .footerLinks{
-  list-style: none;
+  list-style: none
 }
 
 .footerLinks li{
   display: inline-block;
   float: none;
-  margin-right: 30px;
   color: #1e82bc;
-  font-size: 100%;
 }
