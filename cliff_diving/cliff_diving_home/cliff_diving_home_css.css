@@ -141,8 +141,7 @@ img.logo{
   list-style: none
 }
 
-.footerLinks li{
-  display: inline-block;
-  float: none;
-  color: #1e82bc;
+footer{
+  padding-left: 15%;
+  padding-right: 15%;
 }
