@@ -54,7 +54,7 @@ function displaySpotInfo(name, lat, long) {
 
   //adding the name of the spot
   spotNameContainer.insertAdjacentHTML("beforeend", "<p>"+spotName+"</p>"); //is it necessary to create a p tag inside of the div ?
-  spotNameContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
+  spotNameContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:3%;"></div>');
 
   //getting the spot information in the json file
   var spotInfoRequest = new XMLHttpRequest();
@@ -69,30 +69,30 @@ function displaySpotInfo(name, lat, long) {
       picCounter += 1;
       if(picCounter>2){
         spotPicturesContainer.insertAdjacentHTML("beforeend","<div>"+spotPictures+"</div>");
-        spotPicturesContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
+        spotPicturesContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:3%;"></div>');
         spotPictures = "";
         picCounter = 0;
       }
       spotPictures += "<img src='../cliff_diving_spots/"+name+"/picture"+i+".jpg'  alt=''>"
     }
     spotPicturesContainer.insertAdjacentHTML("beforeend", spotPictures);
-    spotPicturesContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
+    spotPicturesContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:3%;"></div>');
 
 
     //adding the description
     spotDescriptionContainer.insertAdjacentHTML("beforeend", "<p>"+spotInfo[0].description+"</p>");
-    spotDescriptionContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
+    spotDescriptionContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:2%;"></div>');
 
     //adding the heights
-    spotMetadataContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='spot_height.svg' width=50vmin> Heights from "+ spotInfo[0].minHeight +"m to "+spotInfo[0].maxHeight+"m<span style='margin-right:30px;'></span>")
+    spotMetadataContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='spot_height.svg' width=5%> Heights from "+ spotInfo[0].minHeight +"m to "+spotInfo[0].maxHeight+"m<span style='margin-right:3%;'></span>")
 
     //adding the legality
-    spotMetadataContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='spot_legality.svg' width=50vmin> Legality : "+ spotInfo[0].legality)
+    spotMetadataContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='spot_legality.svg' width=5%> Legality : "+ spotInfo[0].legality)
 
     //adding video links
     if(spotInfo[0]["videos"].length>0){
-      spotVideosContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:20px;"></div>');
-      spotVideosContainer.insertAdjacentHTML("beforeend","<img class='logo' src='video.svg' width=40vmin><span style='margin-right:10px;'></span>Videos at the spot : ")
+      spotVideosContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:3%;"></div>');
+      spotVideosContainer.insertAdjacentHTML("beforeend","<img class='logo' src='video.svg' width=4%><span style='margin-right:2%;'></span>Videos at the spot : ")
       for(i=0; i<spotInfo[0]["videos"].length; i++){
         v=i+1
         spotVideosContainer.insertAdjacentHTML("beforeend", "<a href ='"+spotInfo[0]["videos"][i]+"' target='_blank'>video "+v+"</a>")
@@ -100,8 +100,8 @@ function displaySpotInfo(name, lat, long) {
   };
   spotInfoRequest.send();
 
-  spotCoordinatesContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:30px;"></div>');
-  spotCoordinatesContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='coordinates.svg' width='40vmin'> Coordinates : "+lat+", "+long);
+  spotCoordinatesContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:3%;"></div>');
+  spotCoordinatesContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='coordinates.svg' width='4%'> Coordinates : "+lat+", "+long);
 }
 
 
