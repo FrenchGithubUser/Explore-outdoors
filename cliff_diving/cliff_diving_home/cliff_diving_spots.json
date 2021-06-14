@@ -18,5 +18,10 @@
     "name":"Cascades du Sautadet",
     "lat":44.188290,
     "long":4.526750
+  },
+  {
+    "name":"Lac de Sainte Croix",
+    "lat":43.801485,
+    "long":6.250639
   }
 ]
