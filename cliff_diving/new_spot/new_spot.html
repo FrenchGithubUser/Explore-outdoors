@@ -17,11 +17,11 @@
   <p class="topMessage">
 
     Adding new spots to the map helps everyone finding new nice places to go to, thank you for your contribution !<br>
-    Please try to describe the spot accurately : the variety of heights, if there's a better way to reach it than another, if people need to watch out about something etc..
+    Please try to describe the spot accurately : the variety of heights, if there's a better way to reach it than another, if people need to watch out about something, if there is a good place to park a car etc..
 
   </p>
 
-  <div style="margin-top:30px;"></div>
+  <div style="margin-top:5vw;"></div>
 
   <form class="newSpotForm" method="post" name="submit-to-google-sheet">
     <div>
@@ -70,7 +70,7 @@
     <div style="margin-top:20px;"></div>
 
     <div>
-      <label for="legality">Legality : </label>
+      <label class="legality" for="legality">Legality : </label>
       <select name="legality">
         <option value="Legal">Legal</option>
         <option value="Illegal">Illegal</option>
@@ -78,11 +78,22 @@
       </select>
     </div>
 
-    <div style="margin-top:20px;"></div>
+    <div style="margin-top:25px;"></div>
 
     <div>
       <label>Provide a description of the spot : </label>
-      <textarea name="spotDescription" rows="8"></textarea>
+      <div style="margin-top:10px;"></div>
+      <textarea name="spotDescription" rows="8" cols="50"></textarea>
+    </div>
+
+    <div style="margin-top:25px;"></div>
+
+    <p>If you know some videos that have been recorded on the spot, you can paste their link below</p>
+
+    <div>
+      <label>Videos at the spot :</label>
+      <div style="margin-top:10px;"></div>
+      <textarea name="spotVideos" rows="2" cols="50"></textarea>
     </div>
 
     <div style="margin-top:30px;"></div>
@@ -96,13 +107,6 @@
     </div>
 
   </form>
-
-
-
-
-
-
-
 
 
   <script>
@@ -121,13 +125,19 @@
 
   <div style="margin-top:30px;"></div>
 
-<footer>
+  <div class="maxWidthContainer">
 
-  <ul class="footerLinks">
-    <li><a href="./footer/contact.html">Contact</a></li>
-    <li><a href="./footer/donate.html">Donate</a></li>
-    <li><a href="https://github.com/ThomasTraineau/Outdoor-spots" target="_blank">Source</a></li>
-  </ul>
+  <footer>
+
+      <a href="../../footer/contact.html"><img src="../../footer/contact.svg" class="logo" width="5%"> Contact</a><span style='margin-right:5%;'></span>
+      <a href="./footer/donate.html"><img src="../../footer/donate.svg" class="logo" width="5%"> Donate</a><span style='margin-right:5%;'></span>
+      <a href="https://github.com/ThomasTraineau/Outdoor-spots" target="_blank"><img src="../../footer/source.svg" class="logo" width="5%"> Source</a><span style='margin-right:5%;'></span>
 
 
-</footer>
+    <div style="margin-top:30px;"></div>
+
+  </footer>
+
+  </div>
+
+</body>

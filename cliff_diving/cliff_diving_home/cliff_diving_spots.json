@@ -13,5 +13,10 @@
     "name":"Pont du gard",
     "lat":43.94760,
     "long":4.53473
+  },
+  {
+    "name":"Cascades du Sautadet",
+    "lat":44.188290,
+    "long":4.526750
   }
 ]

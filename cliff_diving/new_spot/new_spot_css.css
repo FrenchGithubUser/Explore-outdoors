@@ -1,9 +1,11 @@
 *
 {
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
   color: white;
   font-family: open sans;
+  font-size: 16px;
 }
 
 * a:link{
@@ -15,7 +17,7 @@
 }
 
 * p{
-  line-height: 20px;
+  line-height: 28px;
 }
 
 .returnToSpots{
@@ -24,8 +26,8 @@
 
 body
 {
-  background-color: #232528;
-  padding: 10px 50px;
+  background-color: #0c5372;
+  padding: 1vmin 2vmin;
   text-align: center;
 }
 
@@ -34,14 +36,15 @@ body
   width: 100%;
   height: auto;
   margin-left: auto;
-  margin-right: 0px;
-  margin-bottom: 30px;
-  margin-top: 50px;
+  margin-bottom: 3vmin;
+  margin-top: 4vmin;
 }
 
 .topHeader h1{
-  color: #CE4D24;
+  color: #dd8d1c;
+  font-size: 300%;
 }
+
 
 .topHeader p{
   font-size: 30px;
@@ -50,17 +53,20 @@ body
   color: #1ab9bc;
 }
 
-.topMessage{
-  line-height: 20px;
+.maxWidthContainer{
+  max-width: 1200px;
 }
 
-.footerLinks{
-  list-style: none;
+
+textarea{
+  display: block;
 }
 
-.footerLinks li{
-  display: inline-block;
-  float: none;
-  margin-right: 30px;
-  color: #1e82bc;
+footer{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+img.logo{
+  vertical-align: middle;
 }

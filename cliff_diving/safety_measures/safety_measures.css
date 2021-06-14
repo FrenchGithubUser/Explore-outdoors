@@ -6,7 +6,7 @@
   color: white;
   font-family: open sans;
   max-width: 1000px;
-  font-size: 1.7vmin;
+  font-size: 100%;
 }
 
 * a:hover{
@@ -66,18 +66,12 @@ img.logo{
   text-align: center;
 }
 
-.footerLinks{
-  list-style: none;
+footer{
+  padding-left: 15%;
+  padding-right: 15%;
   text-align: center;
 }
 
-.footerLinks li{
-  display: inline-block;
-  float: none;
-  margin-right: 30px;
-  color: #1e82bc;
-}
-
-.footerLinks a{
+footer a{
   text-decoration: none;
 }

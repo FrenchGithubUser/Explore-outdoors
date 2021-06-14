@@ -34,15 +34,16 @@
   </defs>
   <g
      id="g3833"
-     style="fill:#d3d7d2;fill-opacity:1;stroke:#a46100;stroke-opacity:1;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none">
+     style="fill:#d3d7d2;fill-opacity:1;stroke:#0000ff;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     transform="matrix(0.96186189,0,0,0.96186189,1.0071485,0.99399299)">
     <path
-       style="fill:#d3d7d2;fill-opacity:1;fill-rule:evenodd;stroke:#a46100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#d3d7d2;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 23.930136,1.9024788 24.069864,46.097521"
        id="path1422"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:#d3d7d2;fill-opacity:1;fill-rule:evenodd;stroke:#a46100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#d3d7d2;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 1.902479,24.069864 46.097521,23.930136"
        id="path1422-7"
        inkscape:connector-type="polyline"
