@@ -95,7 +95,7 @@ function displaySpotInfo(name, lat, long) {
       spotVideosContainer.insertAdjacentHTML("beforeend","<img class='logo' src='video.svg' width=4%><span style='margin-right:2%;'></span>Videos at the spot : ")
       for(i=0; i<spotInfo[0]["videos"].length; i++){
         v=i+1
-        spotVideosContainer.insertAdjacentHTML("beforeend", "<a href ='"+spotInfo[0]["videos"][i]+"' target='_blank'>video "+v+"</a>")
+        spotVideosContainer.insertAdjacentHTML("beforeend", "<a href ='"+spotInfo[0]["videos"][i]+"' target='_blank'>video "+v+" </a>")
       }}
   };
   spotInfoRequest.send();

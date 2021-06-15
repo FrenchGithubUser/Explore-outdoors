@@ -103,15 +103,26 @@
     <div style="margin-top:20px;"></div>
 
     <div>
+      <label>
+        Pictures :
+        <input type="file" name="spotPictures">
+      </label>
+    </div>
+
+    <div style="margin-top:20px;"></div>
+
+    <div>
       <button type="submit" name="submitSpotButton">Submit my spot</button>
     </div>
 
   </form>
 
-
+  <!-- Using google script to store the results in a spreadsheet -->
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbx9D6q4s2EYclPyt-oKb4BDPR4cXrww2bVnzeB_oHdYM__MsS0/exec'
     const form = document.forms['submit-to-google-sheet']
+
+    console.log(new FormData(form))
 
     form.addEventListener('submit', e => {
       e.preventDefault()
