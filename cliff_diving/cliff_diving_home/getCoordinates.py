@@ -13,7 +13,7 @@ with open("overpassRequest.geojson", 'r') as data:
             with open("spotCoordinates.json", "a") as newData:
                 newData.write('\n\t{')
                 try:
-                    newData.write('\n\t\t"name":"' + str(spots["features"][i]["properties"]["name"].replace('"', '').replace("'", " ")) + '",')
+                    newData.write('\n\t\t"name":"' + str(spots["features"][i]["properties"]["name"].replace('"', '').replace("'", " ")) + '",') #.replace in case there is a quotation mark in the name of the spot
                 except: #if no name has been set
                     newData.write('\n\t\t"name":"Undefined",')
                 newData.write('\n\t\t"lat":' + str(spots["features"][i]["geometry"]["coordinates"][0]) + ',')
@@ -21,7 +21,7 @@ with open("overpassRequest.geojson", 'r') as data:
                 newData.write('\n\t},')
         i+=1
 
-
+#removing the last line of the file and replacing it bc otherwise there is a coma at the end of the object
 file_path = "spotCoordinates.json"
 os.system('sed -i "$ d" {0}'.format(file_path))
 

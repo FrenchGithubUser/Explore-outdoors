@@ -17,8 +17,8 @@ var markers = L.markerClusterGroup();
 //displays the spots on the map
 function addSpotsToMap(spots) {
   for(spot in spots){
-    var lat = spots[spot].lat;
-    var long = spots[spot].long;
+    var long = spots[spot].lat;
+    var lat = spots[spot].long;
     var marker = L.marker([lat, long]);
     var spotName = spots[spot].name;
     //binds a popup on the map for each spot and clicking on it will call the displaySpotInfo function
