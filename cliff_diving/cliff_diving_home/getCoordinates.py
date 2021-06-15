@@ -1,17 +1,22 @@
 import json
 
+with open("spotCoordinates.json", "w") as newData:
+    newData.write("[\n\t{")
 
 with open("overpassRequest.geojson", 'r') as data:
     spots = json.load(data)
     i=0
     while i < len(spots["features"]):
         #checks if the spot is a point or a polygon, only accepting points as polygons are annoying to handle
-        try:
-            if spots["features"][i]["properties"]["leisure"] != "swimming_pool":
-                pass
-            elif spots["features"][i]["geometry"]["type"] != "LineString":
-                pass
-        except:
+        if spots["features"][i]["geometry"]["type"] == "Point":
+            print(spots["features"][i]["geometry"]["coordinates"][0])
             with open("spotCoordinates.json", "a") as newData:
-                json.dump(spots["features"][i]["geometry"]["coordinates"][0], newData)
+                try:
+                    newData.write('\n\t\t"name":"' + str(spots["features"][i]["properties"]["name"]) + '",')
+                except: #if no name has been set
+                    newData.write('\n\t\t"name":"Undefined",')
+                newData.write('\n\t\t"lat":' + str(spots["features"][i]["geometry"]["coordinates"][0]) + ',')
+                newData.write('\n\t\t"long":' + str(spots["features"][i]["geometry"]["coordinates"][1]))
+                newData.write('\n\t},')
+                newData.write('\n\t{')
         i+=1
