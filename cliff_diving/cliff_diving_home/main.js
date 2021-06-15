@@ -114,7 +114,7 @@ function displaySpotInfo(name, lat, long) {
 
 //Getting the spots from the geojson file
 var ourRequest = new XMLHttpRequest();
-ourRequest.open('GET', 'https://thomastraineau.github.io/Outdoor-spots/cliff_diving/cliff_diving_home/overpassRequestBack.geojson');
+ourRequest.open('GET', 'https://thomastraineau.github.io/Outdoor-spots/cliff_diving/cliff_diving_home/overpassRequest.geojson');
 ourRequest.onload = function() {
   var cliffDivingSpots = JSON.parse(ourRequest.responseText);
   addSpotsToMap(cliffDivingSpots);
