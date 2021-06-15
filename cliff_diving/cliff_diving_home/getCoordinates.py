@@ -13,7 +13,7 @@ with open("overpassRequest.geojson", 'r') as data:
             with open("spotCoordinates.json", "a") as newData:
                 newData.write('\n\t{')
                 try:
-                    newData.write('\n\t\t"name":"' + str(spots["features"][i]["properties"]["name"]) + '",')
+                    newData.write('\n\t\t"name":"' + str(spots["features"][i]["properties"]["name"].replace('"', '').replace("'", " ")) + '",')
                 except: #if no name has been set
                     newData.write('\n\t\t"name":"Undefined",')
                 newData.write('\n\t\t"lat":' + str(spots["features"][i]["geometry"]["coordinates"][0]) + ',')
