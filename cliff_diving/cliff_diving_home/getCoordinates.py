@@ -1,4 +1,5 @@
 import json
+import os
 
 with open("spotCoordinates.json", "w") as newData:
     newData.write("[")
@@ -20,5 +21,10 @@ with open("overpassRequest.geojson", 'r') as data:
                 newData.write('\n\t},')
         i+=1
 
+
+file_path = "spotCoordinates.json"
+os.system('sed -i "$ d" {0}'.format(file_path))
+
 with open("spotCoordinates.json", "a") as newData:
+    newData.write('\t}')
     newData.write("\n]")
