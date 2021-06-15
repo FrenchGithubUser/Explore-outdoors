@@ -1,0 +1,1092 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2021-06-15T10:16:41Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/571327567",
+        "name": "Black Rock",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -156.6966864,
+          20.9265799
+        ]
+      },
+      "id": "node/571327567"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1129835777",
+        "alt": "24",
+        "natural": "peak",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.2505187,
+          39.1305238
+        ]
+      },
+      "id": "node/1129835777"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1423587166",
+        "fixme": "resurvey",
+        "hazard": "yes",
+        "natural": "cliff",
+        "note": "Depth not surveyed, but probably shallow; not for competitive use",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.3714763,
+          58.949677
+        ]
+      },
+      "id": "node/1423587166"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1769911224",
+        "maxheight": "13",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8380456,
+          58.1841813
+        ]
+      },
+      "id": "node/1769911224"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1769911226",
+        "maxheight": "5",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8426321,
+          58.1843565
+        ]
+      },
+      "id": "node/1769911226"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2158688021",
+        "maxheight": "3",
+        "note": "diving platform",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.7829471,
+          -34.6166242
+        ]
+      },
+      "id": "node/2158688021"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2158688022",
+        "maxheight": "5",
+        "note": "diving platform",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.782891,
+          -34.6166361
+        ]
+      },
+      "id": "node/2158688022"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2386539364",
+        "alt_name": "Rocher du saut prodigieux",
+        "maxheight": "15",
+        "min_height": "4",
+        "mindepth": "4",
+        "name": "Rocher du saut de la Pucelle",
+        "name:br": "Roc’h ar Divoulc’h",
+        "natural": "cliff",
+        "note": "maxheight et minheight approximatif",
+        "source": "survey",
+        "sport": "cliff_diving",
+        "tidal": "yes",
+        "wikipedia": "fr:Plomelin#L.C3.A9gendes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.1410625,
+          47.9241757
+        ]
+      },
+      "id": "node/2386539364"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2412752059",
+        "height": "3",
+        "source": "survey;estimate",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3235904,
+          58.8531278
+        ]
+      },
+      "id": "node/2412752059"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2604759686",
+        "fixme": "resurvey height",
+        "height": "9",
+        "source": "knowledge;estimate",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3676419,
+          58.8621855
+        ]
+      },
+      "id": "node/2604759686"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2982879817",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.9521539,
+          58.8933347
+        ]
+      },
+      "id": "node/2982879817"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3001559456",
+        "fixme": "resurvey: depth not checked but looks ok from above",
+        "hazard": "yes",
+        "source": "survey",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3864555,
+          58.7829823
+        ]
+      },
+      "id": "node/3001559456"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3001559478",
+        "fixme": "resurvey: depth not checked but looks ok from above",
+        "hazard": "yes",
+        "source": "survey",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3858417,
+          58.7834027
+        ]
+      },
+      "id": "node/3001559478"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3001559512",
+        "fixme": "resurvey height",
+        "height": "12",
+        "source": "survey",
+        "source:height": "estimate",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3854828,
+          58.7836426
+        ]
+      },
+      "id": "node/3001559512"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3001559515",
+        "fixme": "resurvey height",
+        "height": "4.5",
+        "source": "survey",
+        "source:height": "estimate",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3857237,
+          58.7836546
+        ]
+      },
+      "id": "node/3001559515"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3001559530",
+        "fixme": "resurvey height",
+        "height": "13",
+        "source": "observation",
+        "source:height": "estimate",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.385084,
+          58.7838679
+        ]
+      },
+      "id": "node/3001559530"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3139186804",
+        "natural": "cliff",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.6976854,
+          39.7976622
+        ]
+      },
+      "id": "node/3139186804"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3140211696",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7555817,
+          46.1870308
+        ]
+      },
+      "id": "node/3140211696"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3228823443",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.270203,
+          32.8501831
+        ]
+      },
+      "id": "node/3228823443"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3601085697",
+        "name": "Rick's Cafe 1974",
+        "natural": "cliff",
+        "sport": "cliff_diving",
+        "tourism": "attraction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.3631967,
+          18.2539829
+        ]
+      },
+      "id": "node/3601085697"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3601085698",
+        "natural": "cliff",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.364045,
+          18.2547482
+        ]
+      },
+      "id": "node/3601085698"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3637810877",
+        "leisure": "spring_board",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5867588,
+          49.3810173
+        ]
+      },
+      "id": "node/3637810877"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3963743127",
+        "access": "discouraged",
+        "source": "survey",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1147817,
+          -34.1370136
+        ]
+      },
+      "id": "node/3963743127"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3994291078",
+        "access": "discouraged",
+        "source": "survey",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.6071658,
+          -34.2399557
+        ]
+      },
+      "id": "node/3994291078"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4235060038",
+        "height": "5",
+        "man_made": "tower",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.4690795,
+          50.2606691
+        ]
+      },
+      "id": "node/4235060038"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4241011490",
+        "name": "Cliff diving spot",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.4377992,
+          -8.7062786
+        ]
+      },
+      "id": "node/4241011490"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4271602537",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.3393922,
+          55.5661534
+        ]
+      },
+      "id": "node/4271602537"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4315508376",
+        "name": "Pantern",
+        "natural": "cliff",
+        "note": "man made diving board/springboard",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.6647407,
+          59.9094101
+        ]
+      },
+      "id": "node/4315508376"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4557193477",
+        "name": "Pedra do Navio",
+        "place": "locality",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.0537782,
+          -23.5276314
+        ]
+      },
+      "id": "node/4557193477"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4681453033",
+        "height": "5",
+        "source": "survey",
+        "source:geometry": "LPI Imagery",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.9573614,
+          -34.3104822
+        ]
+      },
+      "id": "node/4681453033"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4693270626",
+        "source": "survey",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.6615453,
+          -34.5705167
+        ]
+      },
+      "id": "node/4693270626"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4699891340",
+        "height": "7",
+        "name": "Камень\"Жопа\" и одноимённый пляж",
+        "natural": "cliff",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.6373432,
+          44.4689841
+        ]
+      },
+      "id": "node/4699891340"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4699930480",
+        "natural": "cliff",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.2085588,
+          34.3405817
+        ]
+      },
+      "id": "node/4699930480"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4707601348",
+        "source": "local_knowledge",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.7042182,
+          -34.192973
+        ]
+      },
+      "id": "node/4707601348"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4730367072",
+        "natural": "rock",
+        "source": "survey",
+        "source:geometry": "LPI Imagery",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.6186207,
+          -33.7805456
+        ]
+      },
+      "id": "node/4730367072"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4780357344",
+        "height": "10",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5339582,
+          47.3861747
+        ]
+      },
+      "id": "node/4780357344"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4985561628",
+        "name:de": "Springen",
+        "name:en": "Jump",
+        "name:hu": "Sziklaugrás",
+        "sport": "cliff_diving",
+        "tourism": "attraction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.1988099,
+          42.9172337
+        ]
+      },
+      "id": "node/4985561628"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5017879312",
+        "leisure": "pitch",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.1442279,
+          49.8256285
+        ]
+      },
+      "id": "node/5017879312"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5031307482",
+        "man_made": "springboard",
+        "note": "man made diving board/springboard",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.6001352,
+          59.7066543
+        ]
+      },
+      "id": "node/5031307482"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5047463903",
+        "height": "3",
+        "man_made": "tower",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.7383034,
+          54.0410683
+        ]
+      },
+      "id": "node/5047463903"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5127782423",
+        "name": "Cliff Dive",
+        "name:en": "Cliff Dive",
+        "natural": "cliff",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7740927,
+          9.6182189
+        ]
+      },
+      "id": "node/5127782423"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5243376747",
+        "height": "1",
+        "natural": "cliff",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3764277,
+          53.3000041
+        ]
+      },
+      "id": "node/5243376747"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5243376748",
+        "height": "2",
+        "natural": "cliff",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3763859,
+          53.2999958
+        ]
+      },
+      "id": "node/5243376748"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5418171365",
+        "height": "2",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.5090777,
+          -34.2635892
+        ]
+      },
+      "id": "node/5418171365"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5453838004",
+        "height": "2",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.5692867,
+          -33.7835831
+        ]
+      },
+      "id": "node/5453838004"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5673635057",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0379236,
+          59.009072
+        ]
+      },
+      "id": "node/5673635057"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5696452021",
+        "description": "Cliff jumps and slide to ocean",
+        "natural": "cliff",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.681322,
+          9.2122983
+        ]
+      },
+      "id": "node/5696452021"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5788056788",
+        "height": "8.5",
+        "natural": "cliff",
+        "note": "platform",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5353024,
+          58.3212454
+        ]
+      },
+      "id": "node/5788056788"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5788056789",
+        "natural": "cliff",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.727511,
+          58.3924477
+        ]
+      },
+      "id": "node/5788056789"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5788056790",
+        "height": "7",
+        "natural": "cliff",
+        "note": "platform",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5354036,
+          58.3210958
+        ]
+      },
+      "id": "node/5788056790"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5788056791",
+        "height": "15",
+        "natural": "cliff",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5342748,
+          58.3206717
+        ]
+      },
+      "id": "node/5788056791"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5788056792",
+        "natural": "cliff",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6846166,
+          58.343902
+        ]
+      },
+      "id": "node/5788056792"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5794351696",
+        "natural": "cliff",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.9499779,
+          58.5226357
+        ]
+      },
+      "id": "node/5794351696"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6072489489",
+        "height": "13",
+        "name:en": "Cliff Diving Point",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.4388728,
+          -8.7090987
+        ]
+      },
+      "id": "node/6072489489"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6550610602",
+        "natural": "cliff",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.09916,
+          45.3118301
+        ]
+      },
+      "id": "node/6550610602"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6550616554",
+        "natural": "cliff",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.1256764,
+          45.289346
+        ]
+      },
+      "id": "node/6550616554"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7102268111",
+        "height": "12",
+        "natural": "cliff",
+        "opening_hours": "24/7",
+        "sport": "cliff_diving",
+        "tourism": "attraction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.1828888,
+          45.0883443
+        ]
+      },
+      "id": "node/7102268111"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7102268112",
+        "height": "8",
+        "natural": "cliff",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.1830101,
+          45.0882846
+        ]
+      },
+      "id": "node/7102268112"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7146901793",
+        "name": "diving rock",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -156.6666122,
+          21.0027102
+        ]
+      },
+      "id": "node/7146901793"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7650422880",
+        "natural": "cliff",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.3646637,
+          18.2551724
+        ]
+      },
+      "id": "node/7650422880"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7887725694",
+        "natural": "cliff",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3764254,
+          42.7190671
+        ]
+      },
+      "id": "node/7887725694"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8090523657",
+        "name": "La Palme",
+        "natural": "cliff",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.6558922,
+          48.3483754
+        ]
+      },
+      "id": "node/8090523657"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8313599725",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.2415399,
+          -37.7587492
+        ]
+      },
+      "id": "node/8313599725"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8729218040",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.43448,
+          49.5738386
+        ]
+      },
+      "id": "node/8729218040"
+    }
+  ]
+}

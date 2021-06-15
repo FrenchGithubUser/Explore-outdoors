@@ -17,20 +17,22 @@ var markers = L.markerClusterGroup();
 //displays the spots on the map
 function addSpotsToMap(spots) {
   for (let i = 0; i < spots.features.length; i++){
-    var lat = spots.features[i].geometry.coordinates[0];
-    var long = spots.features[i].geometry.coordinates[1];
-    var marker = L.marker([lat, long]);
-    var spotName = spots.features[i].properties.name;
+    if (spots.features[i].properties.leisure != "swimming_pool"){
+      var long = spots.features[i].geometry.coordinates[0];
+      var lat = spots.features[i].geometry.coordinates[1];
+      var marker = L.marker([lat, long]);
+      var spotName = spots.features[i].properties.name;
 
-    console.log(lat, long, spotName)
-    //binds a popup on the map for each spot and clicking on it will call the displaySpotInfo function
+      console.log(lat, long, spotName)
+      //binds a popup on the map for each spot and clicking on it will call the displaySpotInfo function
 
-    marker.bindPopup("<p>test</p>");
+      marker.bindPopup("<p>test</p>");
 
-    //marker.bindPopup("<p><a href='javascript:displaySpotInfo(\""+spotName+"\",\""+lat+"\",\""+long+"\")'>"+spotName+"</a></p>");
-    //markers.addLayer(marker);  //add the marker to the cluster group
+      //marker.bindPopup("<p><a href='javascript:displaySpotInfo(\""+spotName+"\",\""+lat+"\",\""+long+"\")'>"+spotName+"</a></p>");
+      markers.addLayer(marker);  //add the marker to the cluster group
+    };
   };
-  //mymap.addLayer(markers);
+  mymap.addLayer(markers);
 };
 
 //finding the div where we put the spot's info
