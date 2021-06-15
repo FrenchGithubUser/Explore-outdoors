@@ -23,12 +23,15 @@ It uses the data stored on OSM servers to grab all the spots set as "cliff_divin
 Roadmap :
 
 x Building the website with OSM integration
+
 x Creating sections for each sports (with subcategories)
 - Creating a logo for the project
 - Creating the option of adding new spots (with GPS coordinates, pictures, links to videos)
 - Adding the option of commenting under the spots and adding informations (with an account ?)
 - Adding the posssibility to export the data to make it accessible offline
+
 x Creating sections with informations related to each sport (safety measures, general informations, links to useful documentation etc...)
+
 - Communicate about the app (as it's highly based on community's spots !)
 - Making some shirts/sweaters to help financing the project (possibly server costs)
 - Make some reusable bags to clean the spots of their waste
