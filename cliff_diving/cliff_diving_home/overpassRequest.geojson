@@ -2,8 +2,1430 @@
   "type": "FeatureCollection",
   "generator": "overpass-ide",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2021-06-15T10:16:41Z",
+  "timestamp": "2021-06-15T12:46:56Z",
   "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24042411",
+        "description": "Sprungbecken",
+        "leisure": "swimming_pool",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.8787931,
+              50.933875
+            ],
+            [
+              6.8787465,
+              50.9336501
+            ],
+            [
+              6.8790449,
+              50.9336261
+            ],
+            [
+              6.87909,
+              50.9338506
+            ],
+            [
+              6.8789945,
+              50.9338581
+            ],
+            [
+              6.8788925,
+              50.9338666
+            ],
+            [
+              6.8787931,
+              50.933875
+            ]
+          ]
+        ]
+      },
+      "id": "way/24042411"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/64265423",
+        "description": "Fosse à plongeon",
+        "leisure": "swimming_pool",
+        "location": "outdoor",
+        "source": "data.gouv.fr:Le ministère des droits des femmes, de la ville, de la jeunesse et des sports - 2014",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              3.8154689,
+              43.62017
+            ],
+            [
+              3.8154658,
+              43.6200614
+            ],
+            [
+              3.8156154,
+              43.6200591
+            ],
+            [
+              3.8156186,
+              43.6201677
+            ],
+            [
+              3.8154689,
+              43.62017
+            ]
+          ]
+        ]
+      },
+      "id": "way/64265423"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/68805069",
+        "leisure": "swimming_pool",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.6367094,
+              44.0046435
+            ],
+            [
+              12.636487,
+              44.0045454
+            ],
+            [
+              12.6366061,
+              44.0044057
+            ],
+            [
+              12.6368285,
+              44.0045038
+            ],
+            [
+              12.6367094,
+              44.0046435
+            ]
+          ]
+        ]
+      },
+      "id": "way/68805069"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/69436395",
+        "depth": "15",
+        "disused": "quarry",
+        "landuse": "disused",
+        "leisure": "swimming_area",
+        "name": "Tortunagropen",
+        "natural": "water",
+        "source": "landsat",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.7389418,
+              59.6968877
+            ],
+            [
+              16.7389553,
+              59.6967701
+            ],
+            [
+              16.7391833,
+              59.6966959
+            ],
+            [
+              16.7394145,
+              59.6966288
+            ],
+            [
+              16.7396019,
+              59.6965745
+            ],
+            [
+              16.7400291,
+              59.6964987
+            ],
+            [
+              16.7401806,
+              59.6964389
+            ],
+            [
+              16.7404682,
+              59.6964544
+            ],
+            [
+              16.7409116,
+              59.696518
+            ],
+            [
+              16.741236,
+              59.6966002
+            ],
+            [
+              16.7413145,
+              59.6965876
+            ],
+            [
+              16.7415753,
+              59.6966318
+            ],
+            [
+              16.7416786,
+              59.6967122
+            ],
+            [
+              16.741654,
+              59.696856
+            ],
+            [
+              16.7413317,
+              59.6970627
+            ],
+            [
+              16.740935,
+              59.6972615
+            ],
+            [
+              16.7407404,
+              59.6974835
+            ],
+            [
+              16.7404435,
+              59.6975799
+            ],
+            [
+              16.7400402,
+              59.6975332
+            ],
+            [
+              16.7395661,
+              59.6974782
+            ],
+            [
+              16.7393277,
+              59.6973682
+            ],
+            [
+              16.7391026,
+              59.6971496
+            ],
+            [
+              16.7389418,
+              59.6968877
+            ]
+          ]
+        ]
+      },
+      "id": "way/69436395"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/90984401",
+        "leisure": "swimming_pool",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.946296,
+              52.1408186
+            ],
+            [
+              9.9464752,
+              52.1407686
+            ],
+            [
+              9.9465199,
+              52.1408268
+            ],
+            [
+              9.9465362,
+              52.1408312
+            ],
+            [
+              9.9465503,
+              52.1408491
+            ],
+            [
+              9.9465478,
+              52.1408615
+            ],
+            [
+              9.9465343,
+              52.1408733
+            ],
+            [
+              9.946391,
+              52.1409155
+            ],
+            [
+              9.9463653,
+              52.1409168
+            ],
+            [
+              9.946341,
+              52.1409088
+            ],
+            [
+              9.9463255,
+              52.1408901
+            ],
+            [
+              9.9463372,
+              52.1408743
+            ],
+            [
+              9.946296,
+              52.1408186
+            ]
+          ]
+        ]
+      },
+      "id": "way/90984401"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/170122721",
+        "covered": "no",
+        "leisure": "swimming_pool",
+        "name": "Fosse de plongée",
+        "source": "cadastre-dgi-fr source : Direction Générale des Finances Publiques",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.2922111,
+              48.7622317
+            ],
+            [
+              2.2920504,
+              48.7622128
+            ],
+            [
+              2.2920795,
+              48.7621053
+            ],
+            [
+              2.2922402,
+              48.7621242
+            ],
+            [
+              2.2922111,
+              48.7622317
+            ]
+          ]
+        ]
+      },
+      "id": "way/170122721"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/171021782",
+        "covered": "yes",
+        "leisure": "swimming_pool",
+        "name": "Plongeoir",
+        "name:de": "Sprungturm",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.3191637,
+              47.733027
+            ],
+            [
+              7.3191583,
+              47.7328845
+            ],
+            [
+              7.3193323,
+              47.7328815
+            ],
+            [
+              7.3193377,
+              47.733024
+            ],
+            [
+              7.3191637,
+              47.733027
+            ]
+          ]
+        ]
+      },
+      "id": "way/171021782"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/203672599",
+        "leisure": "swimming_pool",
+        "name": "Sprungbecken",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.1233098,
+              48.9495183
+            ],
+            [
+              9.1234811,
+              48.9495189
+            ],
+            [
+              9.1234803,
+              48.9496259
+            ],
+            [
+              9.123309,
+              48.9496253
+            ],
+            [
+              9.1233098,
+              48.9495183
+            ]
+          ]
+        ]
+      },
+      "id": "way/203672599"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/205883161",
+        "leisure": "swimming_pool",
+        "name": "The Rock",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              150.7828493,
+              -34.6166493
+            ],
+            [
+              150.7828017,
+              -34.6166603
+            ],
+            [
+              150.7827396,
+              -34.6167352
+            ],
+            [
+              150.7827348,
+              -34.6167574
+            ],
+            [
+              150.782738,
+              -34.6167822
+            ],
+            [
+              150.7827492,
+              -34.6167911
+            ],
+            [
+              150.7827686,
+              -34.6167944
+            ],
+            [
+              150.7827963,
+              -34.6167917
+            ],
+            [
+              150.7828461,
+              -34.6167764
+            ],
+            [
+              150.7828796,
+              -34.6167737
+            ],
+            [
+              150.7829074,
+              -34.6167762
+            ],
+            [
+              150.7829347,
+              -34.616774
+            ],
+            [
+              150.7829577,
+              -34.6167687
+            ],
+            [
+              150.7829778,
+              -34.6167613
+            ],
+            [
+              150.7829963,
+              -34.6167563
+            ],
+            [
+              150.7830348,
+              -34.6167533
+            ],
+            [
+              150.7830759,
+              -34.6167542
+            ],
+            [
+              150.7830861,
+              -34.616748
+            ],
+            [
+              150.7831123,
+              -34.6167353
+            ],
+            [
+              150.7831339,
+              -34.6167208
+            ],
+            [
+              150.783091,
+              -34.6166553
+            ],
+            [
+              150.7830546,
+              -34.6166371
+            ],
+            [
+              150.7830015,
+              -34.616628
+            ],
+            [
+              150.7829471,
+              -34.6166242
+            ],
+            [
+              150.782891,
+              -34.6166361
+            ],
+            [
+              150.7828493,
+              -34.6166493
+            ]
+          ]
+        ]
+      },
+      "id": "way/205883161"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250623087",
+        "covered": "no",
+        "leisure": "swimming_pool",
+        "name": "Fosse de Plongée",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.3668265,
+              44.0133894
+            ],
+            [
+              1.366733,
+              44.0132604
+            ],
+            [
+              1.366919,
+              44.0131907
+            ],
+            [
+              1.3670125,
+              44.0133196
+            ],
+            [
+              1.3668265,
+              44.0133894
+            ]
+          ]
+        ]
+      },
+      "id": "way/250623087"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278106997",
+        "alt_name": "Jumping Rock",
+        "name": "High Rock",
+        "natural": "rock",
+        "place": "locality",
+        "source": "Bing",
+        "source:alt_name": "https://newburyportkayakreport.wordpress.com/2009/08/15/up-the-merrimack-river-jumping-rock-and-eagles-nest-with-jamie-newburyport-ma-kayak-trip-log/",
+        "source:name": "http://www.newburyportnews.com/news/local_news/high-rock-area-awful-strewn-withgarbage-litter/article_43cea90b-25d7-58db-bdd1-327e57f14539.html",
+        "sport": "cliff_diving",
+        "tidal": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -70.8884857,
+              42.8323557
+            ],
+            [
+              -70.8884669,
+              42.8323754
+            ],
+            [
+              -70.8884842,
+              42.8324104
+            ],
+            [
+              -70.888519,
+              42.8324399
+            ],
+            [
+              -70.8885539,
+              42.8324674
+            ],
+            [
+              -70.8885781,
+              42.8324812
+            ],
+            [
+              -70.888629,
+              42.8324989
+            ],
+            [
+              -70.88868,
+              42.8325107
+            ],
+            [
+              -70.8887256,
+              42.8325186
+            ],
+            [
+              -70.8887712,
+              42.8325206
+            ],
+            [
+              -70.8888087,
+              42.8325088
+            ],
+            [
+              -70.8888758,
+              42.8324871
+            ],
+            [
+              -70.8889631,
+              42.8324954
+            ],
+            [
+              -70.8890114,
+              42.8325308
+            ],
+            [
+              -70.8890275,
+              42.8326193
+            ],
+            [
+              -70.8890313,
+              42.8326484
+            ],
+            [
+              -70.889034,
+              42.8326858
+            ],
+            [
+              -70.8890528,
+              42.8327074
+            ],
+            [
+              -70.8891091,
+              42.8326877
+            ],
+            [
+              -70.8891547,
+              42.8326484
+            ],
+            [
+              -70.8891869,
+              42.832611
+            ],
+            [
+              -70.8892111,
+              42.8325894
+            ],
+            [
+              -70.8892528,
+              42.8325701
+            ],
+            [
+              -70.8893037,
+              42.8325426
+            ],
+            [
+              -70.8892593,
+              42.8325284
+            ],
+            [
+              -70.8892098,
+              42.8324836
+            ],
+            [
+              -70.8891374,
+              42.8324147
+            ],
+            [
+              -70.8890945,
+              42.8323911
+            ],
+            [
+              -70.889065,
+              42.8323656
+            ],
+            [
+              -70.8890275,
+              42.8323282
+            ],
+            [
+              -70.8889845,
+              42.8323183
+            ],
+            [
+              -70.8889336,
+              42.8323105
+            ],
+            [
+              -70.8888853,
+              42.8323046
+            ],
+            [
+              -70.8888638,
+              42.8322967
+            ],
+            [
+              -70.888837,
+              42.832281
+            ],
+            [
+              -70.8888007,
+              42.8323003
+            ],
+            [
+              -70.8887834,
+              42.8322928
+            ],
+            [
+              -70.8887512,
+              42.8322928
+            ],
+            [
+              -70.8887297,
+              42.8323203
+            ],
+            [
+              -70.8887056,
+              42.8323026
+            ],
+            [
+              -70.8886815,
+              42.8322967
+            ],
+            [
+              -70.8886627,
+              42.8322829
+            ],
+            [
+              -70.8886466,
+              42.8322711
+            ],
+            [
+              -70.8886144,
+              42.8322908
+            ],
+            [
+              -70.8885807,
+              42.8322983
+            ],
+            [
+              -70.8885432,
+              42.8323003
+            ],
+            [
+              -70.8885137,
+              42.832316
+            ],
+            [
+              -70.8885125,
+              42.8323361
+            ],
+            [
+              -70.8884857,
+              42.8323557
+            ]
+          ]
+        ]
+      },
+      "id": "way/278106997"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/300595268",
+        "leisure": "swimming_pool",
+        "name": "plongeon",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.5335205,
+              45.5131597
+            ],
+            [
+              -73.5337426,
+              45.5129975
+            ],
+            [
+              -73.5335152,
+              45.5128446
+            ],
+            [
+              -73.533293,
+              45.5130068
+            ],
+            [
+              -73.5335205,
+              45.5131597
+            ]
+          ]
+        ]
+      },
+      "id": "way/300595268"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/325687151",
+        "access": "customers",
+        "leisure": "swimming_pool",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.6581325,
+              51.8891635
+            ],
+            [
+              7.6581507,
+              51.8890542
+            ],
+            [
+              7.6583383,
+              51.8890661
+            ],
+            [
+              7.6583201,
+              51.8891754
+            ],
+            [
+              7.6581325,
+              51.8891635
+            ]
+          ]
+        ]
+      },
+      "id": "way/325687151"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/340236419",
+        "leisure": "swimming_pool",
+        "source": "Le ministère de la ville, de la jeunesse et des sports - 01/2018",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.6228033,
+              43.1830237
+            ],
+            [
+              -0.6228957,
+              43.1829524
+            ],
+            [
+              -0.6228293,
+              43.1829067
+            ],
+            [
+              -0.622737,
+              43.182978
+            ],
+            [
+              -0.6228033,
+              43.1830237
+            ]
+          ]
+        ]
+      },
+      "id": "way/340236419"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/362247629",
+        "leisure": "swimming_pool",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.8216744,
+              45.6622214
+            ],
+            [
+              8.8216183,
+              45.6623019
+            ],
+            [
+              8.8215205,
+              45.6622685
+            ],
+            [
+              8.8215767,
+              45.6621881
+            ],
+            [
+              8.8216744,
+              45.6622214
+            ]
+          ]
+        ]
+      },
+      "id": "way/362247629"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/381755256",
+        "access": "yes",
+        "description": "Sprungbecken",
+        "indoor": "yes",
+        "leisure": "swimming_pool",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.4443914,
+              49.0252826
+            ],
+            [
+              8.4444733,
+              49.0251912
+            ],
+            [
+              8.444486,
+              49.0251888
+            ],
+            [
+              8.4446007,
+              49.0252303
+            ],
+            [
+              8.4446014,
+              49.0252406
+            ],
+            [
+              8.4445195,
+              49.0253289
+            ],
+            [
+              8.4443914,
+              49.0252826
+            ]
+          ]
+        ]
+      },
+      "id": "way/381755256"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/420063922",
+        "leisure": "yes",
+        "name": "Plongeoir",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.6917421,
+              46.4993729
+            ],
+            [
+              6.6917488,
+              46.4993544
+            ],
+            [
+              6.6917984,
+              46.4993627
+            ],
+            [
+              6.6918105,
+              46.4993517
+            ],
+            [
+              6.6919017,
+              46.4993517
+            ],
+            [
+              6.6919205,
+              46.4993886
+            ],
+            [
+              6.6918923,
+              46.4994163
+            ],
+            [
+              6.6917984,
+              46.4993932
+            ],
+            [
+              6.6917944,
+              46.4993812
+            ],
+            [
+              6.6917421,
+              46.4993729
+            ]
+          ]
+        ]
+      },
+      "id": "way/420063922"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/542327982",
+        "depth": "2.15",
+        "leisure": "swimming_pool",
+        "name": "Springer",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.3765327,
+              53.2998791
+            ],
+            [
+              10.3765716,
+              53.2999426
+            ],
+            [
+              10.3765,
+              53.2999587
+            ],
+            [
+              10.3764638,
+              53.30002
+            ],
+            [
+              10.3763335,
+              53.2999943
+            ],
+            [
+              10.3763642,
+              53.2999412
+            ],
+            [
+              10.3763307,
+              53.2999333
+            ],
+            [
+              10.3763243,
+              53.2999227
+            ],
+            [
+              10.3765327,
+              53.2998791
+            ]
+          ]
+        ]
+      },
+      "id": "way/542327982"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/586402529",
+        "access": "customers",
+        "leisure": "swimming_pool",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.7940849,
+              50.8852091
+            ],
+            [
+              12.7941302,
+              50.8850434
+            ],
+            [
+              12.7942637,
+              50.8850599
+            ],
+            [
+              12.7942201,
+              50.8852169
+            ],
+            [
+              12.7941998,
+              50.8852273
+            ],
+            [
+              12.7940849,
+              50.8852091
+            ]
+          ]
+        ]
+      },
+      "id": "way/586402529"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/752955762",
+        "leisure": "swimming_pool",
+        "source": "Le ministère de la ville, de la jeunesse et des sports - 01/2018",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.3150372,
+              43.3837869
+            ],
+            [
+              -1.3149971,
+              43.3836866
+            ],
+            [
+              -1.3148882,
+              43.3837096
+            ],
+            [
+              -1.3149283,
+              43.3838099
+            ],
+            [
+              -1.3150372,
+              43.3837869
+            ]
+          ]
+        ]
+      },
+      "id": "way/752955762"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/952067351",
+        "building": "yes",
+        "height": "10",
+        "name": "Plongeoir",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.4220711,
+              43.7343359
+            ],
+            [
+              7.4221076,
+              43.7343408
+            ],
+            [
+              7.4220996,
+              43.7343719
+            ],
+            [
+              7.4220936,
+              43.7343951
+            ],
+            [
+              7.422057,
+              43.7343902
+            ],
+            [
+              7.4220711,
+              43.7343359
+            ]
+          ]
+        ]
+      },
+      "id": "way/952067351"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/463212533",
+        "name": "Fishermans Rock",
+        "natural": "cliff",
+        "source": "survey",
+        "source:geometry": "NSW LPI Imagery",
+        "source:name": "extrapolation from road name",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            150.5381788,
+            -35.2059635
+          ],
+          [
+            150.5385708,
+            -35.206112
+          ]
+        ]
+      },
+      "id": "way/463212533"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/729263474",
+        "name": "Diver's Rock",
+        "natural": "cliff",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            175.0225634,
+            -36.7798283
+          ],
+          [
+            175.0225614,
+            -36.7797778
+          ],
+          [
+            175.0225882,
+            -36.7797246
+          ],
+          [
+            175.0226177,
+            -36.7796843
+          ]
+        ]
+      },
+      "id": "way/729263474"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/729263475",
+        "name": "The Blowhole",
+        "natural": "cliff",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            175.02301,
+            -36.7803863
+          ],
+          [
+            175.0229711,
+            -36.780382
+          ],
+          [
+            175.0229369,
+            -36.7803562
+          ],
+          [
+            175.0229208,
+            -36.7803192
+          ],
+          [
+            175.0229208,
+            -36.7802751
+          ],
+          [
+            175.0229302,
+            -36.7802338
+          ],
+          [
+            175.0229382,
+            -36.7802064
+          ]
+        ]
+      },
+      "id": "way/729263475"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/771371093",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            5.2865933,
+            60.4516289
+          ],
+          [
+            5.2865749,
+            60.4516025
+          ],
+          [
+            5.2865641,
+            60.4516043
+          ],
+          [
+            5.2865826,
+            60.4516308
+          ],
+          [
+            5.2865933,
+            60.4516289
+          ]
+        ]
+      },
+      "id": "way/771371093"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/950056645",
+        "height": "5m",
+        "leisure": "springboard",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            12.1350666,
+            47.5721926
+          ],
+          [
+            12.1349889,
+            47.5723228
+          ]
+        ]
+      },
+      "id": "way/950056645"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/950056647",
+        "height": "1m",
+        "leisure": "springboard",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            12.1362567,
+            47.5733443
+          ],
+          [
+            12.1364207,
+            47.5732964
+          ]
+        ]
+      },
+      "id": "way/950056647"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/28901066",
+        "maxheight": "10",
+        "min_height": "3",
+        "name": "Taro",
+        "place": "locality",
+        "source": "survey;estimate",
+        "sport": "cliff_diving",
+        "tidal": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.0805542,
+          47.8418898
+        ]
+      },
+      "id": "node/28901066"
+    },
     {
       "type": "Feature",
       "properties": {
@@ -1087,6 +2509,26 @@
         ]
       },
       "id": "node/8729218040"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8835895711",
+        "image": "[https://mega.nz/file/xbJRmQYT#w0KLTOUiIzhYYhajFI_TRi8uF_rH469vo_A1uMu4DV8,https://mega.nz/file/YWJTyATL#8wR24FdMKkCxIGpEyMx5jjMHeNmzjXEOSXO4CRfGtBs]",
+        "maxheight": "18",
+        "minheight": "2",
+        "name": "Plongeoirs naturels",
+        "natural": "cliff",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.1832977,
+          44.4088546
+        ]
+      },
+      "id": "node/8835895711"
     }
   ]
 }

@@ -17,7 +17,8 @@ var markers = L.markerClusterGroup();
 //displays the spots on the map
 function addSpotsToMap(spots) {
   for (let i = 0; i < spots.features.length; i++){
-    if (spots.features[i].properties.leisure != "swimming_pool"){
+    //some spots are defined by polygones and therefore have more coordinates than 1 and are annoying to handle, so just skipping them
+    if (spots.features[i].properties.leisure != "swimming_pool" , spots.features[i].geometry.type != "LineString"){
       try{
         var long = spots.features[i].geometry.coordinates[0];
         var lat = spots.features[i].geometry.coordinates[1];
@@ -27,13 +28,9 @@ function addSpotsToMap(spots) {
         console.log(lat, long, spotName)
         //binds a popup on the map for each spot and clicking on it will call the displaySpotInfo function
 
-        marker.bindPopup("<p>test</p>");
-
-        //marker.bindPopup("<p><a href='javascript:displaySpotInfo(\""+spotName+"\",\""+lat+"\",\""+long+"\")'>"+spotName+"</a></p>");
+        marker.bindPopup("<p><a href='javascript:displaySpotInfo(\""+spotName+"\",\""+lat+"\",\""+long+"\")'>"+spotName+"</a></p>");
         markers.addLayer(marker);  //add the marker to the cluster group
-      }catch(e){
-        console.log(e)
-      };
+      }catch(e){};
     };
   };
   mymap.addLayer(markers);
@@ -117,7 +114,7 @@ function displaySpotInfo(name, lat, long) {
 
 //Getting the spots from the geojson file
 var ourRequest = new XMLHttpRequest();
-ourRequest.open('GET', 'https://thomastraineau.github.io/Outdoor-spots/cliff_diving/cliff_diving_home/overpassRequest1.geojson');
+ourRequest.open('GET', 'https://thomastraineau.github.io/Outdoor-spots/cliff_diving/cliff_diving_home/overpassRequestBack.geojson');
 ourRequest.onload = function() {
   var cliffDivingSpots = JSON.parse(ourRequest.responseText);
   addSpotsToMap(cliffDivingSpots);
