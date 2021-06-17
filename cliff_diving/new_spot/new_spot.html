@@ -1,154 +1,51 @@
 <!DOCTYPE html>
-<head>
-  <title>Outdoor spots</title>
-  <meta charset="utf-8"/>
-  <link rel="stylesheet" href="./new_spot_css.css" type="text/css"/>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>New spot</title>
+    <!-- Should help to keep a good font scale on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</head>
+    <!-- Importing the CSS -->
+    <link rel="stylesheet" href="./new_spot_css.css" type="text/css"/>
+  </head>
+  <body>
 
-<body>
-
-  <p class="returnToSpots"><a href="../cliff_diving_home/cliff_diving_home.html">Back to the spots</a></p>
-
-  <div class="topHeader">
-    <h1>Adding a new cliff diving spot</h1>
-  </div>
-
-  <p class="topMessage">
-
-    Adding new spots to the map helps everyone finding new nice places to go to, thank you for your contribution !<br>
-    Please try to describe the spot accurately : the variety of heights, if there's a better way to reach it than another, if people need to watch out about something, if there is a good place to park a car etc..
-
-  </p>
-
-  <div style="margin-top:5vw;"></div>
-
-  <form class="newSpotForm" method="post" name="submit-to-google-sheet">
-    <div>
-      <label>
-        Name of the spot :
-        <input type="text" name="spotName" required>
-      </label>
+    <div class="maxWidthContainer">
+      <p class="returnToSpots"><a href="../cliff_diving_home/cliff_diving_home.html">Back to the spots</a></p>
     </div>
 
-    <div style="margin-top:20px;"></div>
-
-    <p>Coordinates of the spot :</p>
-
-    <div style="margin-top:15px;"></div>
-
-    <div>
-      <label>
-        Latitude :
-        <input type="text" name="spotLat" required>
-      </label>
-
-      <label>
-        Longitude :
-        <input type="text" name="spotLong" required>
-      </label>
-    </div>
-
-    <div style="margin-top:20px;"></div>
-
-    <div>
-      <label>
-        Maximum height :
-        <input type="number" name="spotMaxHeight" required>
-      </label>
-    </div>
-
-    <div style="margin-top:20px;"></div>
-
-    <div>
-      <label>
-        Minimum height :
-        <input type="number" name="spotMinHeight" required>
-      </label>
-    </div>
-
-    <div style="margin-top:20px;"></div>
-
-    <div>
-      <label class="legality" for="legality">Legality : </label>
-      <select name="legality">
-        <option value="Legal">Legal</option>
-        <option value="Illegal">Illegal</option>
-        <option value="Unknown">Unknown</option>
-      </select>
-    </div>
-
-    <div style="margin-top:25px;"></div>
-
-    <div>
-      <label>Provide a description of the spot : </label>
-      <div style="margin-top:10px;"></div>
-      <textarea name="spotDescription" rows="8" cols="50"></textarea>
-    </div>
-
-    <div style="margin-top:25px;"></div>
-
-    <p>If you know some videos that have been recorded on the spot, you can paste their link below</p>
-
-    <div>
-      <label>Videos at the spot :</label>
-      <div style="margin-top:10px;"></div>
-      <textarea name="spotVideos" rows="2" cols="50"></textarea>
+    <div class="topHeader">
+      <h1>Adding a new spot to the map</h1>
     </div>
 
     <div style="margin-top:30px;"></div>
 
-    <p>Providing some pictures of the place really gives a better idea of how it is in real life, please add some if have some !</p>
+    <p>You can add a spot that is not referenced yet on the map by different ways :</p>
 
-    <div style="margin-top:20px;"></div>
+    <div class="maxWidthContainer">
 
-    <div>
-      <label>
-        Pictures :
-        <input type="file" name="spotPictures">
-      </label>
+      <p class="options">Option 1 (fast & easy) :</p>
+
+      <div>
+        <p>The fast and easy way is by using <a href="https://script.google.com/macros/s/AKfycbzyVyVncJvmTN1GdHsDiRIWRDDYqexX0Y1Wi-E5hbsk02kOfmmI/exec" target="_blank">this form</a>. You won't need any account to add it.<br>It sends your input into a google spreasheet which I use to update the OSM database everyday.</p>
+      </div>
+
+      <div style="margin-top:30px;"></div>
+
+      <p class="options">Option 2 :</p>
+
+      <p>The website is relying on the OSM database of markers with the tag "cliff_diving", so you can contribute directly on OSM and your spot will appear as soon as I will have pulled the new spots from their database (the map is showing the spots from a file that is generated once a day from the OSM database).</p>
+
+      <div style="margin-top:15px;"></div>
+
+      <p>Here is an example of the tags you can add :</p>
+
+
+
+      <p>If you add other tags, they won't be shown on this website, unless you make a pull request on github with the necessary changes or ask me to do the modifications to the code of the website.</p>
+
     </div>
+  </body>
 
-    <div style="margin-top:20px;"></div>
-
-    <div>
-      <button type="submit" name="submitSpotButton">Submit my spot</button>
-    </div>
-
-  </form>
-
-  <!-- Using google script to store the results in a spreadsheet -->
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbx9D6q4s2EYclPyt-oKb4BDPR4cXrww2bVnzeB_oHdYM__MsS0/exec'
-    const form = document.forms['submit-to-google-sheet']
-
-    console.log(new FormData(form))
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-
-
-
-  <div style="margin-top:30px;"></div>
-
-  <div class="maxWidthContainer">
-
-  <footer>
-
-      <a href="../../footer/contact.html"><img src="../../footer/contact.svg" class="logo" width="5%"> Contact</a><span style='margin-right:5%;'></span>
-      <a href="./footer/donate.html"><img src="../../footer/donate.svg" class="logo" width="5%"> Donate</a><span style='margin-right:5%;'></span>
-      <a href="https://github.com/ThomasTraineau/Outdoor-spots" target="_blank"><img src="../../footer/source.svg" class="logo" width="5%"> Source</a><span style='margin-right:5%;'></span>
-
-
-    <div style="margin-top:30px;"></div>
-
-  </footer>
-
-  </div>
-
-</body>
+</html>
