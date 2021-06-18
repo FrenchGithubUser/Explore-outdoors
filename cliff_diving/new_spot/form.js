@@ -54,10 +54,11 @@ window.onload = () => {
   minZoom: 1,
   maxZoom: 20,
   }).addTo(mymap);
+  /*
   //different pin icon for the location of the person
   var icon = i.icon({
     iconurl:
-  })
+  })*/
 
 
   mymap.on("click", mapClickListen)
