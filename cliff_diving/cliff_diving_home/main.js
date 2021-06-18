@@ -17,10 +17,10 @@ var markers = L.markerClusterGroup();
 //displays the spots on the map
 function addSpotsToMap(spots) {
   for(spot in spots){
-    var long = spots[spot].lat;
-    var lat = spots[spot].long;
+    var long = spots[spot].o;
+    var lat = spots[spot].a;
     var marker = L.marker([lat, long]);
-    var spotName = spots[spot].name;
+    var spotName = spots[spot].n;
     //binds a popup on the map for each spot and clicking on it will call the displaySpotInfo function
     marker.bindPopup("<p><a href='javascript:displaySpotInfo(\""+spotName+"\",\""+lat+"\",\""+long+"\")'>"+spotName+"</a></p>");
     markers.addLayer(marker);  //add the marker to the cluster group
