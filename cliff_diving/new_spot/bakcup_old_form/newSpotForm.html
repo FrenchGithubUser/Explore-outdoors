@@ -10,7 +10,7 @@
   padding: 0;
   color: white;
   font-family: open sans;
-  font-size: 16px;
+  font-size: 1.7vmin;
   max-width:800px;
   }
 
@@ -107,7 +107,7 @@
 
   function clickedFunc(){
   var loadingContainerVar = document.getElementById("loadingContainer");
-  loadingContainerVar.insertAdjacentHTML("beforeend","<p><b>Your pictures are loading... You will be brought to a new page soon, please don't exit this page.</b></p>");
+  loadingContainerVar.insertAdjacentHTML("beforeend","<p><b>Your spot is being sent... You will be brought to a new page soon, please don't exit this page.</b></p>");
   return true;
   }
   </script>
@@ -133,13 +133,17 @@
 
     <div>
       <label>
-        Latitude :
-        <input type="number" step="0.0000001" name="spotLat" required>
-      </label>
-
-      <label>
         Longitude :
         <input type="number" step="0.0000001" name="spotLong" required>
+      </label>
+    </div>
+
+    <div style="margin-top:20px;"></div>
+
+    <div>
+      <label>
+        Latitude :
+        <input type="number" step="0.0000001" name="spotLat" required>
       </label>
     </div>
 
@@ -183,7 +187,7 @@
 
     <div style="margin-top:20px;"></div>
 
-    <p>Providing some pictures of the place really gives a better idea of how it is in real life, please add some if have some ! (you can upload up to 5 pictures)</p>
+    <p>Providing some pictures of the place really gives a better idea of how it is in real life, please add some if you have some ! (you can upload up to 5 pictures)</p>
 
     <div style="margin-top:20px;"></div>
 
