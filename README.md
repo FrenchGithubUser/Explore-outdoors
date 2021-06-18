@@ -1,4 +1,4 @@
-# Outside-spots
+# Oudoor-spots
 
 Note : the design of the website is temporary and WILL change in the future
 
