@@ -16,8 +16,8 @@ with open("overpassRequest.geojson", 'r') as data:
                     newData.write('\n\t\t"n":"' + str(spots["features"][i]["properties"]["name"].replace('"', '').replace("'", " ")) + '",') #.replace in case there is a quotation mark in the name of the spot
                 except: #if no name has been set
                     newData.write('\n\t\t"n":"u",')#u stands for undefined
-                newData.write('\n\t\t"o":' + str(spots["features"][i]["geometry"]["coordinates"][0]) + ',')#latitude
-                newData.write('\n\t\t"a":' + str(spots["features"][i]["geometry"]["coordinates"][1]))#longitude
+                newData.write('\n\t\t"o":' + str(spots["features"][i]["geometry"]["coordinates"][0]) + ',')#longitude
+                newData.write('\n\t\t"a":' + str(spots["features"][i]["geometry"]["coordinates"][1]))#latitude
                 newData.write('\n\t},')
         i+=1
 

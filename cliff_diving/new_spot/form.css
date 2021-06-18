@@ -18,7 +18,7 @@ color: #c98510;
 }
 
 * p{
-line-height: 28px;
+  line-height: 120%;
 }
 
 .returnToSpots{
@@ -43,7 +43,7 @@ margin-top: 4vmin;
 
 .topHeader h1{
 color: #dd8d1c;
-font-size: 300%;
+font-size: 4.5vmin;
 }
 
 
