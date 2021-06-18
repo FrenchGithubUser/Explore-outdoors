@@ -58,6 +58,22 @@ color: #1ab9bc;
 max-width: 1200px;
 }
 
+.leaflet-control-attribution{
+  font-size: 100%;
+}
+
+.leaflet-control{
+  font-size: 100%;
+}
+
+.leaflet-control-attribution a{
+  font-size: 100%;
+}
+
+.leaflet-control a{
+  font-size: 100%;
+}
+
 input{
 background-color:white;
 color:black;
@@ -68,6 +84,14 @@ textarea{
 display: block;
 background-color:white;
 color:black;
+}
+
+#detailsMap{
+  height: 400px;
+}
+
+.locationPin{
+  color: black;
 }
 
 footer{
