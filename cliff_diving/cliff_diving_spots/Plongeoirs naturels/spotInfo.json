@@ -4,7 +4,7 @@
     "minHeight":0.1,
     "maxHeight":18,
     "legality":"legal",
-    "images":["https://github.com/ThomasTraineau/Outdoor-spots/blob/main/cliff_diving/cliff_diving_spots/Plongeoirs%20naturels/picture0.jpg","https://github.com/ThomasTraineau/Outdoor-spots/blob/main/cliff_diving/cliff_diving_spots/Plongeoirs%20naturels/picture1.jpg"],
+    "pictureAmount":2,
     "videos":[
 
     ]
