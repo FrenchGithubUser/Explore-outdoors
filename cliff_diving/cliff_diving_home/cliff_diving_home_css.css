@@ -65,6 +65,10 @@ body
   font-size: 300%;
 }
 
+.locationPin{
+  color: black;
+}
+
 #mapid{
   max-width: 1000px;
   margin-right: auto;

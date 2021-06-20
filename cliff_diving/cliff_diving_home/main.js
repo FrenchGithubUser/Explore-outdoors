@@ -2,7 +2,13 @@
 //creating the map variable
 var mymap = L.map('mapid').setView([46.94760, 4.53473,], 5).addControl(new L.Control.Fullscreen());
 
-
+//locates the person on the map
+mymap.locate({setView: true})
+      .on('locationfound', function(e){
+          var marker = L.marker([e.latitude, e.longitude], {icon:icon}).bindPopup('<p class="locationPin">Your are here</p>');
+          mymap.addLayer(marker);
+          mymap.addLayer(circle);
+      });
 
 //creating and displaying the map
 L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
@@ -10,6 +16,12 @@ attribution: '© <a href= "https://osm.org/copyright"> OpenStreetMap </a> contri
 minZoom: 1,
 maxZoom: 20,
 }).addTo(mymap);
+//different pin icon for the location of the person
+var icon = L.icon({
+  iconUrl: "../position.svg",
+  iconSize: [25, 25],
+  iconAnchor: [12.5, 12.5] //center the marker on the position
+})
 
   //creating the marker clusters
 var markers = L.markerClusterGroup();
