@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "generator": "overpass-ide",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2021-06-15T12:46:56Z",
+  "timestamp": "2021-06-20T16:24:13Z",
   "features": [
     {
       "type": "Feature",
@@ -2519,6 +2519,7 @@
         "minheight": "2",
         "name": "Plongeoirs naturels",
         "natural": "cliff",
+        "note": "Multiple heights in between 0 and 18m. To access the spot, you have to park your car (if you have one) on the parking (which is free) next to the river, and then go back, uphill and you will end up in a viniard, you just have to continue straight, and the",
         "sport": "cliff_diving"
       },
       "geometry": {
@@ -2529,6 +2530,27 @@
         ]
       },
       "id": "node/8835895711"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8850792402",
+        "description": "You can access the bridge for free via the GR, jumping off the bridge is prohibited. The parking is paid if you don't live in the area.",
+        "maxHeight": "8",
+        "minHeight": "0.1",
+        "name": "Pont du gard",
+        "natural": "cliff",
+        "sport": "cliff_diving",
+        "videos": "https://youtu.be/RFJomGE43o4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.5353737,
+          43.9474301
+        ]
+      },
+      "id": "node/8850792402"
     }
   ]
 }

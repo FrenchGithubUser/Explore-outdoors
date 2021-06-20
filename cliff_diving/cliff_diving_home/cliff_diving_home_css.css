@@ -55,13 +55,14 @@ body
   width: 100%;
   height: auto;
   margin-left: auto;
-  margin-bottom: 3vmin;
-  margin-top: 4vmin;
+  margin-right: 0px;
+  margin-bottom: 30px;
+  margin-top: 50px;
 }
 
 .topHeader h1{
   color: #dd8d1c;
-  font-size: 4.5vw;
+  font-size: 4.5vmin;
 }
 
 .locationPin{
@@ -94,7 +95,7 @@ body
   max-width: 45vw;
 }
 
-@media screen and (min-width: 1300px) {
+@media only screen and (min-width: 1300px) {
   #spotPicturesContainer img{
     max-width: 30vw;
   }
@@ -102,6 +103,10 @@ body
 
 #spotDescriptionContainer p{
   line-height: 150%;
+}
+
+#spotMetadataContainer{
+  text-align: left;
 }
 
 #spotCoordinatesContainer{

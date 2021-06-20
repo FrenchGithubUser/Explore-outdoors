@@ -33,6 +33,8 @@ function addSpotsToMap(spots) {
     var lat = spots[spot].a;
     var marker = L.marker([lat, long]);
     var spotName = spots[spot].n;
+    if (spotName == "u"){
+      spotName = "Unnamed spot"}
     //binds a popup on the map for each spot and clicking on it will call the displaySpotInfo function
     marker.bindPopup("<p><a href='javascript:displaySpotInfo(\""+spotName+"\",\""+lat+"\",\""+long+"\")'>"+spotName+"</a></p>");
     markers.addLayer(marker);  //add the marker to the cluster group
@@ -44,7 +46,7 @@ function addSpotsToMap(spots) {
 var spotNameContainer = document.getElementById("spotNameContainer");
 var spotPicturesContainer = document.getElementById("spotPicturesContainer");
 var spotDescriptionContainer = document.getElementById("spotDescriptionContainer");
-var spotMetadataContainer = document.getElementById("spotMetadata");
+var spotMetadataContainer = document.getElementById("spotMetadataContainer");
 var spotCoordinatesContainer = document.getElementById("spotCoordinatesContainer");
 var spotVideosContainer = document.getElementById("spotVideosContainer");
 
@@ -54,7 +56,7 @@ function displaySpotInfo(name, lat, long) {
   spotNameContainer.innerHTML = "";
   spotPicturesContainer.innerHTML = "";
   spotDescriptionContainer.innerHTML = "";
-  spotMetadata.innerHTML = "";
+  spotMetadataContainer.innerHTML = "";
   spotCoordinatesContainer.innerHTML = "";
   spotVideosContainer.innerHTML = "";
 
@@ -101,7 +103,7 @@ function displaySpotInfo(name, lat, long) {
     //adding the legality
     spotMetadataContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='spot_legality.svg' width=5%> Legality : "+ spotInfo[0].legality)
     */
-    
+
     //adding video links
     if(spotInfo[0]["videos"].length>0){
       spotVideosContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:3%;"></div>');
