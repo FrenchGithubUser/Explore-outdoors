@@ -17,7 +17,11 @@
     <!-- Importing the leaflet js -->
 	  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 
-    <?var url = "https://script.google.com/macros/s/AKfycbzyVyVncJvmTN1GdHsDiRIWRDDYqexX0Y1Wi-E5hbsk02kOfmmI/exec";?>
+    <!-- JS to display a fullscreen button on the map -->
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
+
     <form method="post" action="https://script.google.com/macros/s/AKfycbzyVyVncJvmTN1GdHsDiRIWRDDYqexX0Y1Wi-E5hbsk02kOfmmI/exec" >
           <div>
       <label>
@@ -140,19 +144,6 @@
       <tr>
       <td colspan="2"><span><?= message ?></span></td>
     </form>
-
-    <script type="text/javascript">
-
-	  const scriptURL = 'https://script.google.com/macros/s/AKfycbzyVyVncJvmTN1GdHsDiRIWRDDYqexX0Y1Wi-E5hbsk02kOfmmI/exec'
-            const form = document.forms['google-sheet']
-
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("You have successfully submitted."))
-                .catch(error => console.error('Error!', error.message))
-            })
-  </script>
 
     <div style="margin-top:20px;"></div>
   </body>

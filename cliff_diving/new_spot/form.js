@@ -25,27 +25,20 @@ return true;
 
 
 //functions to display the map and put a pin on it
-let mymap, pin //variables for the map and
+
+let mymap, pin //variables for the map and the pin
 
 window.onload = () => {
-  mymap = L.map('detailsMap').setView([46.94760, 4.53473,], 5);
+  mymap = L.map('detailsMap').setView([46.94760, 4.53473,], 5).addControl(new L.Control.Fullscreen());
 
   //locates the person on the map
   mymap.locate({setView: true})
         .on('locationfound', function(e){
-            var marker = L.marker([e.latitude, e.longitude]).bindPopup('<p class="locationPin">Your are here</p>');
-            var circle = L.circle([e.latitude, e.longitude], e.accuracy/2, {
-                weight: 1,
-                color: 'blue',
-                fillColor: '#cacaca',
-                fillOpacity: 0.2
-            });
+            var marker = L.marker([e.latitude, e.longitude], {icon:icon}).bindPopup('<p class="locationPin">Your are here</p>');
             mymap.addLayer(marker);
-            mymap.addLayer(circle);
-        })
-       .on('locationerror', function(e){
-            console.log(e);
-            alert("Location access denied.");
+            document.querySelector("#lat").value = e.latitude
+            document.querySelector("#lon").value = e.longitude
+            console.log(document.querySelector("#lat").value, document.querySelector("#lon").value)
         });
 
   //creating and displaying the map
@@ -54,11 +47,12 @@ window.onload = () => {
   minZoom: 1,
   maxZoom: 20,
   }).addTo(mymap);
-  /*
   //different pin icon for the location of the person
-  var icon = i.icon({
-    iconurl:
-  })*/
+  var icon = L.icon({
+    iconUrl: "../position.svg",
+    iconSize: [25, 25],
+    iconAnchor: [12.5, 12.5] //center the marker on the position
+  })
 
 
   mymap.on("click", mapClickListen)
