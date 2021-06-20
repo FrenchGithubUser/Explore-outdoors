@@ -92,7 +92,12 @@ body
   padding-left: 1vw;
   vertical-align: middle;
   max-width: 45vw;
-  width: 100%;
+}
+
+@media screen and (min-width: 1300px) {
+  #spotPicturesContainer img{
+    max-width: 30vw;
+  }
 }
 
 #spotDescriptionContainer p{

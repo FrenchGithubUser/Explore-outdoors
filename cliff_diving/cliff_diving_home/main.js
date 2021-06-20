@@ -97,9 +97,11 @@ function displaySpotInfo(name, lat, long) {
     //adding the heights
     spotMetadataContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='spot_height.svg' width=5%> Heights from "+ spotInfo[0].minHeight +"m to "+spotInfo[0].maxHeight+"m<span style='margin-right:3%;'></span>")
 
+    /*
     //adding the legality
     spotMetadataContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='spot_legality.svg' width=5%> Legality : "+ spotInfo[0].legality)
-
+    */
+    
     //adding video links
     if(spotInfo[0]["videos"].length>0){
       spotVideosContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:3%;"></div>');
