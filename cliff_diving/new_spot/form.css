@@ -101,6 +101,10 @@ textarea{
   color: black;
 }
 
+#TOS{
+  text-decoration: underline;
+}
+
 footer{
 padding-left: 15%;
 padding-right: 15%;

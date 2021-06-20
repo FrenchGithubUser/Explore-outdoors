@@ -38,3 +38,5 @@ x Creating sections with informations related to each sport (safety measures, ge
 
 
 Thanks to onlinewebfonts that provided some nice svg images !
+
+Disclaimer : I can not be held responsible if you do something bad with the information provided through this website. By using it, you take full responsability of your acts.
