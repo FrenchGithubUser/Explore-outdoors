@@ -4,7 +4,7 @@ import os
 with open("spotCoordinates.json", "w") as newData:
     newData.write("[")
 
-with open("overpassRequest.geojson", 'r') as data:
+with open("export.geojson", 'r') as data:
     spots = json.load(data)
     i=0
     while i < len(spots["features"]):

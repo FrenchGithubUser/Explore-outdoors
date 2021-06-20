@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "generator": "overpass-ide",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2021-06-20T16:24:13Z",
+  "timestamp": "2021-06-20T16:46:43Z",
   "features": [
     {
       "type": "Feature",
@@ -2551,6 +2551,67 @@
         ]
       },
       "id": "node/8850792402"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8850833685",
+        "description": "You can park on the side of the road for free. Don't go in the waterfalls, they can be dangerous, stay in the calm part of the river",
+        "maxHeight": "8",
+        "minHeight": "1",
+        "name": "Cascades du Sautadet",
+        "natural": "cliff",
+        "sport": "cliff_diving",
+        "videos": "https://youtu.be/w62f1RT7BzY"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.5267151,
+          44.1877746
+        ]
+      },
+      "id": "node/8850833685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8850852594",
+        "description": "Multiple heights from 1 to 30m. Free parking next to the lake. Very touristic place from late morning to begining evening (in summer)",
+        "maxHeight": "30",
+        "minHeight": "1",
+        "name": "Lac de Sainte Croix",
+        "natural": "cliff",
+        "sport": "cliff_diving",
+        "videos": "https://youtu.be/mnYBJd2VJKU, https://www.instagram.com/p/CDrYommiypS/?utm_source=ig_web_copy_link"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2500784,
+          43.8018122
+        ]
+      },
+      "id": "node/8850852594"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8850859902",
+        "description": "You can park a car on the parking above (for free). To access the 8m spot you have to go on the left of the rock that is in the water and climb back to the right. Be careful it is not deep everywhere and the deep area isn't very big.",
+        "maxHeight": "8",
+        "minHeight": "1",
+        "name": "Mazet plage",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.193856,
+          44.3971782
+        ]
+      },
+      "id": "node/8850859902"
     }
   ]
 }
