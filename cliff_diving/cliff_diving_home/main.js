@@ -7,7 +7,6 @@ mymap.locate({setView: true})
       .on('locationfound', function(e){
           var marker = L.marker([e.latitude, e.longitude], {icon:icon}).bindPopup('<p class="locationPin">Your are here</p>');
           mymap.addLayer(marker);
-          mymap.addLayer(circle);
       });
 
 //creating and displaying the map
