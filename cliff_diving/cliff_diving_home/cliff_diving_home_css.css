@@ -76,6 +76,13 @@ body
   height: 500px;
 }
 
+.findMeButton{
+  background-color: #973a0f;
+  padding: 6px;
+  color: white;
+  border-radius: 9px;
+}
+
 #spotInfoContainer{
   max-width: 1000px;
   margin: auto;

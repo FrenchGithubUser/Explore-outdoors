@@ -3,11 +3,13 @@
 var mymap = L.map('mapid').setView([46.94760, 4.53473,], 5).addControl(new L.Control.Fullscreen());
 
 //locates the person on the map
-mymap.locate({setView: true})
-      .on('locationfound', function(e){
-          var marker = L.marker([e.latitude, e.longitude], {icon:icon}).bindPopup('<p class="locationPin">Your are here</p>');
-          mymap.addLayer(marker);
-      });
+function findUser(){
+  mymap.locate({setView: true})
+        .on('locationfound', function(e){
+            var marker = L.marker([e.latitude, e.longitude], {icon:icon}).bindPopup('<p class="locationPin">Your are here</p>');
+            mymap.addLayer(marker);
+        });
+};
 
 //creating and displaying the map
 L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
