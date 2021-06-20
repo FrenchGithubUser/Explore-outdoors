@@ -1,6 +1,7 @@
 
 //creating the map variable
-var mymap = L.map('mapid').setView([46.94760, 4.53473,], 5);
+var mymap = L.map('mapid').setView([46.94760, 4.53473,], 5).addControl(new L.Control.Fullscreen());
+
 
 
 //creating and displaying the map
