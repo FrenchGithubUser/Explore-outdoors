@@ -74,16 +74,32 @@ max-width: 1200px;
   font-size: 100%;
 }
 
-input{
-background-color:white;
-color:black;
+
+input {
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  background-color:transparent;
+  outline: none;
+  color: white;
 }
 
-
 textarea{
-display: block;
-background-color:white;
-color:black;
+  display: block;
+  background-color:transparent;
+  color:white;
+}
+
+.picInputs input{
+  margin-bottom: 1vw;
+}
+
+.submitButton input{
+  border-right: solid;
+  border-left: solid;
+  border-bottom: solid;
+  border-top: solid;
+  padding: 0.5vw;
 }
 
 #detailsMap{

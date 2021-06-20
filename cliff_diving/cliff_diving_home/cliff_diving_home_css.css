@@ -5,7 +5,6 @@
   padding: 0;
   color: white;
   font-family: open sans;
-  font-size: 1.7vmin;
 }
 
 * a:link{
@@ -62,7 +61,7 @@ body
 
 .topHeader h1{
   color: #dd8d1c;
-  font-size: 300%;
+  font-size: 3em;
 }
 
 .locationPin{
@@ -84,7 +83,7 @@ body
 }
 
 #spotNameContainer p{
-  font-size: 4.2vmin;
+  font-size: 2.5em;
   color: #dd8d1c;
 }
 

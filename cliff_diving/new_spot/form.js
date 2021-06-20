@@ -38,7 +38,6 @@ window.onload = () => {
             mymap.addLayer(marker);
             document.querySelector("#lat").value = e.latitude
             document.querySelector("#lon").value = e.longitude
-            console.log(document.querySelector("#lat").value, document.querySelector("#lon").value)
         });
 
   //creating and displaying the map
@@ -66,6 +65,10 @@ function mapClickListen(e){
   //add the coordinates to the input feild
   document.querySelector("#lat").value = pos.lat
   document.querySelector("#lon").value = pos.lng
+
+  var validContainer = document.getElementById("coordinatesValidation");
+  validContainer.innerHTML = "";
+  validContainer.insertAdjacentHTML("beforeend","<p><b>Coordinates set ! ("+pos.lat+", "+pos.lng+")</b></p>");
 }
 
 function addMarker(pos){

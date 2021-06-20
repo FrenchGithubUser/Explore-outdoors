@@ -37,6 +37,7 @@
     <div style="margin-top:15px;"></div>
 
     <div id="detailsMap"></div>
+    <div id="coordinatesValidation"></div>
 
     <div style="margin-top:15px;"></div>
 
@@ -94,6 +95,8 @@
 
     <div style="margin-top:20px;"></div>
 
+    <div class="picInputs">
+
       <tr>
       <td>Picture 1:</td>
       <td><input type="file" name="file1" onchange="LoadFile(event,'fileData1','mimeType1','fileName1')" />
@@ -133,12 +136,15 @@
       <input type="hidden" id="mimeType5" name="mimeType5" />
       <input type="hidden" id="fileName5" name="fileName5" /></td>
       </tr>
+
+    </div>
+
       <div style="margin-top:10px;"></div>
       <div id="loadingContainer"></div>
       <div style="margin-top:10px;"></div>
-      <div>
+      <div class="submitButton">
          <tr>
-         <td colspan="2"><input type="submit" value="Add my spot" onclick="return clickedFunc();" /></td>
+         <td colspan="2"><input type="submit" value="  Add my spot  " onclick="return clickedFunc();" /></td>
          </tr>
       </div>
       <tr>
