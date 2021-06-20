@@ -61,7 +61,7 @@ body
 
 .topHeader h1{
   color: #dd8d1c;
-  font-size: 3em;
+  font-size: 4vw;
 }
 
 .locationPin{
@@ -138,7 +138,6 @@ img.logo{
   list-style: none;
   display: inline-block;
   margin-right: 5%;
-  font-size: 125%;
 }
 
 
