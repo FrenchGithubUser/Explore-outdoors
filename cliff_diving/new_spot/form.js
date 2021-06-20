@@ -36,8 +36,8 @@ window.onload = () => {
         .on('locationfound', function(e){
             var marker = L.marker([e.latitude, e.longitude], {icon:icon}).bindPopup('<p class="locationPin">Your are here</p>');
             mymap.addLayer(marker);
-            document.querySelector("#lat").value = e.latitude
-            document.querySelector("#lon").value = e.longitude
+            document.querySelector("#lat").value = e.latitude.toFixed(7)
+            document.querySelector("#lon").value = e.longitude.toFixed(7)
         });
 
   //creating and displaying the map
@@ -63,12 +63,12 @@ function mapClickListen(e){
   //adding a marker
   addMarker(pos)
   //add the coordinates to the input feild
-  document.querySelector("#lat").value = pos.lat
-  document.querySelector("#lon").value = pos.lng
+  document.querySelector("#lat").value = pos.lat.toFixed(7)
+  document.querySelector("#lon").value = pos.lng.toFixed(7)
 
   var validContainer = document.getElementById("coordinatesValidation");
   validContainer.innerHTML = "";
-  validContainer.insertAdjacentHTML("beforeend","<p><b>Coordinates set ! ("+pos.lat+", "+pos.lng+")</b></p>");
+  validContainer.insertAdjacentHTML("beforeend","<p><b>Coordinates set ! ("+pos.lat.toFixed(7)+", "+pos.lng.toFixed(7)+")</b></p>");
 }
 
 function addMarker(pos){
