@@ -65,6 +65,12 @@ max-width: 1200px;
   font-size: 100%;
 }
 
+.findMeButton{
+  background-color: #973a0f;
+  padding: 6px;
+  color: white;
+  border-radius: 9px;
+}
 
 input {
   border-right: none;

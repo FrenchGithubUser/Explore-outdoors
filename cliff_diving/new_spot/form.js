@@ -25,20 +25,13 @@ return true;
 
 
 //functions to display the map and put a pin on it
-
 let mymap, pin //variables for the map and the pin
+
 
 window.onload = () => {
   mymap = L.map('detailsMap').setView([46.94760, 4.53473,], 5).addControl(new L.Control.Fullscreen());
 
-  //locates the person on the map
-  mymap.locate({setView: true})
-        .on('locationfound', function(e){
-            var marker = L.marker([e.latitude, e.longitude], {icon:icon}).bindPopup('<p class="locationPin">Your are here</p>');
-            mymap.addLayer(marker);
-            document.querySelector("#lat").value = e.latitude.toFixed(7)
-            document.querySelector("#lon").value = e.longitude.toFixed(7)
-        });
+
 
   //creating and displaying the map
   L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
@@ -46,16 +39,58 @@ window.onload = () => {
   minZoom: 1,
   maxZoom: 20,
   }).addTo(mymap);
-  //different pin icon for the location of the person
-  var icon = L.icon({
-    iconUrl: "../position.svg",
-    iconSize: [25, 25],
-    iconAnchor: [12.5, 12.5] //center the marker on the position
-  })
-
 
   mymap.on("click", mapClickListen)
 }
+
+//functions to get the user's location
+//different pin icon for the location of the person
+var icon = L.icon({
+  iconUrl: "../position.svg",
+  iconSize: [25, 25],
+  iconAnchor: [12.5, 12.5] //center the marker on the position
+})
+
+function watchLocation(successCallback, errorCallback) {
+  successCallback = successCallback || function(){};
+  errorCallback = errorCallback || function(){};
+  // Try HTML5-spec geolocation.
+  var geolocation = navigator.geolocation;
+
+  if (geolocation) {
+    // We have a real geolocation service.
+    try {
+      function handleSuccess(position) {
+        successCallback(position.coords);
+      }
+
+      geolocation.getCurrentPosition(handleSuccess, errorCallback, {
+        enableHighAccuracy: true,
+        maximumAge: 5000 // 5 sec.
+      });
+    } catch (err) {
+      errorCallback();
+    }
+  } else {
+    errorCallback();
+  }
+}
+
+function initLocation() {
+  watchLocation(function(coords) {
+    findUser(coords);
+  }, function() {
+    console.log('error');
+  });
+}
+
+function findUser(coords){
+    var marker = L.marker([coords.latitude, coords.longitude], {icon:icon}).bindPopup('<p class="locationPin">Your are here</p>');
+    mymap.addLayer(marker);
+    mymap.setView([coords.latitude, coords.longitude], 19)
+};
+
+
 
 function mapClickListen(e){
   //retreiving the data from the click
