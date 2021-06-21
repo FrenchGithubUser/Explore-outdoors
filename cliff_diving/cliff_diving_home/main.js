@@ -18,7 +18,7 @@ function watchLocation(successCallback, errorCallback) {
         successCallback(position.coords);
       }
 
-      geolocation.watchPosition(handleSuccess, errorCallback, {
+      geolocation.getCurrentPosition(handleSuccess, errorCallback, {
         enableHighAccuracy: true,
         maximumAge: 5000 // 5 sec.
       });
