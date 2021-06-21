@@ -2,13 +2,16 @@
 //creating the map variable
 var mymap = L.map('mapid').setView([46.94760, 4.53473,], 5).addControl(new L.Control.Fullscreen());
 
-//locates the person on the map
+
+
+
+//locates the user on the map
 function findUser(){
-  mymap.locate({setView: true})
-        .on('locationfound', function(e){
-            var marker = L.marker([e.latitude, e.longitude], {icon:icon}).bindPopup('<p class="locationPin">Your are here</p>');
-            mymap.addLayer(marker);
-        });
+  navigator.geolocation.getCurrentPosition(function(position){
+    var marker = L.marker([position.coords.latitude, position.coords.longitude], {icon:icon}).bindPopup('<p class="locationPin">Your are here</p>');
+    mymap.addLayer(marker);
+    mymap.setView([position.coords.latitude, position.coords.longitude], 19)
+  });
 };
 
 //creating and displaying the map
