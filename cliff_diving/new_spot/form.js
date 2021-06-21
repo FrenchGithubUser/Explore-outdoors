@@ -31,8 +31,6 @@ let mymap, pin //variables for the map and the pin
 window.onload = () => {
   mymap = L.map('detailsMap').setView([46.94760, 4.53473,], 5).addControl(new L.Control.Fullscreen());
 
-
-
   //creating and displaying the map
   L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
   attribution: '© <a href= "https://osm.org/copyright"> OpenStreetMap </a> contributors',
@@ -88,6 +86,11 @@ function findUser(coords){
     var marker = L.marker([coords.latitude, coords.longitude], {icon:icon}).bindPopup('<p class="locationPin">Your are here</p>');
     mymap.addLayer(marker);
     mymap.setView([coords.latitude, coords.longitude], 19)
+    document.querySelector("#lat").value = coords.latitude.toFixed(7)
+    document.querySelector("#lon").value = coords.longitude.toFixed(7)
+    var validContainer = document.getElementById("coordinatesValidation");
+    validContainer.innerHTML = "";
+    validContainer.insertAdjacentHTML("beforeend","<p><b>Coordinates set : ("+coords.latitude.toFixed(7)+", "+coords.longitude.toFixed(7)+")</b><br>You can still change them placing another pin.</p>");
 };
 
 
@@ -103,7 +106,7 @@ function mapClickListen(e){
 
   var validContainer = document.getElementById("coordinatesValidation");
   validContainer.innerHTML = "";
-  validContainer.insertAdjacentHTML("beforeend","<p><b>Coordinates set ! ("+pos.lat.toFixed(7)+", "+pos.lng.toFixed(7)+")</b></p>");
+  validContainer.insertAdjacentHTML("beforeend","<p><b>Coordinates set : ("+pos.lat.toFixed(7)+", "+pos.lng.toFixed(7)+")</b><br>You can still change them placing another pin.</p>");
 }
 
 function addMarker(pos){
