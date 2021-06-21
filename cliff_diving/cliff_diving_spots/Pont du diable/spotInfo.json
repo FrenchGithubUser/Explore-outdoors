@@ -1,0 +1,12 @@
+[
+  {
+    "description":"Jumping off the bridges is prohibited.",
+    "minHeight":1,
+    "maxHeight":28,
+    "pictureAmount":1,
+    "videos":[
+	"https://youtu.be/wRWRdkoE-b4"
+    ]
+  }
+]
+
