@@ -101,6 +101,11 @@ textarea{
   border-bottom: solid;
   border-top: solid;
   padding: 0.5vw;
+  font-size: 1.2em;
+}
+
+.submitButton input:hover{
+  color: #c98510;
 }
 
 #detailsMap{

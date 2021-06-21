@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "generator": "overpass-ide",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2021-06-20T16:46:43Z",
+  "timestamp": "2021-06-21T13:18:27Z",
   "features": [
     {
       "type": "Feature",
@@ -2612,6 +2612,27 @@
         ]
       },
       "id": "node/8850859902"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8851007420",
+        "description": "Jumping off the bridges is prohibited.",
+        "maxHeight": "28",
+        "minHeight": "1",
+        "name": "Pont du diable",
+        "natural": "cliff",
+        "sport": "cliff_diving",
+        "videos": "https://youtu.be/wRWRdkoE-b4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.5574417,
+          43.7075922
+        ]
+      },
+      "id": "node/8851007420"
     }
   ]
 }
