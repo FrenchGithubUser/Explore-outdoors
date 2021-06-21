@@ -7,7 +7,7 @@ var mymap = L.map('mapid').setView([46.94760, 4.53473,], 5).addControl(new L.Con
 
 //locates the user on the map
 function findUser(){
-  navigator.geolocation.getCurrentPosition(function(position){
+  window.onload = navigator.geolocation.getCurrentPosition(function(position){
     var marker = L.marker([position.coords.latitude, position.coords.longitude], {icon:icon}).bindPopup('<p class="locationPin">Your are here</p>');
     mymap.addLayer(marker);
     mymap.setView([position.coords.latitude, position.coords.longitude], 19)
