@@ -4,7 +4,48 @@ var mymap = L.map('mapid').setView([46.94760, 4.53473,], 5).addControl(new L.Con
 
 
 
+function watchLocation(successCallback, errorCallback) {
+  successCallback = successCallback || function(){};
+  errorCallback = errorCallback || function(){};
 
+  // Try HTML5-spec geolocation.
+  var geolocation = navigator.geolocation;
+
+  if (geolocation) {
+    // We have a real geolocation service.
+    try {
+      function handleSuccess(position) {
+        successCallback(position.coords);
+      }
+
+      geolocation.watchPosition(handleSuccess, errorCallback, {
+        enableHighAccuracy: true,
+        maximumAge: 5000 // 5 sec.
+      });
+    } catch (err) {
+      errorCallback();
+    }
+  } else {
+    errorCallback();
+  }
+}
+
+function init() {
+  watchLocation(function(coords) {
+    findUser(coords);
+  }, function() {
+    console.log('error');
+  });
+}
+
+
+function findUser(coords){
+    var marker = L.marker([coords.latitude, coords.longitude], {icon:icon}).bindPopup('<p class="locationPin">Your are here</p>');
+    mymap.addLayer(marker);
+    mymap.setView([coords.latitude, coords.longitude], 19)
+};
+
+/*
 //locates the user on the map
 function findUser(){
   window.onload = navigator.geolocation.getCurrentPosition(function(position){
@@ -12,7 +53,7 @@ function findUser(){
     mymap.addLayer(marker);
     mymap.setView([position.coords.latitude, position.coords.longitude], 19)
   });
-};
+};*/
 
 //creating and displaying the map
 L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
