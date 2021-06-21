@@ -89,7 +89,10 @@ textarea{
 
 input{
   margin-bottom: 1vw;
-  font-size: 1em;
+  font-size: 100%;
+}
+textarea{
+  font-size: 100%;
 }
 
 .submitButton input{
