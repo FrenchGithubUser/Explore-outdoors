@@ -1,53 +1,24 @@
-//function to compress the images
-
 //functions to handle the answers of the form and to send them to the google sheet
-function LoadFile(event, fileDataID, mimeTypeID, fileNameID, fileID)
+function LoadFile(event, fileDataID, mimeTypeID, fileNameID)
   {
-    var fileName = event.target.files[0].name;
-    const file = document.querySelector(fileID).files[0];
-
-    if (!file) return;
-
-    const reader = new FileReader();
-
-    reader.readAsDataURL(file);
-
-    reader.onload = function (event) {
-      const imgElement = document.createElement("img");
-      imgElement.src = event.target.result;
-
-      imgElement.onload = function (e) {
-        const canvas = document.createElement("canvas");
-        const MAX_WIDTH = 800;
-
-        const scaleSize = MAX_WIDTH / e.target.width;
-        canvas.width = MAX_WIDTH;
-        canvas.height = e.target.height * scaleSize;
-
-        const ctx = canvas.getContext("2d");
-
-        ctx.drawImage(e.target, 0, 0, canvas.width, canvas.height);
-
-        const srcEncoded = ctx.canvas.toDataURL(e.target, "image/jpeg");//compressed image
-
-
-        var fileData = srcEncoded.substr(srcEncoded.indexOf(",")+1);
-        var mimeTypeStart = srcEncoded.indexOf("data:") + 5;
-        var mimeTypeEnd = srcEncoded.indexOf(";");
-        var mimeType = srcEncoded.substr(mimeTypeStart, mimeTypeEnd - mimeTypeStart);
-        document.getElementById(fileDataID).value = fileData;
-        document.getElementById(mimeTypeID).value = mimeType;
-        document.getElementById(fileNameID).value = fileName;
-
-      };
+    var file = event.target.files[0];
+    console.log(file)
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      console.log(e.target.result)
+      var fileData = e.target.result.substr(e.target.result.indexOf(",")+1);
+      var mimeTypeStart = e.target.result.indexOf("data:") + 5;
+      var mimeTypeEnd = e.target.result.indexOf(";");
+      var mimeType = e.target.result.substr(mimeTypeStart, mimeTypeEnd - mimeTypeStart);
+      var fileName = file.name;
+      document.getElementById(fileDataID).value = fileData;
+      console.log(fileData)
+      document.getElementById(mimeTypeID).value = mimeType;
+      console.log(mimeType)
+      document.getElementById(fileNameID).value = fileName;
     };
-  };
-
-
-
-
-
-
+  reader.readAsDataURL(file);
+}
 
 function clickedFunc(){
 var loadingContainerVar = document.getElementById("loadingContainer");

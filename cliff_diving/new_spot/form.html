@@ -14,7 +14,7 @@
     <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
 
     <link rel="stylesheet" href="./form.css">
-    <script src="./form.js"></script>
+
   </head>
   <body>
     <div class="topHeader">
@@ -106,7 +106,7 @@
 
       <tr>
       <td>Picture 1:</td>
-      <td><input type="file" name="file1" onchange="LoadFile(event,'fileData1','mimeType1','fileName1')" />
+      <td><input type="file" id="file1" name="file1" onchange="LoadFile(event,'fileData1','mimeType1','fileName1', '#file1')" />
       <input type="hidden" id="fileData1" name="fileData1" />
       <input type="hidden" id="mimeType1" name="mimeType1" />
       <input type="hidden" id="fileName1" name="fileName1" /></td>
@@ -114,7 +114,7 @@
       <div style="margin-top:10px;"></div>
       <tr>
       <td>Picture 2:</td>
-      <td><input type="file" name="file2" onchange="LoadFile(event, 'fileData2', 'mimeType2', 'fileName2')" />
+      <td><input type="file" id="file2" name="file2" onchange="LoadFile(event, 'fileData2', 'mimeType2', 'fileName2', '#file2')" />
       <input type="hidden" id="fileData2" name="fileData2" />
       <input type="hidden" id="mimeType2" name="mimeType2" />
       <input type="hidden" id="fileName2" name="fileName2" /></td>
@@ -122,7 +122,7 @@
       <div style="margin-top:10px;"></div>
       <tr>
       <td>Picture 3:</td>
-      <td><input type="file" name="file3" onchange="LoadFile(event, 'fileData3', 'mimeType3', 'fileName3')" />
+      <td><input type="file" id="file3" name="file3" onchange="LoadFile(event, 'fileData3', 'mimeType3', 'fileName3', '#file3')" />
       <input type="hidden" id="fileData3" name="fileData3" />
       <input type="hidden" id="mimeType3" name="mimeType3" />
       <input type="hidden" id="fileName3" name="fileName3" /></td>
@@ -130,7 +130,7 @@
       <div style="margin-top:10px;"></div>
       <tr>
       <td>Picture 4:</td>
-      <td><input type="file" name="file4" onchange="LoadFile(event, 'fileData4', 'mimeType4', 'fileName4')" />
+      <td><input type="file" id="file4" name="file4" onchange="LoadFile(event, 'fileData4', 'mimeType4', 'fileName4', '#file4')" />
       <input type="hidden" id="fileData4" name="fileData4" />
       <input type="hidden" id="mimeType4" name="mimeType4" />
       <input type="hidden" id="fileName4" name="fileName4" /></td>
@@ -138,7 +138,7 @@
       <div style="margin-top:10px;"></div>
       <tr>
       <td>Picture 5:</td>
-      <td><input type="file" name="file5" onchange="LoadFile(event, 'fileData5', 'mimeType5', 'fileName5')" />
+      <td><input type="file" id="file5" name="file5" onchange="LoadFile(event, 'fileData5', 'mimeType5', 'fileName5', '#file5')" />
       <input type="hidden" id="fileData5" name="fileData5" />
       <input type="hidden" id="mimeType5" name="mimeType5" />
       <input type="hidden" id="fileName5" name="fileName5" /></td>
@@ -162,6 +162,8 @@
       <tr>
       <td colspan="2"><span><?= message ?></span></td>
     </form>
+
+    <script src="./form.js"></script>
 
     <div style="margin-top:20px;"></div>
   </body>
