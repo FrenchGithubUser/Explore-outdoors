@@ -1,6 +1,4 @@
-//function to compress the images
-
-//functions to handle the answers of the form and to send them to the google sheet
+//functions to handle the answers of the form and to send them to the google sheet and compressing the images (lighter on the servers and the bandwith)
 function LoadFile(event, fileDataID, mimeTypeID, fileNameID, fileID)
   {
     var fileName = event.target.files[0].name;
@@ -28,8 +26,8 @@ function LoadFile(event, fileDataID, mimeTypeID, fileNameID, fileID)
 
         ctx.drawImage(e.target, 0, 0, canvas.width, canvas.height);
 
-        const srcEncoded = ctx.canvas.toDataURL(e.target, "image/jpeg");//compressed image
-
+        let srcEncoded = ctx.canvas.toDataURL(e.target, "image/jpeg");//compressed image
+        if(event.target.result.length<srcEncoded.length){srcEncoded = event.target.result}//keeps the unconverted image if it is lighter
 
         var fileData = srcEncoded.substr(srcEncoded.indexOf(",")+1);
         var mimeTypeStart = srcEncoded.indexOf("data:") + 5;
@@ -38,19 +36,14 @@ function LoadFile(event, fileDataID, mimeTypeID, fileNameID, fileID)
         document.getElementById(fileDataID).value = fileData;
         document.getElementById(mimeTypeID).value = mimeType;
         document.getElementById(fileNameID).value = fileName;
-
       };
     };
   };
 
 
-
-
-
-
-
 function clickedFunc(){
 var loadingContainerVar = document.getElementById("loadingContainer");
+loadingContainerVar.innerHTML = "";
 loadingContainerVar.insertAdjacentHTML("beforeend","<p><b>Your spot is being sent... You will be brought to a new page soon, please don't exit this page. This can be long if you uploaded high quality pictures.</b></p>");
 return true;
 }
