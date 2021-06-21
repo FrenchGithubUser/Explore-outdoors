@@ -1,6 +1,33 @@
+//function to compress the image on the client side
+var minifyImg = function(dataUrl,newWidth,imageType="image/jpeg",resolve,imageArguments=0.7){
+    var image, oldWidth, oldHeight, newHeight, canvas, ctx, newDataUrl;
+    (new Promise(function(resolve){
+      image = new Image(); image.src = dataUrl;
+      log(image);
+      resolve('Done : ');
+    })).then((d)=>{
+      oldWidth = image.width; oldHeight = image.height;
+      log([oldWidth,oldHeight]);
+      newHeight = Math.floor(oldHeight / oldWidth * newWidth);
+      log(d+' '+newHeight);
+
+      canvas = document.createElement("canvas");
+      canvas.width = newWidth; canvas.height = newHeight;
+      log(canvas);
+      ctx = canvas.getContext("2d");
+      ctx.drawImage(image, 0, 0, newWidth, newHeight);
+      //log(ctx);
+      newDataUrl = canvas.toDataURL(imageType, imageArguments);
+      resolve(newDataUrl);
+    });
+  };
+
+
 //functions to handle the answers of the form and to send them to the google sheet
 function LoadFile(event, fileDataID, mimeTypeID, fileNameID)
-{
+  {minifyImg(fileDataID,"600","image/jpeg",(data)=>{
+   console.log(data); // the new DATAURL
+  });
   var file = event.target.files[0];
   var reader = new FileReader();
   reader.onload = function(e) {
@@ -19,7 +46,7 @@ function LoadFile(event, fileDataID, mimeTypeID, fileNameID)
 
 function clickedFunc(){
 var loadingContainerVar = document.getElementById("loadingContainer");
-loadingContainerVar.insertAdjacentHTML("beforeend","<p><b>Your spot is being sent... You will be brought to a new page soon, please don't exit this page.</b></p>");
+loadingContainerVar.insertAdjacentHTML("beforeend","<p><b>Your spot is being sent... You will be brought to a new page soon, please don't exit this page. This can be long if you uploaded high quality pictures.</b></p>");
 return true;
 }
 
@@ -78,7 +105,9 @@ function initLocation() {
   watchLocation(function(coords) {
     findUser(coords);
   }, function() {
-    console.log('error');
+    var validContainer = document.getElementById("coordinatesValidation"); //container to print the coordinates or an error message
+    validContainer.innerHTML = '<div style="margin-top:20px;"></div>';
+    validContainer.insertAdjacentHTML("beforeend","Please enable your location services and reload the page.");
   });
 }
 
