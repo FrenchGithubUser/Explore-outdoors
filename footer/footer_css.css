@@ -47,6 +47,10 @@ body
   text-decoration: none;
 }
 
+.underline{
+  text-decoration: underline;
+}
+
 .topHeader
 {
   width: 100%;
