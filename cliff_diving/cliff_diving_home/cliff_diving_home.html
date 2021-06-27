@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8" />
   <title>Outdoor spots</title>
 
   <!-- Importing the leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
 
   <!-- Importing the cluster addon CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
@@ -13,36 +16,40 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
 
   <!-- Importing the website CSS -->
-  <link rel="stylesheet" href="./cliff_diving_home_css.css" type="text/css"/>
+  <link rel="stylesheet" href="./cliff_diving_home_css.css" type="text/css" />
 
   <!-- Should help to keep a good font scale on mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Importing the leaflet js -->
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
 
   <!-- Importing the markercluster js -->
   <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 
   <!-- JS to display a fullscreen button on the map -->
   <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
-  <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+  <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'
+    rel='stylesheet' />
 
 
 </head>
 
 <body>
 
-	<!-- Allows to display the spot pictures wider than 1200px while keeping the rest of the page at max 1200px width -->
-	<div class="maxWidthContainer">
+  <!-- Allows to display the spot pictures wider than 1200px while keeping the rest of the page at max 1200px width -->
+  <div class="maxWidthContainer">
 
-	  <p class="returnHome"><a href="../../index.html">Back home</a></p>
+    <p class="returnHome"><a href="../../index.html">Back home</a></p>
 
-	  <div class="topHeader">
-	    <h1><img src="diver.svg" class="logo" width="10%"> Outdoor spots - Cliff diving <img src="whale.svg" class="logo" width="10%"></h1>
-	  </div>
+    <div class="topHeader">
+      <h1><img src="diver.svg" class="logo" width="10%"> Outdoor spots - Cliff diving <img src="whale.svg" class="logo"
+          width="10%"></h1>
+    </div>
 
-	  <div id="mapid"></div>
+    <div id="mapid"></div>
 
     <div id="errorCoordsContainer"></div>
 
@@ -51,20 +58,21 @@
     <a class="findMeButton" href='javascript:initLocation()'>Localize me</a>
 
 
-	  <div style="margin-top:20px;"></div>
+    <div style="margin-top:20px;"></div>
 
-	  <p id="disclaimer"> <img src="clean.svg" class="logo" width=5% alt=""> Please help us protecting the environment from pollution by bringing your waste back with you and cleaning up the spots if they are dirty, thank you!</p>
+    <p id="disclaimer"> <img src="clean.svg" class="logo" width=5% alt=""> Please help us protecting the environment
+      from pollution by bringing your waste back with you and cleaning up the spots if they are dirty, thank you!</p>
 
-	  <div style="margin-top:30px;"></div>
+    <div style="margin-top:30px;"></div>
 
-	  <!-- Creating containers to add info about a specific spot (with the js script) -->
+    <!-- Creating containers to add info about a specific spot (with the js script) -->
 
     <div id="spotNameContainer"></div>
-	</div>
+  </div>
 
-    <div id="spotPicturesContainer"></div>
+  <div id="spotPicturesContainer"></div>
 
-	<div class="maxWidthContainer">
+  <div class="maxWidthContainer">
 
     <div id="spotDescriptionContainer"></div>
     <div id="spotMetadataContainer"></div>
@@ -72,26 +80,27 @@
     <div id="spotCoordinatesContainer"></div>
 
 
-	  <!-- Importing the js to use the map, markers and display spots' info -->
-	  <script src="main.js"></script>
+    <!-- Importing the js to use the map, markers and display spots' info -->
+    <script src="main.js"></script>
 
-	  <div style="margin-top:6%;"></div>
+    <div style="margin-top:6%;"></div>
 
-	  <p>Found a new spot ?  <a id="newSpot" href="../new_spot/form.html"><img src="./plus_sign.svg" class="logo" width="2.5%"> Add it to the map ! <a></p>
+    <p>Found a new spot ? <a id="newSpot" href="../new_spot/form.html"><img src="./plus_sign.svg" class="logo"
+          width="2.5%"> Add it to the map ! <a></p>
 
-	  <div style="margin-top:7%;"></div>
+    <div style="margin-top:7%;"></div>
 
-	  <p class="relatedLinksTitle">Related links :</p>
+    <p class="relatedLinksTitle">Related links :</p>
 
-	  <div style="margin-top:5%;"></div>
+    <div style="margin-top:5%;"></div>
 
-	  <ul class="relatedLinks">
-	    <li><a href="">What is cliff diving ?</a></li>
-	    <li><a href="../safety_measures/safety_measures.html">Safety measures</a></li>
-	    <li><a href="">How to cliff dive ?</a></li>
-	  </ul>
+    <ul class="relatedLinks">
+      <li><a href="">What is cliff diving ?</a></li>
+      <li><a href="../safety_measures/safety_measures.html">Safety measures</a></li>
+      <li><a href="">How to cliff dive ?</a></li>
+    </ul>
 
-	</div>
+  </div>
 
 </body>
 
@@ -99,15 +108,18 @@
 
 <div class="maxWidthContainer">
 
-<footer>
+  <footer>
 
-    <a href="../../footer/contact.html"><img src="../../footer/contact.svg" class="logo" width="5%"> Contact</a><span style='margin-right:5%;'></span>
-    <a href="../../footer/donate.html"><img src="../../footer/donate.svg" class="logo" width="5%"> Donate</a><span style='margin-right:5%;'></span>
-    <a href="https://github.com/ThomasTraineau/Outdoor-spots" target="_blank"><img src="../../footer/source.svg" class="logo" width="5%"> Source</a><span style='margin-right:5%;'></span>
-    <a href="../../footer/TOS.html"><img src="../../footer/TOS.svg" class="logo" width="30px"> TOS</a>
+    <a href="../../footer/contact.html"><img src="../../footer/contact.svg" class="logo" width="5%"> Contact</a><span
+      style='margin-right:5%;'></span>
+    <a href="../../footer/donate.html"><img src="../../footer/donate.svg" class="logo" width="5%"> Donate</a><span
+      style='margin-right:5%;'></span>
+    <a href="https://github.com/ThomasTraineau/Outdoor-spots" target="_blank"><img src="../../footer/source.svg"
+        class="logo" width="5%"> Source</a><span style='margin-right:5%;'></span>
+    <a href="../../footer/legal.html"><img src="../../footer/legal.svg" class="logo" width="30px"> Legal</a>
 
-  <div style="margin-top:30px;"></div>
+    <div style="margin-top:30px;"></div>
 
-</footer>
+  </footer>
 
 </div>
