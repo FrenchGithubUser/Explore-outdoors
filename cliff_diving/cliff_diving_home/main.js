@@ -129,7 +129,7 @@ function displaySpotInfo(name, lat, long) {
     //adding the pictures, displaying 2 pics by line
     spotPictures = "";
     var picCounter = 0;
-    for (i = 0; i < spotInfo[0].pictureAmount; i++) {
+    for (i = 0; i < spotInfo[0].p; i++) {
       picCounter += 1;
       if (picCounter > 2) {
         spotPicturesContainer.insertAdjacentHTML("beforeend", "<div>" + spotPictures + "</div>");
@@ -144,11 +144,11 @@ function displaySpotInfo(name, lat, long) {
 
 
     //adding the description
-    spotDescriptionContainer.insertAdjacentHTML("beforeend", "<p>" + spotInfo[0].description + "</p>");
+    spotDescriptionContainer.insertAdjacentHTML("beforeend", "<p>" + spotInfo[0].d + "</p>");
     spotDescriptionContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:2%;"></div>');
 
     //adding the heights
-    spotMetadataContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='spot_height.svg' width=5%> Heights from " + spotInfo[0].minHeight + "m to " + spotInfo[0].maxHeight + "m<span style='margin-right:3%;'></span>")
+    spotMetadataContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='spot_height.svg' width=5%> Heights from " + spotInfo[0].mi + "m to " + spotInfo[0].ma + "m<span style='margin-right:3%;'></span>")
 
     /*
     //adding the legality
@@ -156,12 +156,12 @@ function displaySpotInfo(name, lat, long) {
     */
 
     //adding video links
-    if (spotInfo[0]["videos"].length > 0) {
+    if (spotInfo[0]["v"].length > 0) {
       spotVideosContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:3%;"></div>');
       spotVideosContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='video.svg' width=4%><span style='margin-right:2%;'></span>Videos at the spot : ")
-      for (i = 0; i < spotInfo[0]["videos"].length; i++) {
+      for (i = 0; i < spotInfo[0]["v"].length; i++) {
         v = i + 1
-        spotVideosContainer.insertAdjacentHTML("beforeend", "<a href ='" + spotInfo[0]["videos"][i] + "' target='_blank'>video " + v + " </a>")
+        spotVideosContainer.insertAdjacentHTML("beforeend", "<a href ='" + spotInfo[0]["v"][i] + "' target='_blank'>video " + v + " </a>")
       }
     }
   };

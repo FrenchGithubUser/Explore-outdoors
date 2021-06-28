@@ -1,12 +1,13 @@
 [
   {
-    "description":"Very famous spot. You can park your car next to the bridge, relatively crowded by paddle boats in the late morning and the afternoon. Jumping off the bridge (which is 15m high) is forbidden. The gainer tour video shows some images of this spot but also of other locations.",
-    "minHeight":2,
-    "maxHeight":30,
-    "legality":"legal",
-    "pictureAmount":2,
-    "videos":[
-      "https://youtu.be/mnYBJd2VJKU", "https://www.instagram.com/p/CDrYommiypS/?utm_source=ig_web_copy_link", "https://youtu.be/M2e1ULq2B6E"
+    "d": "Very famous spot. You can park your car next to the bridge, relatively crowded by paddle boats in the late morning and the afternoon. Jumping off the bridge (which is 15m high) is forbidden. The gainer tour video shows some images of this spot but also of other locations.",
+    "mi": 2,
+    "ma": 30,
+    "p": 2,
+    "v": [
+      "https://youtu.be/mnYBJd2VJKU",
+      "https://www.instagram.com/p/CDrYommiypS/?utm_source=ig_web_copy_link",
+      "https://youtu.be/M2e1ULq2B6E"
     ]
   }
 ]

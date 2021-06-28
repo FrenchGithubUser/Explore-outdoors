@@ -1,12 +1,9 @@
 [
   {
-    "description":"You can park a car on the parking above (for free). To access the 8m spot you have to go on the left of the rock that is in the water and climb back to the right. Be careful it is not deep everywhere and the deep area isn't very big.",
-    "minHeight":1,
-    "maxHeight":8,
-    "legality":"legal",
-    "pictureAmount":1,
-    "videos":[
-
-    ]
+    "d": "You can park a car on the parking above (for free). To access the 8m spot you have to go on the left of the rock that is in the water and climb back to the right. Be careful it is not deep everywhere and the deep area isn't very big.",
+    "mi": 1,
+    "ma": 8,
+    "p": 1,
+    "v": []
   }
 ]

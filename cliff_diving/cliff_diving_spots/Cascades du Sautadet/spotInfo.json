@@ -1,11 +1,10 @@
 [
   {
-    "description":"Various jumps along the river, usually crowded in summer in the late morning and the afternoon. You can park your car for free on the side of the road. There are some warning signs but that's because some people weren't carefull, please always check the depth before jumping. Don't go in the small wterfalls, they are dangerous, stay on the part of the river that is wide.",
-    "minHeight":1,
-    "maxHeight":8,
-    "legality":"legal",
-    "pictureAmount":4,
-    "videos":[
+    "d": "Various jumps along the river, usually crowded in summer in the late morning and the afternoon. You can park your car for free on the side of the road. There are some warning signs but that's because some people weren't carefull, please always check the depth before jumping. Don't go in the small wterfalls, they are dangerous, stay on the part of the river that is wide.",
+    "mi": 1,
+    "ma": 8,
+    "p": 4,
+    "v": [
       "https://youtu.be/w62f1RT7BzY"
     ]
   }
