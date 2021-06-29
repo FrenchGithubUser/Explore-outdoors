@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "generator": "overpass-ide",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2021-06-21T13:18:27Z",
+  "timestamp": "2021-06-29T19:09:58Z",
   "features": [
     {
       "type": "Feature",
@@ -2633,6 +2633,25 @@
         ]
       },
       "id": "node/8851007420"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8874584017",
+        "maxHeight": "22",
+        "minHeight": "2",
+        "name": "Arche de Théoule",
+        "natural": "cliff",
+        "sport": "cliff_diving"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9542567,
+          43.5052406
+        ]
+      },
+      "id": "node/8874584017"
     }
   ]
 }
