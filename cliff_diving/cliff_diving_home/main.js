@@ -42,7 +42,7 @@ function initLocation() {
   }, function () {
     var errorCoordsContainer = document.getElementById("errorCoordsContainer"); //container to print the coordinates or an error message
     errorCoordsContainer.innerHTML = '<div style="margin-top:20px;"></div>';
-    errorCoordsContainer.insertAdjacentHTML("beforeend", "Please enable your location services and reload the page.");
+    errorCoordsContainer.insertAdjacentHTML("beforeend", "<b>Please enable your location services and reload the page.</b>");
   });
 }
 
