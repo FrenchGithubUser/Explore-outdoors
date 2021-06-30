@@ -1,4 +1,4 @@
-# Oudoor-spots
+# Explore-outdoors
 
 Note : the design of the website is temporary and WILL change in the future
 
