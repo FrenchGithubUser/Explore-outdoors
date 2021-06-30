@@ -15,10 +15,6 @@
   color: #c98510;
 }
 
-* p{
-  line-height: 1vw;
-}
-
 .maxWidthContainer{
   max-width: 1200px;
 }
