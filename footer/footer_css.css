@@ -1,6 +1,7 @@
 *
 {
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
   color: white;
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif ;
@@ -12,16 +13,10 @@
 
 * p{
   line-height: 20px;
-  text-align: justify;
 }
 
 .maxWidthContainer{
   max-width: 1000px;
-  margin: auto;
-}
-
-.maxWidthContainer p{
-  text-align: justify;
 }
 
 .maxWidthContainer li{
