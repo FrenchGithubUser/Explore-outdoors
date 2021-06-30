@@ -122,7 +122,7 @@ function displaySpotInfo(name, lat, long) {
 
   //getting the spot information in the json file
   var spotInfoRequest = new XMLHttpRequest();
-  spotInfoRequest.open('GET', 'https://thomastraineau.github.io/Explore-outdoors/cliff_diving/cliff_diving_spots/' + name + '/spotInfo.json');
+  spotInfoRequest.open('GET', 'https://Explore-outdoors.org/cliff_diving/cliff_diving_spots/' + name + '/spotInfo.json');
   spotInfoRequest.onload = function () {
     var spotInfo = JSON.parse(spotInfoRequest.responseText);
 
@@ -174,7 +174,7 @@ function displaySpotInfo(name, lat, long) {
 
 //Getting the spots from the geojson file
 var ourRequest = new XMLHttpRequest();
-ourRequest.open('GET', 'https://thomastraineau.github.io/Explore-outdoors/cliff_diving/cliff_diving_home/spotCoordinates.json');
+ourRequest.open('GET', 'https://Explore-outdoors.org/cliff_diving/cliff_diving_home/spotCoordinates.json');
 ourRequest.onload = function () {
   var cliffDivingSpots = JSON.parse(ourRequest.responseText);
   addSpotsToMap(cliffDivingSpots);
