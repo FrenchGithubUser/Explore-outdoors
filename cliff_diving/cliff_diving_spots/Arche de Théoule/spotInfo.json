@@ -1,11 +1,9 @@
 [
 	{
-		"d": "Multiple heights all around the arch. However be careful it's not deep everywhere. You can park you car on the side of the road and you can walk to the ark by a little path in the forest, then walk to your right when you arrive at a beach (the location on the map is maybe not very precise). The rocks are sharp so take some shoes if your feet are sensible. The back side of the arch has a wider deep area than the front side.",
-		"mi": 2,
-		"ma": 22,
-		"p": 1,
-		"v": [
-			"https://www.youtube.com/watch?v=iQWpCJvcsOY"
-		]
+		"d":"Multiple heights all around the arch. However be careful it's not deep everywhere. You can park you car on the side of the road and you can walk to the ark by a little path in the forest, then walk to your right when you arrive at a beach (the location on the map is maybe not very precise). The rocks are sharp so take some shoes if your feet are sensible. The back side of the arch has a wider deep area than the front side.",
+		"mi":2,
+		"ma":22,
+		"p":1,
+		"v":["https://www.youtube.com/watch?v=iQWpCJvcsOY"]
 	}
 ]
