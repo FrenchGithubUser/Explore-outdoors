@@ -28,7 +28,7 @@ function doPost(e) {
   listRecord(e.parameter.spotName, e.parameter.spotLong, e.parameter.spotLat, e.parameter.spotMinHeight, e.parameter.spotMaxHeight, e.parameter.spotDescription, e.parameter.spotVideos, e.parameter.fileName1, e.parameter.fileName2, e.parameter.fileName3, e.parameter.fileName4, e.parameter.fileName5);
 
   return HtmlService.createHtmlOutput(
-    "<script>window.top.location.href='https://thomastraineau.github.io/Outdoor-spots/cliff_diving/new_spot/submitted.html';</script>"
+    "<script>window.top.location.href='https://Explore-outdoors.org/cliff_diving/new_spot/submitted.html';</script>"
   );
 
 }
