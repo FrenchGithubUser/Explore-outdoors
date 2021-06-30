@@ -139,6 +139,8 @@ body
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
+  padding: 20px;
+  border: 2px solid #ffffff;
 }
 
 img.logo{
