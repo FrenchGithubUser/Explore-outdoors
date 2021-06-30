@@ -108,6 +108,10 @@ textarea{
   color: #c98510;
 }
 
+.submittedMessage{
+  color: red;
+}
+
 #detailsMap{
   max-width: 1000px;
   margin-right: auto;
