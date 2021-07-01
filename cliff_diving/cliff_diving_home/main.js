@@ -112,7 +112,7 @@ function displaySpotInfo(name, lat, long) {
   spotVideosContainer.innerHTML = "";
 
   //scrolls to the spot info so people can see that it is being displayed (it should also keep the disclaimer on their sight)
-  document.getElementById('spotNameContainer').scrollIntoView();
+  document.getElementById('scrollTo').scrollIntoView();
 
   spotName = name;
 
