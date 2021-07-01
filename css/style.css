@@ -43,12 +43,6 @@ body
   font-size: 4.5vmin;
 }
 
-.betaVersion{
-  color: red;
-  font-size: 2vmin;
-  text-decoration: underline;
-}
-
 #sports{
   list-style: none;
 }

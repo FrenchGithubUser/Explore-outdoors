@@ -16,7 +16,7 @@
 }
 
 .maxWidthContainer{
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 body
@@ -66,7 +66,7 @@ body
 }
 
 #mapid{
-  max-width: 1000px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   height: 500px;
@@ -131,12 +131,35 @@ body
   background-color: #782c09;
 }
 
-#disclaimer{
-  max-width: 1000px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 20px;
+.wrapper{
+  padding: 7px;
   border: 2px solid #ffffff;
+  border-radius: 1vw;
+  overflow: auto;
+}
+
+.block{
+  display: inline-block;
+  vertical-align: middle;
+  text-align:center;
+}
+
+.right{
+  width:84%;
+}
+
+.left{
+  width: 15%;
+}
+
+.leftWrap img{
+  max-height: 100%;  
+  max-width: 100%; 
+  top: 0;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  margin: auto;
 }
 
 img.logo{
