@@ -1,4 +1,4 @@
-# Explore-outdoors
+![alt text](https://github.com/ThomasTraineau/Explore-outdoors/blob/main/Explore-outdoors.png)
 
 The goal of this website is to provide an easy an bloat-free access to places that allow you to practice outdoor sports.
 
