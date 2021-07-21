@@ -363,23 +363,20 @@
 		"n": "Small platform",
 		"o": 4.9623321,
 		"a": 51.7233059
-	}
-,
+	},
 	{
-		"n":"Agios Nikolaos",
-		"o":25.7170173,
-		"a":35.1902749
-	}
-,
+		"n": "Agios Nikolaos",
+		"o": 25.7170173,
+		"a": 35.1902749
+	},
 	{
-		"n":"Rocher de l echo",
-		"o":6.7055008,
-		"a":47.074577
-	}
-,
+		"n": "Rocher de l echo",
+		"o": 6.7055008,
+		"a": 47.074577
+	},
 	{
-		"n":"Pont lac de Villefort (et rochers)",
-		"o":3.9235617,
-		"a":44.4501801
+		"n": "Pont lac de Villefort (et rochers)",
+		"o": 3.9235617,
+		"a": 44.4501801
 	}
 ]
