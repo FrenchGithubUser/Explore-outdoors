@@ -61,10 +61,13 @@ body
 }
 
 .topHeader p{
-  font-size: 30px;
-  margin-top: 20px;
-  font-weight: 600;
-  color: #1ab9bc;
+  font-size: 20px;
+  color: black;
+  margin-top: -15px;
+}
+
+.justified{
+  text-align: justify;
 }
 
 img.logo{
