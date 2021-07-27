@@ -1,0 +1,185 @@
+*
+{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* a:link{
+  text-decoration: none;
+}
+
+* a:hover{
+  color: #c98510;
+}
+
+.maxWidthContainer{
+  max-width: 1000px;
+}
+
+body
+{
+  background-color: #0c5372;
+  padding: 1vmin 2vmin;
+  text-align: center;
+}
+
+.leaflet-control-attribution{
+  font-size: 100%;
+}
+
+.leaflet-control{
+  font-size: 100%;
+}
+
+.leaflet-control-attribution a{
+  font-size: 100%;
+}
+
+.leaflet-control a{
+  font-size: 100%;
+}
+
+.returnHome{
+  text-align: right;
+}
+
+.topHeader
+{
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: 0px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.topHeader h1{
+  color: #dd8d1c;
+  font-size: 4.5vmin;
+}
+
+.locationPin{
+  color: black;
+}
+
+#mapid{
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 500px;
+}
+
+.findMeButton{
+  background-color: #973a0f;
+  padding: 6px;
+  color: white;
+  border-radius: 9px;
+}
+
+#spotInfoContainer{
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 10px;
+  line-height: 20%;
+}
+
+#spotNameContainer p{
+  font-size: 2.5em;
+  color: #dd8d1c;
+}
+
+#spotPicturesContainer img{
+  padding-right: 1vw;
+  padding-left: 1vw;
+  vertical-align: middle;
+  max-width: 45vw;
+}
+
+@media only screen and (min-width: 1300px) {
+  #spotPicturesContainer img{
+    max-width: 30vw;
+  }
+}
+
+#spotDescriptionContainer p{
+  line-height: 150%;
+}
+
+#spotMetadataContainer{
+  text-align: left;
+}
+
+#spotCoordinatesContainer{
+  text-align: left;
+}
+
+#spotVideosContainer{
+  text-align: left;
+}
+
+#newSpot{
+  background-color: #973a0f;
+  padding: 0.7%;
+  color: white;
+  border-radius: 9px;
+}
+
+#newSpot:hover{
+  background-color: #782c09;
+}
+
+.wrapper{
+  padding: 7px;
+  border: 2px solid #ffffff;
+  border-radius: 1vw;
+  overflow: auto;
+}
+
+.block{
+  display: inline-block;
+  vertical-align: middle;
+  text-align:center;
+}
+
+.right{
+  width:84%;
+}
+
+.left{
+  width: 15%;
+}
+
+.leftWrap img{
+  max-height: 100%;  
+  max-width: 100%; 
+  top: 0;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  margin: auto;
+}
+
+img.logo{
+  vertical-align: middle;
+}
+
+
+.relatedLinksTitle{
+  text-decoration: underline;
+}
+
+
+.relatedLinks li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 5%;
+}
+
+
+footer{
+  padding-left: 15%;
+  padding-right: 15%;
+}
