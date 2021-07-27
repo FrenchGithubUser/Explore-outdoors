@@ -168,7 +168,7 @@ function displaySpotInfo(name, lat, long) {
   spotInfoRequest.send();
 
   spotCoordinatesContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:3%;"></div>');
-  spotCoordinatesContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='coordinates.svg' width='4%'> Coordinates : " + lat + ", " + long);
+  spotCoordinatesContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='../common_files/coordinates.svg' width='4%'> Coordinates : " + lat + ", " + long);
 }
 
 
