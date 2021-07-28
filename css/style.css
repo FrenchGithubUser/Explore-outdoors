@@ -56,7 +56,7 @@ body
   margin-right: 5px;
 }
 
-#sports li:hover{
+.cliffButton:hover{
   background-color: #060e79;
 }
 
@@ -70,8 +70,12 @@ body
 }
 
 .calisthenicsButton{
-  padding: 12px;
-  background-color: brown;
+  padding: 14px;
+  background-color: #ba6821;
+}
+
+.calisthenicsButton:hover{
+  background-color: #934c0e;
 }
 
 .footerLinks{

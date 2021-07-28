@@ -85,13 +85,11 @@ textarea{
   display: block;
   background-color:transparent;
   color:white;
+  font-size: 100%;
 }
 
 input{
   margin-bottom: 1vw;
-  font-size: 100%;
-}
-textarea{
   font-size: 100%;
 }
 
@@ -106,10 +104,6 @@ textarea{
 
 .submitButton input:hover{
   color: #c98510;
-}
-
-.submittedMessage{
-  color: red;
 }
 
 #detailsMap{

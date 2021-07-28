@@ -153,12 +153,12 @@ body
 }
 
 .leftWrap img{
-  max-height: 100%;  
-  max-width: 100%; 
-  top: 0;  
-  bottom: 0;  
-  left: 0;  
-  right: 0;  
+  max-height: 100%;
+  max-width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   margin: auto;
 }
 
@@ -178,8 +178,13 @@ img.logo{
   margin-right: 5%;
 }
 
+.footerLinks{
+  list-style: none;
+}
 
-footer{
-  padding-left: 15%;
-  padding-right: 15%;
+.footerLinks li{
+  display: inline-block;
+  float: none;
+  margin-right: 30px;
+  color: #1e82bc;
 }

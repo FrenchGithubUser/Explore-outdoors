@@ -52,6 +52,9 @@ body
   margin-top: 30px;
 }
 
+.loadingContainer{
+  color: red;
+}
 
 textarea{
   display: block;
