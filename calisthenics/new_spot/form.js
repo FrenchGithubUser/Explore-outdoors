@@ -43,7 +43,7 @@ function LoadFile(event, fileDataID, mimeTypeID, fileNameID, fileID) {
 function clickedFunc() {
   var loadingContainerVar = document.getElementById("loadingContainer");
   loadingContainerVar.innerHTML = "";
-  loadingContainerVar.insertAdjacentHTML("beforeend", "<p class='submittedMessage' style='color:red;'><b>Your spot is being sent... You will be brought to a new page soon, please don't exit this page. This can be long if you uploaded high quality pictures.</b></p>");
+  loadingContainerVar.insertAdjacentHTML("beforeend", "<p class='submittedMessage'><b>Your spot is being sent... You will be brought to a new page soon, please don't exit this page. This can be long if you uploaded high quality pictures.</b></p>");
   return true;
 }
 

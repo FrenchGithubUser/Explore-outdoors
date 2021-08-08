@@ -79,17 +79,14 @@ input {
   background-color:transparent;
   outline: none;
   color: white;
+  margin-bottom: 1vw;
+  font-size: 100%;
 }
 
 textarea{
   display: block;
   background-color:transparent;
   color:white;
-  font-size: 100%;
-}
-
-input{
-  margin-bottom: 1vw;
   font-size: 100%;
 }
 
