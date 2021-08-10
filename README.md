@@ -16,7 +16,7 @@ Street workout, climbing, skateboarding, surfing, parkour, children playgrounds,
 
 ## For everyone
 
- Some google my maps with cliff diving spots already exist and the spots could be migrated on the website, you can add some (after verifying that they don't already exist) by using the form on the website. Please try to add some info (description, pictures, videos) that you can find on the web as they are usually poorly documented.
+ Some google my maps with cliff diving spots already exist and the spots could be migrated on the website, you can add some (after verifying that they are not already listed on the website) by using the form on the website. Please try to add some info (description, pictures, videos) that you can find on the web as they are usually poorly documented.
 
  Here are some known links :
 
