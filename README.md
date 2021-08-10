@@ -24,7 +24,7 @@ Street workout, climbing, skateboarding, surfing, parkour, children playgrounds,
 
 <https://www.google.com/maps/d/viewer?fbclid=IwAR3idS9P7hHje8Rxd1eJka4LWrAe8m1wZPa-Ffwm5L-PyEUlWaqK2NcrmSo&mid=1dqCWUF8IRuBhg-NP-gz_SYh2lNQ&ll=39.12748893994469%2C-121.06037600000002&z=7>
 
-<https://www.google.com/maps/d/viewer?fbclid=IwAR3HcT_pK9JVDYHabMdRcw72nNTc_IZFLYTX5eAcb8pWeh2ROoZ0FSG1kvM&mid=1dqCWUF8IRuBhg-NP-gz_SYh2lNQ&ll=39.23698240368931%2C-113.91761919756786&z=6>
+<https://www.google.com/maps/d/u/0/edit?mid=194Hm3wZn202PPf7CoNmElPQa6NL4gyWl&ll=43.847151809233%2C3.0221792916198424&z=5&fbclid=IwAR06P1sFbcPbJuqZUW3oQKp5S4txt45uDt8EEPM4WbJyrQS9Em8jzwIXaic>
 
 <https://www.google.com/maps/d/edit?mid=1Y_Q3S-gs_CLQuWH4wAIaYRtopGRxA-rB&ll=-25.048524738890823%2C134.63057470000004&z=5>
 
