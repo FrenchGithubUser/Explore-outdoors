@@ -20,13 +20,13 @@ Street workout, climbing, skateboarding, surfing, parkour, children playgrounds,
 
  Here are some known links :
 
- <https://www.google.com/maps/d/viewer?mid=1KPtqR8wxMPkz2oO8OtwSZumpDyo&hl=en&ll=43.842412777429104%2C-123.96205972021383&z=6&fbclid=IwAR0Grin7OjC3Fz0rdB-WhHF6APk_AI_CNdDSUBqtvI8ZYiSg6O07ldw47Kk>
+ [North West of the USA](https://www.google.com/maps/d/viewer?mid=1KPtqR8wxMPkz2oO8OtwSZumpDyo&hl=en&ll=43.842412777429104%2C-123.96205972021383&z=6&fbclid=IwAR0Grin7OjC3Fz0rdB-WhHF6APk_AI_CNdDSUBqtvI8ZYiSg6O07ldw47Kk)
 
-<https://www.google.com/maps/d/viewer?fbclid=IwAR3idS9P7hHje8Rxd1eJka4LWrAe8m1wZPa-Ffwm5L-PyEUlWaqK2NcrmSo&mid=1dqCWUF8IRuBhg-NP-gz_SYh2lNQ&ll=39.12748893994469%2C-121.06037600000002&z=7>
+[California](https://www.google.com/maps/d/viewer?fbclid=IwAR3idS9P7hHje8Rxd1eJka4LWrAe8m1wZPa-Ffwm5L-PyEUlWaqK2NcrmSo&mid=1dqCWUF8IRuBhg-NP-gz_SYh2lNQ&ll=39.12748893994469%2C-121.06037600000002&z=7)
 
-<https://www.google.com/maps/d/u/0/edit?mid=194Hm3wZn202PPf7CoNmElPQa6NL4gyWl&ll=43.847151809233%2C3.0221792916198424&z=5&fbclid=IwAR06P1sFbcPbJuqZUW3oQKp5S4txt45uDt8EEPM4WbJyrQS9Em8jzwIXaic>
+[France](https://www.google.com/maps/d/u/0/edit?mid=194Hm3wZn202PPf7CoNmElPQa6NL4gyWl&ll=43.847151809233%2C3.0221792916198424&z=5&fbclid=IwAR06P1sFbcPbJuqZUW3oQKp5S4txt45uDt8EEPM4WbJyrQS9Em8jzwIXaic)
 
-<https://www.google.com/maps/d/edit?mid=1Y_Q3S-gs_CLQuWH4wAIaYRtopGRxA-rB&ll=-25.048524738890823%2C134.63057470000004&z=5>
+[Australia](https://www.google.com/maps/d/edit?mid=1Y_Q3S-gs_CLQuWH4wAIaYRtopGRxA-rB&ll=-25.048524738890823%2C134.63057470000004&z=5)
 
 ## For the ones who do some developpement
 
