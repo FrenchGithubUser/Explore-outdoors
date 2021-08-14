@@ -148,11 +148,21 @@ function displaySpotInfo(name, lat, long) {
     spotDescriptionContainer.insertAdjacentHTML("beforeend", "<p>" + spotInfo[0].d + "</p>");
     spotDescriptionContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:2%;"></div>');
 
-    /*
-    //adding the legality
-    spotMetadataContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='spot_legality.svg' width=5%> Legality : "+ spotInfo[0].legality)
-    */
-
+    //adding the available equipments
+    spotMetadataContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:3%;"></div>')
+    spotMetadataContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='equipments.svg' width=4%><span style='margin-right:2%;'></span>Available equipments : ")
+    if (spotInfo[0]["pu"] == 1) {
+      spotMetadataContainer.insertAdjacentHTML("beforeend", " [pullup bar] ")
+    }
+    if (spotInfo[0]["di"] == 1) {
+      spotMetadataContainer.insertAdjacentHTML("beforeend", " [dips bars] ")
+    }
+    if (spotInfo[0]["l"] == 1) {
+      spotMetadataContainer.insertAdjacentHTML("beforeend", " [flag ladder] ")
+    }
+    if (spotInfo[0]["b"] == 1) {
+      spotMetadataContainer.insertAdjacentHTML("beforeend", " [abs bench] ")
+    }
     //adding video links
     if (spotInfo[0]["v"].length > 0) {
       spotVideosContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:3%;"></div>');
