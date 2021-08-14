@@ -1,10 +1,9 @@
-
 //creating the map variable
-var mymap = L.map('mapid').setView([46.94760, 4.53473,], 5).addControl(new L.Control.Fullscreen());
+var mymap = L.map('mapid').setView([46.94760, 4.53473, ], 5).addControl(new L.Control.Fullscreen());
 //checks if the map is in fullscreen mode to get out of it when a spot is clicked
 //not working, figure out why
 var mapState = 0
-mymap.on('enterFullscreen', function () {
+mymap.on('enterFullscreen', function() {
   mapState = 1;
   console.log("entered full screen");
 });
@@ -12,8 +11,8 @@ mymap.on('enterFullscreen', function () {
 
 //functions to get the user's location
 function watchLocation(successCallback, errorCallback) {
-  successCallback = successCallback || function () {};
-  errorCallback = errorCallback || function () {};
+  successCallback = successCallback || function() {};
+  errorCallback = errorCallback || function() {};
   // Try HTML5-spec geolocation.
   var geolocation = navigator.geolocation;
 
@@ -37,9 +36,9 @@ function watchLocation(successCallback, errorCallback) {
 }
 
 function initLocation() {
-  watchLocation(function (coords) {
+  watchLocation(function(coords) {
     findUser(coords);
-  }, function () {
+  }, function() {
     var errorCoordsContainer = document.getElementById("errorCoordsContainer"); //container to print the coordinates or an error message
     errorCoordsContainer.innerHTML = '<div style="margin-top:20px;"></div>';
     errorCoordsContainer.insertAdjacentHTML("beforeend", "<b>Please enable your location services and reload the page.</b>");
@@ -47,7 +46,9 @@ function initLocation() {
 }
 
 function findUser(coords) {
-  var marker = L.marker([coords.latitude, coords.longitude], {icon: icon}).bindPopup('<p class="locationPin">Your are here</p>');
+  var marker = L.marker([coords.latitude, coords.longitude], {
+    icon: icon
+  }).bindPopup('<p class="locationPin">Your are here</p>');
   mymap.addLayer(marker);
   mymap.setView([coords.latitude, coords.longitude], 19)
 };
@@ -82,7 +83,7 @@ function addSpotsToMap(spots) {
     }
     //binds a popup on the map for each spot and clicking on it will call the displaySpotInfo function
     marker.bindPopup("<p><a href='javascript:displaySpotInfo(\"" + spotName + "\",\"" + lat + "\",\"" + long + "\")'>" + spotName + "</a></p>");
-    markers.addLayer(marker);  //add the marker to the cluster group
+    markers.addLayer(marker); //add the marker to the cluster group
   }
   mymap.addLayer(markers);
 }
@@ -122,8 +123,8 @@ function displaySpotInfo(name, lat, long) {
 
   //getting the spot information in the json file
   var spotInfoRequest = new XMLHttpRequest();
-  spotInfoRequest.open('GET', 'https://Explore-outdoors.org/cliff_diving/cliff_diving_spots/' + name + '/spotInfo.json');
-  spotInfoRequest.onload = function () {
+  spotInfoRequest.open('GET', 'https://Explore-outdoors.org/calisthenics/calisthenics_spots/' + name + '/spotInfo.json');
+  spotInfoRequest.onload = function() {
     var spotInfo = JSON.parse(spotInfoRequest.responseText);
 
     //adding the pictures, displaying 2 pics by line
@@ -137,7 +138,7 @@ function displaySpotInfo(name, lat, long) {
         spotPictures = "";
         picCounter = 0;
       }
-      spotPictures += "<img src='../cliff_diving_spots/" + name + "/picture" + i + ".jpg'  alt=''>"
+      spotPictures += "<img src='calisthenics_spots/" + name + "/picture" + i + ".jpg'  alt=''>"
     }
     spotPicturesContainer.insertAdjacentHTML("beforeend", spotPictures);
     spotPicturesContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:3%;"></div>');
@@ -147,9 +148,6 @@ function displaySpotInfo(name, lat, long) {
     spotDescriptionContainer.insertAdjacentHTML("beforeend", "<p>" + spotInfo[0].d + "</p>");
     spotDescriptionContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:2%;"></div>');
 
-    //adding the heights
-    spotMetadataContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='spot_height.svg' width=5%> Heights from " + spotInfo[0].mi + "m to " + spotInfo[0].ma + "m<span style='margin-right:3%;'></span>")
-
     /*
     //adding the legality
     spotMetadataContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='spot_legality.svg' width=5%> Legality : "+ spotInfo[0].legality)
@@ -158,7 +156,7 @@ function displaySpotInfo(name, lat, long) {
     //adding video links
     if (spotInfo[0]["v"].length > 0) {
       spotVideosContainer.insertAdjacentHTML("beforeend", '<div style="margin-top:3%;"></div>');
-      spotVideosContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='video.svg' width=4%><span style='margin-right:2%;'></span>Videos at the spot : ")
+      spotVideosContainer.insertAdjacentHTML("beforeend", "<img class='logo' src='../../common_files/video.svg' width=4%><span style='margin-right:2%;'></span>Videos at the spot : ")
       for (i = 0; i < spotInfo[0]["v"].length; i++) {
         v = i + 1
         spotVideosContainer.insertAdjacentHTML("beforeend", "<a href ='" + spotInfo[0]["v"][i] + "' target='_blank'>video " + v + " </a>")
@@ -175,7 +173,7 @@ function displaySpotInfo(name, lat, long) {
 //Getting the spots from the geojson file
 var ourRequest = new XMLHttpRequest();
 ourRequest.open('GET', 'https://Explore-outdoors.org/calisthenics/calisthenics_spots/spotCoordinates.json');
-ourRequest.onload = function () {
+ourRequest.onload = function() {
   var cliffDivingSpots = JSON.parse(ourRequest.responseText);
   addSpotsToMap(cliffDivingSpots);
 };
