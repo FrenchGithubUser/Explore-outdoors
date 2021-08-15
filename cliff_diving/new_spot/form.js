@@ -9,11 +9,11 @@ function LoadFile(event, fileDataID, mimeTypeID, fileNameID, fileID) {
 
   reader.readAsDataURL(file);
 
-  reader.onload = function (event) {
+  reader.onload = function(event) {
     const imgElement = document.createElement("img");
     imgElement.src = event.target.result;
 
-    imgElement.onload = function (e) {
+    imgElement.onload = function(e) {
       const canvas = document.createElement("canvas");
       const MAX_WIDTH = 800;
 
@@ -25,8 +25,10 @@ function LoadFile(event, fileDataID, mimeTypeID, fileNameID, fileID) {
 
       ctx.drawImage(e.target, 0, 0, canvas.width, canvas.height);
 
-      let srcEncoded = ctx.canvas.toDataURL(e.target, "image/jpeg");//compressed image
-      if (event.target.result.length < srcEncoded.length) {srcEncoded = event.target.result}//keeps the unconverted image if it is lighter
+      let srcEncoded = ctx.canvas.toDataURL(e.target, "image/jpeg"); //compressed image
+      if (event.target.result.length < srcEncoded.length) {
+        srcEncoded = event.target.result
+      } //keeps the unconverted image if it is lighter
 
       var fileData = srcEncoded.substr(srcEncoded.indexOf(",") + 1);
       var mimeTypeStart = srcEncoded.indexOf("data:") + 5;
@@ -43,7 +45,7 @@ function LoadFile(event, fileDataID, mimeTypeID, fileNameID, fileID) {
 function clickedFunc() {
   var loadingContainerVar = document.getElementById("loadingContainer");
   loadingContainerVar.innerHTML = "";
-  loadingContainerVar.insertAdjacentHTML("beforeend", "<p class='submittedMessage'><b>Your spot is being sent... You will be brought to a new page soon, please don't exit this page. This can be long if you uploaded high quality pictures.</b></p>");
+  loadingContainerVar.insertAdjacentHTML("beforeend", "<div class='lds-roller'><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><p class='submittedMessage'><b>Your spot is being sent... You will be brought to a new page soon, please don't exit this page. This can be long if you uploaded high quality pictures.</b></p>");
   return true;
 }
 
@@ -52,7 +54,7 @@ function clickedFunc() {
 let mymap, pin //variables for the map and the pin
 
 window.onload = () => {
-  mymap = L.map('detailsMap').setView([46.94760, 4.53473,], 5).addControl(new L.Control.Fullscreen());
+  mymap = L.map('detailsMap').setView([46.94760, 4.53473, ], 5).addControl(new L.Control.Fullscreen());
 
   //creating and displaying the map
   L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
@@ -73,8 +75,8 @@ var icon = L.icon({
 })
 
 function watchLocation(successCallback, errorCallback) {
-  successCallback = successCallback || function () {};
-  errorCallback = errorCallback || function () {};
+  successCallback = successCallback || function() {};
+  errorCallback = errorCallback || function() {};
   // Try HTML5-spec geolocation.
   var geolocation = navigator.geolocation;
 
@@ -98,9 +100,9 @@ function watchLocation(successCallback, errorCallback) {
 }
 
 function initLocation() {
-  watchLocation(function (coords) {
+  watchLocation(function(coords) {
     findUser(coords);
-  }, function () {
+  }, function() {
     var validContainer = document.getElementById("coordinatesValidation"); //container to print the coordinates or an error message
     validContainer.innerHTML = '<div style="margin-top:20px;"></div>';
     validContainer.insertAdjacentHTML("beforeend", "Please enable your location services and reload the page.");
@@ -108,7 +110,9 @@ function initLocation() {
 }
 
 function findUser(coords) {
-  var marker = L.marker([coords.latitude, coords.longitude], {icon: icon}).bindPopup('<p class="locationPin">Your are here</p>');
+  var marker = L.marker([coords.latitude, coords.longitude], {
+    icon: icon
+  }).bindPopup('<p class="locationPin">Your are here</p>');
   mymap.addLayer(marker);
   mymap.setView([coords.latitude, coords.longitude], 19)
   document.querySelector("#lat").value = coords.latitude.toFixed(7)
@@ -139,9 +143,11 @@ function addMarker(pos) {
   if (pin != undefined) {
     mymap.removeLayer(pin)
   }
-  pin = L.marker(pos, {draggable: true}).addTo(mymap)
+  pin = L.marker(pos, {
+    draggable: true
+  }).addTo(mymap)
   //listens to the end of the drag of the pin and actualises the coordinates
-  pin.on("dragend", function (e) {
+  pin.on("dragend", function(e) {
     pos = e.target.getLatLng()
     document.querySelector("#lat").value = pos.lat
     document.querySelector("#lon").value = pos.lng
