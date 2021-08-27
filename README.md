@@ -6,11 +6,11 @@ The website is currently hosted on github and uses some google services to handl
 
 # Currently supported sports
 
-Cliff diving
+Cliff diving, Street workout
 
 # Sports that will be supported in the future
 
-Street workout, climbing, skateboarding, surfing, parkour, children playgrounds, and others...
+climbing, skateboarding, surfing, parkour, children playgrounds, and others...
 
 # Contribute
 
