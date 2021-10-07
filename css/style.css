@@ -21,6 +21,9 @@ body
 	background-image: url("../background.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
+	height:100%;
+  width:100%;
+  overflow:hidden;
   padding: 1vmin 1vmin;
   text-align: center;
   font-size: 2vmin;
@@ -58,27 +61,22 @@ body
   margin-right: 5px;
 }
 
-.cliffButton:hover{
-  background-color: #060e79;
+#sports a{
+	border: 3px solid black;
+	padding : 15px;
+	margin: 10px;
+	border-radius: 15px;
+	transition: border-radius  0.4s, padding 0.4s, border-color 0.4s;
 }
+
 
 #sports a:hover{
-  color:white;
+	border-radius: 7px;
+	padding: 18px;
+	border-color: white;
+
 }
 
-.cliffButton{
-  background-color: #0b17bb;
-  padding: 8px;
-}
-
-.calisthenicsButton{
-  padding: 14px;
-  background-color: #ba6821;
-}
-
-.calisthenicsButton:hover{
-  background-color: #934c0e;
-}
 
 .footerLinks{
   list-style: none;
@@ -88,9 +86,20 @@ body
   display: inline-block;
   float: none;
   margin-right: 30px;
-  color: #1e82bc;
+}
+
+.footerLinks a{
+	transition: color 0.4s;
+}
+
+.footerLinks a:hover{
+	color: white;
 }
 
 img.logo{
   vertical-align: middle;
 }
+
+
+
+
