@@ -24,7 +24,6 @@ body
 	height:100%;
   width:100%;
   overflow:hidden;
-  padding: 1vmin 1vmin;
   text-align: center;
   font-size: 2vmin;
 }
@@ -74,7 +73,6 @@ body
 	border-radius: 7px;
 	padding: 18px;
 	border-color: white;
-
 }
 
 
