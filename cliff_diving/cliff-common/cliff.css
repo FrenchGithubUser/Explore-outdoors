@@ -5,55 +5,31 @@
 
 *
 {
-margin-left: auto;
-margin-right: auto;
-padding: 0;
-color: white;
-font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif ;
-max-width:1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 * a:link{
-text-decoration: none;
+  text-decoration: none;
+	transition: color 0.4s;
 }
 
 * a:hover{
-color: #c98510;
+  color: white;
 }
 
-* p{
-  line-height: 120%;
-}
-
-.returnToSpots{
-text-align: right;
+.maxWidthContainer{
+  max-width: 1000px;
 }
 
 body
 {
 	background-image: linear-gradient(to bottom right, #4263b7, #1fa370);
-	background-repeat: no-repeat;
-padding: 1vmin 2vmin;
-text-align: center;
-}
-
-.topHeader
-{
-width: 100%;
-height: auto;
-margin-left: auto;
-margin-bottom: 3vmin;
-margin-top: 4vmin;
-}
-
-.topHeader h1{
-font-family: lemonberry;
-	color: #041249;
-font-size: 7vmin;
-}
-
-.maxWidthContainer{
-max-width: 1200px;
+  padding: 1vmin 2vmin;
+  text-align: center;
 }
 
 .leaflet-control-attribution{
@@ -72,12 +48,189 @@ max-width: 1200px;
   font-size: 100%;
 }
 
+.leaflet-popup-content-wrapper a{
+	color: black;
+	transition: color 0.2s;
+}
+
+.leaflet-popup-content-wrapper a:hover{
+	color: blue;
+}
+
+.returnHome{
+  text-align: right;
+}
+
+.returnToSpots{
+text-align: right;
+}
+
+.topHeader
+{
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: 0px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.topHeader h1{
+	font-family: lemonberry;
+	color: #041249;
+  font-size: 7vmin;
+}
+
+.locationPin{
+  color: black;
+}
+
+#mapid{
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 500px;
+	border-radius: 10px;
+}
+
 .findMeButton{
-  background-color: #973a0f;
+	border: solid black 3px;
   padding: 6px;
-  color: white;
   border-radius: 9px;
 }
+
+.maxWidthContainer .findMeButton{
+	transition: padding 0.4s, border-color 0.4s;
+}
+
+.maxWidthContainer .findMeButton:hover{
+	border-color: white;
+	color: black;
+	margin: 2px;
+	padding: 10px;
+}
+
+
+#spotInfoContainer{
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 10px;
+  line-height: 20%;
+}
+
+#spotNameContainer p{
+  font-size: 2.5em;
+	color: #041249;
+}
+
+#spotPicturesContainer img{
+  padding-right: 1vw;
+  padding-left: 1vw;
+  vertical-align: middle;
+  max-width: 45vw;
+}
+ 
+
+@media only screen and (min-width: 1300px) {
+  #spotPicturesContainer img{
+    max-width: 30vw;
+  }
+}
+
+#spotDescriptionContainer p{
+  line-height: 150%;
+}
+
+#spotMetadataContainer{
+  text-align: left;
+}
+
+#spotCoordinatesContainer{
+  text-align: left;
+}
+
+#spotVideosContainer{
+  text-align: left;
+}
+
+#newSpot{
+	border: solid black 3px;
+  padding: 7px;
+  border-radius: 9px;
+	background-color: #83c1f7;
+	transition: padding 0.4s;
+}
+
+#newSpot:hover{
+	color: black;
+	padding: 10px;
+}
+
+#newSpot img{
+	transition-duration: 0.4s;
+}
+
+#newSpot:hover > img {
+	transform: rotate(180deg);
+}
+
+
+.wrapper{
+  padding: 7px;
+  border: 2px solid;
+  border-radius: 1vw;
+  overflow: auto;
+}
+
+.block{
+  display: inline-block;
+  vertical-align: middle;
+  text-align:center;
+}
+
+.right{
+  width:84%;
+}
+
+.left{
+  width: 15%;
+}
+
+.leftWrap img{
+  max-height: 100%;  
+  max-width: 100%; 
+  top: 0;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  margin: auto;
+}
+
+img.logo{
+  vertical-align: middle;
+}
+
+
+.relatedLinksTitle{
+  text-decoration: underline;
+}
+
+
+.relatedLinks li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 5%;
+}
+
+
+footer{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+
+
+
 
 input {
   border-right: none;
