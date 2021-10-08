@@ -91,16 +91,15 @@ input {
 textarea{
   display: block;
   background-color:transparent;
-  color:white;
+  font-size: 100%;
+	padding: 3px;
 }
 
 input{
   margin-bottom: 1vw;
   font-size: 100%;
 }
-textarea{
-  font-size: 100%;
-}
+
 
 .submitButton input{
   border-right: solid;

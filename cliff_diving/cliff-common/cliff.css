@@ -238,22 +238,22 @@ input {
   border-left: none;
   background-color:transparent;
   outline: none;
-  color: white;
 }
 
 textarea{
   display: block;
   background-color:transparent;
-  color:white;
+  font-size: 100%;
+	padding: 5px;
+	border: solid black;
+	border-radius: 7px;
 }
 
 input{
   margin-bottom: 1vw;
   font-size: 100%;
 }
-textarea{
-  font-size: 100%;
-}
+
 
 .submitButton input{
   border-right: solid;
