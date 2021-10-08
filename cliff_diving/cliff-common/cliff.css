@@ -32,6 +32,30 @@ body
   text-align: center;
 }
 
+.safety-measures {
+  text-align: justify;
+}
+
+.safety-measures .img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.safety-measures .topHeader{
+	text-align: center;
+}
+
+.safety-measures .sectionTitle{
+  font-size: 45px;
+	font-weight: bold;
+  margin-bottom: 20px;
+  font-family: lemonberry;
+	color: #041249;
+	margin-top: 50px;
+}
+
 .leaflet-control-attribution{
   font-size: 100%;
 }
@@ -226,6 +250,7 @@ img.logo{
 footer{
   padding-left: 15%;
   padding-right: 15%;
+	text-align: center;
 }
 
 
@@ -256,16 +281,17 @@ input{
 
 
 .submitButton input{
-  border-right: solid;
-  border-left: solid;
-  border-bottom: solid;
-  border-top: solid;
-  padding: 0.5vw;
+	border: solid;
+	border-radius: 10px;
+  padding: 5px;
   font-size: 1.2em;
+	transition: border-radius 0.4s, border-color 0.4s, padding 0.4s;
 }
 
 .submitButton input:hover{
-  color: #c98510;
+	border-color: white;
+	padding: 10px;
+	border-radius: 5px;
 }
 
 .submittedMessage{
@@ -287,10 +313,7 @@ input{
   text-decoration: underline;
 }
 
-footer{
-padding-left: 15%;
-padding-right: 15%;
-}
+
 
 img.logo{
 vertical-align: middle;
