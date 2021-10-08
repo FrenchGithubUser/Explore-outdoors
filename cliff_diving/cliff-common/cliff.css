@@ -253,17 +253,17 @@ footer{
 	text-align: center;
 }
 
-
-
-
-
 input {
+	border: solid black 2px ;
   border-right: none;
   border-top: none;
   border-left: none;
   background-color:transparent;
   outline: none;
+	margin-bottom: 1vw;
+  font-size: 100%;
 }
+
 
 textarea{
   display: block;
@@ -272,11 +272,6 @@ textarea{
 	padding: 5px;
 	border: solid black;
 	border-radius: 7px;
-}
-
-input{
-  margin-bottom: 1vw;
-  font-size: 100%;
 }
 
 
