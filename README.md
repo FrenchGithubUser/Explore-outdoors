@@ -31,3 +31,8 @@ climbing, skateboarding, surfing, parkour, children playgrounds, and others...
 ## For the ones who do some developpement
 
 You can contribute to the website by doing whatever modification you want, and soon, to the app that will come with it.
+
+
+## For the ones who like design and picture editing/creation
+
+I beleive that the appearance of the website is really important as it gives the first image to the new visitors who don't know what we have to offer. So having a good design and nice images would be nice ! If any of you see some points that could be improved, don't hesitate to create a pull request or to contact me !

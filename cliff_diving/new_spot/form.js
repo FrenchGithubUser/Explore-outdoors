@@ -69,7 +69,7 @@ window.onload = () => {
 //functions to get the user's location
 //different pin icon for the location of the person
 var icon = L.icon({
-	iconUrl: "../position.svg",
+	iconUrl: "../cliff-common/position.svg",
 	iconSize: [25, 25],
 	iconAnchor: [12.5, 12.5] //center the marker on the position
 })
