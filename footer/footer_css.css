@@ -97,11 +97,13 @@ img.logo{
 
 .donation-methods li img{
 	width: 50px;
-	transition: width 0.2s, margin-bottom 0.2s, margin-top 0.2s;
+	height: 50px;
+	transition: height 0.2s, width 0.2s, margin-bottom 0.2s, margin-top 0.2s;
 }
 
 .donation-methods li:hover img{
 	width: 70px;
+	height: 70px;
 	margin-bottom: -10px;
 	margin-top: -10px;
 }
