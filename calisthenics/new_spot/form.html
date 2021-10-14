@@ -27,172 +27,182 @@
 </head>
 
 <body>
-	<p class="returnToSpots"><a href="../calisthenics.html">Back to the spots</a></p>
 
-	<div class="topHeader">
-		<h1>Adding a new cliff diving spot</h1>
+	<div class="maxWidthContainer">
+
+
+		<p class="returnToSpots"><a href="../calisthenics.html">Back to the spots</a></p>
+
+		<div class="topHeader">
+			<h1>Adding a new cliff diving spot</h1>
+		</div>
+
+
+
+		<form method="post"
+			action="https://script.google.com/macros/s/AKfycbyY3_3mX4heqYm7o3gHdPbjb0y3-U6zRIChuX8Dga314ooImHkx/exec">
+			<div>
+				<label>
+					Name of the spot :
+					<input type="text" name="spotName" required>
+				</label>
+			</div>
+
+			<div style="margin-top:20px;"></div>
+
+			<p>Coordinates of the spot (click on the map to add a pin):</p>
+
+			<div style="margin-top:15px;"></div>
+
+			<div id="mapid"></div>
+			<div id="coordinatesValidation"></div>
+
+			<div style="margin-top:20px;"></div>
+
+			<a class="findMeButton" href='javascript:initLocation()'>Localize me</a>
+
+			<div style="margin-top:20px;"></div>
+
+			<div style="margin-top:15px;"></div>
+
+			<div>
+				<input type="hidden" id="lon" name="spotLong" required>
+			</div>
+
+			<div style="margin-top:20px;"></div>
+
+			<div>
+				<input type="hidden" id="lat" name="spotLat" required>
+			</div>
+
+			<div style="margin-top:20px;"></div>
+
+			<p>What are the available equipments ?</p>
+
+			<label for="pullup"><input type="checkbox" id="pullup" name="pullup"> Pullup bar</label>
+
+			<div style="margin-top:20px;"></div>
+
+			<label for="dips"><input type="checkbox" id="dips" name="dips"> Dips bars</label>
+
+			<div style="margin-top:20px;"></div>
+
+			<label for="flag"><input type="checkbox" id="flag" name="flag"> Flag ladder</label>
+
+			<div style="margin-top:20px;"></div>
+
+			<label for="bench"><input type="checkbox" id="bench" name="bench"> Abs bench</label>
+
+
+			<div style="margin-top:25px;"></div>
+
+			<div>
+				<label>Provide a description of the spot : </label>
+				<div style="margin-top:10px;"></div>
+				<textarea name="spotDescription" rows="8" cols="50"></textarea>
+			</div>
+
+			<div style="margin-top:25px;"></div>
+
+			<p>If you know some videos that have been recorded on the spot, you can paste their link below (all platforms are
+				accepted : YouTube, Instagram, Reddit etc...)</p>
+
+			<div>
+				<label>Videos at the spot (separate them by a " , " if there are more than 1) :</label>
+				<div style="margin-top:10px;"></div>
+				<textarea name="spotVideos" rows="2" cols="50"></textarea>
+			</div>
+
+			<div style="margin-top:20px;"></div>
+
+			<p>Providing some pictures of the place really gives a better idea of how it is in real life, please add some if
+				you
+				have some ! (you can upload up to 5 pictures)</p>
+
+			<div style="margin-top:20px;"></div>
+
+			<div class="picInputs">
+
+				<tr>
+					<td>Picture 1:</td>
+					<td><input type="file" id="file1" name="file1"
+							onchange="LoadFile(event,'fileData1','mimeType1','fileName1', '#file1')" />
+						<input type="hidden" id="fileData1" name="fileData1" />
+						<input type="hidden" id="mimeType1" name="mimeType1" />
+						<input type="hidden" id="fileName1" name="fileName1" />
+					</td>
+				</tr>
+				<div style="margin-top:10px;"></div>
+				<tr>
+					<td>Picture 2:</td>
+					<td><input type="file" id="file2" name="file2"
+							onchange="LoadFile(event, 'fileData2', 'mimeType2', 'fileName2', '#file2')" />
+						<input type="hidden" id="fileData2" name="fileData2" />
+						<input type="hidden" id="mimeType2" name="mimeType2" />
+						<input type="hidden" id="fileName2" name="fileName2" />
+					</td>
+				</tr>
+				<div style="margin-top:10px;"></div>
+				<tr>
+					<td>Picture 3:</td>
+					<td><input type="file" id="file3" name="file3"
+							onchange="LoadFile(event, 'fileData3', 'mimeType3', 'fileName3', '#file3')" />
+						<input type="hidden" id="fileData3" name="fileData3" />
+						<input type="hidden" id="mimeType3" name="mimeType3" />
+						<input type="hidden" id="fileName3" name="fileName3" />
+					</td>
+				</tr>
+				<div style="margin-top:10px;"></div>
+				<tr>
+					<td>Picture 4:</td>
+					<td><input type="file" id="file4" name="file4"
+							onchange="LoadFile(event, 'fileData4', 'mimeType4', 'fileName4', '#file4')" />
+						<input type="hidden" id="fileData4" name="fileData4" />
+						<input type="hidden" id="mimeType4" name="mimeType4" />
+						<input type="hidden" id="fileName4" name="fileName4" />
+					</td>
+				</tr>
+				<div style="margin-top:10px;"></div>
+				<tr>
+					<td>Picture 5:</td>
+					<td><input type="file" id="file5" name="file5"
+							onchange="LoadFile(event, 'fileData5', 'mimeType5', 'fileName5', '#file5')" />
+						<input type="hidden" id="fileData5" name="fileData5" />
+						<input type="hidden" id="mimeType5" name="mimeType5" />
+						<input type="hidden" id="fileName5" name="fileName5" />
+					</td>
+				</tr>
+
+			</div>
+
+			<div style="margin-top:10px;"></div>
+			<div id="loadingContainer"></div>
+			<div style="margin-top:10px;"></div>
+
+			<p>By adding your spot you agree to our <a href="../../footer/legal.html" id="TOS" target="_blank">terms of
+					use</a>
+			</p>
+
+			<div style="margin-top:10px;"></div>
+
+			<div class="submitButton">
+				<tr>
+					<td colspan="2"><input type="submit" value="  Add my spot  " onclick="return clickedFunc();" /></td>
+				</tr>
+			</div>
+			<tr>
+				<td colspan="2"><span>
+						<?= message ?>
+					</span></td>
+		</form>
+
+		<script src="./form.js"></script>
+
+		<div style="margin-top:20px;"></div>
+
+
 	</div>
 
-
-
-	<form method="post"
-		action="https://script.google.com/macros/s/AKfycbyY3_3mX4heqYm7o3gHdPbjb0y3-U6zRIChuX8Dga314ooImHkx/exec">
-		<div>
-			<label>
-				Name of the spot :
-				<input type="text" name="spotName" required>
-			</label>
-		</div>
-
-		<div style="margin-top:20px;"></div>
-
-		<p>Coordinates of the spot (click on the map to add a pin):</p>
-
-		<div style="margin-top:15px;"></div>
-
-		<div id="mapid"></div>
-		<div id="coordinatesValidation"></div>
-
-		<div style="margin-top:20px;"></div>
-
-		<a class="findMeButton" href='javascript:initLocation()'>Localize me</a>
-
-		<div style="margin-top:20px;"></div>
-
-		<div style="margin-top:15px;"></div>
-
-		<div>
-			<input type="hidden" id="lon" name="spotLong" required>
-		</div>
-
-		<div style="margin-top:20px;"></div>
-
-		<div>
-			<input type="hidden" id="lat" name="spotLat" required>
-		</div>
-
-		<div style="margin-top:20px;"></div>
-
-		<p>What are the available equipments ?</p>
-
-		<label for="pullup"><input type="checkbox" id="pullup" name="pullup"> Pullup bar</label>
-
-		<div style="margin-top:20px;"></div>
-
-		<label for="dips"><input type="checkbox" id="dips" name="dips"> Dips bars</label>
-
-		<div style="margin-top:20px;"></div>
-
-		<label for="flag"><input type="checkbox" id="flag" name="flag"> Flag ladder</label>
-
-		<div style="margin-top:20px;"></div>
-
-		<label for="bench"><input type="checkbox" id="bench" name="bench"> Abs bench</label>
-
-
-		<div style="margin-top:25px;"></div>
-
-		<div>
-			<label>Provide a description of the spot : </label>
-			<div style="margin-top:10px;"></div>
-			<textarea name="spotDescription" rows="8" cols="50"></textarea>
-		</div>
-
-		<div style="margin-top:25px;"></div>
-
-		<p>If you know some videos that have been recorded on the spot, you can paste their link below (all platforms are
-			accepted : YouTube, Instagram, Reddit etc...)</p>
-
-		<div>
-			<label>Videos at the spot (separate them by a " , " if there are more than 1) :</label>
-			<div style="margin-top:10px;"></div>
-			<textarea name="spotVideos" rows="2" cols="50"></textarea>
-		</div>
-
-		<div style="margin-top:20px;"></div>
-
-		<p>Providing some pictures of the place really gives a better idea of how it is in real life, please add some if you
-			have some ! (you can upload up to 5 pictures)</p>
-
-		<div style="margin-top:20px;"></div>
-
-		<div class="picInputs">
-
-			<tr>
-				<td>Picture 1:</td>
-				<td><input type="file" id="file1" name="file1"
-						onchange="LoadFile(event,'fileData1','mimeType1','fileName1', '#file1')" />
-					<input type="hidden" id="fileData1" name="fileData1" />
-					<input type="hidden" id="mimeType1" name="mimeType1" />
-					<input type="hidden" id="fileName1" name="fileName1" />
-				</td>
-			</tr>
-			<div style="margin-top:10px;"></div>
-			<tr>
-				<td>Picture 2:</td>
-				<td><input type="file" id="file2" name="file2"
-						onchange="LoadFile(event, 'fileData2', 'mimeType2', 'fileName2', '#file2')" />
-					<input type="hidden" id="fileData2" name="fileData2" />
-					<input type="hidden" id="mimeType2" name="mimeType2" />
-					<input type="hidden" id="fileName2" name="fileName2" />
-				</td>
-			</tr>
-			<div style="margin-top:10px;"></div>
-			<tr>
-				<td>Picture 3:</td>
-				<td><input type="file" id="file3" name="file3"
-						onchange="LoadFile(event, 'fileData3', 'mimeType3', 'fileName3', '#file3')" />
-					<input type="hidden" id="fileData3" name="fileData3" />
-					<input type="hidden" id="mimeType3" name="mimeType3" />
-					<input type="hidden" id="fileName3" name="fileName3" />
-				</td>
-			</tr>
-			<div style="margin-top:10px;"></div>
-			<tr>
-				<td>Picture 4:</td>
-				<td><input type="file" id="file4" name="file4"
-						onchange="LoadFile(event, 'fileData4', 'mimeType4', 'fileName4', '#file4')" />
-					<input type="hidden" id="fileData4" name="fileData4" />
-					<input type="hidden" id="mimeType4" name="mimeType4" />
-					<input type="hidden" id="fileName4" name="fileName4" />
-				</td>
-			</tr>
-			<div style="margin-top:10px;"></div>
-			<tr>
-				<td>Picture 5:</td>
-				<td><input type="file" id="file5" name="file5"
-						onchange="LoadFile(event, 'fileData5', 'mimeType5', 'fileName5', '#file5')" />
-					<input type="hidden" id="fileData5" name="fileData5" />
-					<input type="hidden" id="mimeType5" name="mimeType5" />
-					<input type="hidden" id="fileName5" name="fileName5" />
-				</td>
-			</tr>
-
-		</div>
-
-		<div style="margin-top:10px;"></div>
-		<div id="loadingContainer"></div>
-		<div style="margin-top:10px;"></div>
-
-		<p>By adding your spot you agree to our <a href="../../footer/legal.html" id="TOS" target="_blank">terms of use</a>
-		</p>
-
-		<div style="margin-top:10px;"></div>
-
-		<div class="submitButton">
-			<tr>
-				<td colspan="2"><input type="submit" value="  Add my spot  " onclick="return clickedFunc();" /></td>
-			</tr>
-		</div>
-		<tr>
-			<td colspan="2"><span>
-					<?= message ?>
-				</span></td>
-	</form>
-
-	<script src="./form.js"></script>
-
-	<div style="margin-top:20px;"></div>
 </body>
 
 </html>
