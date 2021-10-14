@@ -1,0 +1,403 @@
+@font-face {
+	font-family: "lemonberry";
+  src: url(../../common_files/lemonberry.otf);
+}
+
+*
+{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* a:link{
+  text-decoration: none;
+	transition: color 0.4s;
+}
+
+* a:hover{
+  color: white;
+}
+
+.maxWidthContainer{
+  max-width: 1000px;
+}
+
+body
+{
+	background-image: linear-gradient(to bottom right, #4263b7, #1fa370);
+  padding: 1vmin 2vmin;
+  text-align: center;
+}
+
+.safety-measures {
+  text-align: justify;
+}
+
+.safety-measures .img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.safety-measures .topHeader{
+	text-align: center;
+}
+
+.safety-measures .sectionTitle{
+  font-size: 45px;
+	font-weight: bold;
+  margin-bottom: 20px;
+  font-family: lemonberry;
+	color: #041249;
+	margin-top: 50px;
+}
+
+.leaflet-control-attribution{
+  font-size: 100%;
+}
+
+.leaflet-control{
+  font-size: 100%;
+}
+
+.leaflet-control-attribution a{
+  font-size: 100%;
+}
+
+.leaflet-control a{
+  font-size: 100%;
+}
+
+.leaflet-popup-content-wrapper a{
+	color: black;
+	transition: color 0.2s;
+}
+
+.leaflet-popup-content-wrapper a:hover{
+	color: blue;
+}
+
+.returnHome{
+  text-align: right;
+}
+
+.returnToSpots{
+text-align: right;
+}
+
+.topHeader
+{
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: 0px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.topHeader h1{
+	font-family: lemonberry;
+	color: #041249;
+  font-size: 7vmin;
+}
+
+.locationPin{
+  color: black;
+}
+
+#mapid{
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 500px;
+	border-radius: 10px;
+}
+
+.findMeButton{
+	border: solid black 3px;
+  padding: 6px;
+  border-radius: 9px;
+}
+
+.maxWidthContainer .findMeButton{
+	transition: padding 0.4s, border-color 0.4s;
+}
+
+.maxWidthContainer .findMeButton:hover{
+	border-color: white;
+	color: black;
+	margin: 2px;
+	padding: 10px;
+}
+
+
+#spotInfoContainer{
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 10px;
+  line-height: 20%;
+}
+
+#spotNameContainer p{
+  font-size: 2.5em;
+	color: #041249;
+}
+
+#spotPicturesContainer img{
+  padding-right: 1vw;
+  padding-left: 1vw;
+  vertical-align: middle;
+  max-width: 45vw;
+}
+ 
+
+@media only screen and (min-width: 1300px) {
+  #spotPicturesContainer img{
+    max-width: 30vw;
+  }
+}
+
+#spotDescriptionContainer p{
+  line-height: 150%;
+}
+
+#spotMetadataContainer{
+  text-align: left;
+}
+
+#spotCoordinatesContainer{
+  text-align: left;
+}
+
+#spotVideosContainer{
+  text-align: left;
+}
+
+#newSpot{
+	border: solid black 3px;
+  padding: 7px;
+  border-radius: 9px;
+	background-color: #83c1f7;
+	transition: padding 0.4s;
+}
+
+#newSpot:hover{
+	color: black;
+	padding: 10px;
+}
+
+#newSpot img{
+	transition-duration: 0.4s;
+}
+
+#newSpot:hover > img {
+	transform: rotate(180deg);
+}
+
+
+.wrapper{
+  padding: 7px;
+  border: 2px solid;
+  border-radius: 1vw;
+  overflow: auto;
+}
+
+.block{
+  display: inline-block;
+  vertical-align: middle;
+  text-align:center;
+}
+
+.right{
+  width:84%;
+}
+
+.left{
+  width: 15%;
+}
+
+.leftWrap img{
+  max-height: 100%;  
+  max-width: 100%; 
+  top: 0;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  margin: auto;
+}
+
+img.logo{
+  vertical-align: middle;
+}
+
+
+.relatedLinksTitle{
+  text-decoration: underline;
+}
+
+
+.relatedLinks li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 5%;
+}
+
+
+footer{
+  padding-left: 15%;
+  padding-right: 15%;
+	text-align: center;
+}
+
+input {
+	border: solid black 2px ;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  background-color:transparent;
+  outline: none;
+	margin-bottom: 1vw;
+  font-size: 100%;
+}
+
+
+textarea{
+  display: block;
+  background-color:transparent;
+  font-size: 100%;
+	padding: 5px;
+	border: solid black;
+	border-radius: 7px;
+}
+
+
+.submitButton input{
+	border: solid;
+	border-radius: 10px;
+  padding: 5px;
+  font-size: 1.2em;
+	transition: border-radius 0.4s, border-color 0.4s, padding 0.4s;
+}
+
+.submitButton input:hover{
+	border-color: white;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.submittedMessage{
+  color: red;
+}
+
+#detailsMap{
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 500px;
+}
+
+.locationPin{
+  color: black;
+}
+
+#TOS{
+  text-decoration: underline;
+}
+
+
+
+img.logo{
+vertical-align: middle;
+}
+
+
+
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
