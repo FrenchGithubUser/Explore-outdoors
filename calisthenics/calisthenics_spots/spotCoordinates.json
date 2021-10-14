@@ -1,19 +1,23 @@
 [
-		{
-		"n":"Parc de Pujaut",
-		"o":4.779874,
-		"a":43.998087
-		}
-,
 	{
-		"n":"Barcelona park",
-		"o":2.188942,
-		"a":41.3704237
+		"n": "Parc de Pujaut",
+		"o": 4.779874,
+		"a": 43.998087
+	},
+	{
+		"n": "Barcelona park",
+		"o": 2.188942,
+		"a": 41.3704237
+	},
+	{
+		"n": "Parc du lac de la Triouzoune",
+		"o": 2.2919055,
+		"a": 45.3891453
 	}
 ,
 	{
-		"n":"Parc du lac de la Triouzoune",
-		"o":2.2919055,
-		"a":45.3891453
+		"n":"dorigny",
+		"o":6.5840211,
+		"a":46.5188559
 	}
 ]
