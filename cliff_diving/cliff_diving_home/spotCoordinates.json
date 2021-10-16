@@ -468,121 +468,110 @@
 		"n": "Gouffre de l oeil doux",
 		"o": 3.1868011,
 		"a": 43.1922945
-	}
-,
-	{
-		"n":"Le maupuy",
-		"o":1.8436287,
-		"a":46.1670774
-	}
-,
-	{
-		"n":"Pont de l île enchantée",
-		"o":-0.3827779,
-		"a":49.1523875
 	},
 	{
-		"n":"Les soux",
-		"o":-2.325363,
-		"a":46.6887581
+		"n": "Le maupuy",
+		"o": 1.8436287,
+		"a": 46.1670774
 	},
 	{
-		"n":"Porto flavia",
-		"o":8.4079075,
-		"a":39.3361771
-	}
-
-,
-	{
-		"n":"Dorothea Quarry",
-		"o":-4.2394996,
-		"a":53.055816
+		"n": "Pont de l île enchantée",
+		"o": -0.3827779,
+		"a": 49.1523875
 	},
 	{
-		"n":"90ft Bridge Spot",
-		"o":28.2510349,
-		"a":61.0795498
-	}
-,
-	{
-		"n":"Cliff and Bridge ",
-		"o":28.1113015,
-		"a":61.1188898
+		"n": "Les soux",
+		"o": -2.325363,
+		"a": 46.6887581
 	},
 	{
-		"n":"Pont du lac de Triouzoune",
-		"o":2.2825189,
-		"a":45.4068906
+		"n": "Porto flavia",
+		"o": 8.4079075,
+		"a": 39.3361771
 	},
 	{
-		"n":"Pont de Saint-Projet",
-		"o":2.279868,
-		"a":45.2875615
+		"n": "Dorothea Quarry",
+		"o": -4.2394996,
+		"a": 53.055816
 	},
 	{
-		"n":"Pont des Ajustans",
-		"o":2.3008999,
-		"a":45.312168
+		"n": "90ft Bridge Spot",
+		"o": 28.2510349,
+		"a": 61.0795498
 	},
 	{
-		"n":"~10m5m3m cliff jumps ( i suggest to depth check)",
-		"o":12.7753615,
-		"a":43.6821148
+		"n": "Cliff and Bridge ",
+		"o": 28.1113015,
+		"a": 61.1188898
 	},
 	{
-		"n":"cascata della sega",
-		"o":11.7672372,
-		"a":43.9718432
-	}
-,
-	{
-		"n":"Quarry of Vall (Valls Kalkbrott)",
-		"o":16.43048288,
-		"a":60.48775906
-	}
-,
-	{
-		"n":"Pont de fer de Compiègne",
-		"o":2.8351247,
-		"a":49.4271184
-	}
-,
-	{
-		"n":" arch in cala goloritze",
-		"o":9.6912641,
-		"a":40.1084213
+		"n": "Pont du lac de Triouzoune",
+		"o": 2.2825189,
+		"a": 45.4068906
 	},
 	{
-		"n":"Les parapluies",
-		"o":3.5533695,
-		"a":43.7174401
-	}
-,
-	{
-		"n":"CAP LA HOUSSAYE",
-		"o":55.2383369,
-		"a":-21.0183868
+		"n": "Pont de Saint-Projet",
+		"o": 2.279868,
+		"a": 45.2875615
 	},
 	{
-		"n":"Pont de sarrance",
-		"o":-0.600912,
-		"a":43.0500553
+		"n": "Pont des Ajustans",
+		"o": 2.3008999,
+		"a": 45.312168
 	},
 	{
-		"n":"Calanque de cassis",
-		"o":5.5093646,
-		"a":43.20107
-	}
-,
+		"n": "~10m5m3m cliff jumps ( i suggest to depth check)",
+		"o": 12.7753615,
+		"a": 43.6821148
+	},
 	{
-		"n":"Pont gave d oloron",
-		"o":-0.833094,
-		"a":43.369336
-	}
-,
+		"n": "cascata della sega",
+		"o": 11.7672372,
+		"a": 43.9718432
+	},
 	{
-		"n":"Pont de la Pyle",
-		"o":5.67524282,
-		"a":46.51595943
+		"n": "Quarry of Vall (Valls Kalkbrott)",
+		"o": 16.43048288,
+		"a": 60.48775906
+	},
+	{
+		"n": "Pont de fer de Compiègne",
+		"o": 2.8351247,
+		"a": 49.4271184
+	},
+	{
+		"n": " arch in cala goloritze",
+		"o": 9.6912641,
+		"a": 40.1084213
+	},
+	{
+		"n": "Les parapluies",
+		"o": 3.5533695,
+		"a": 43.7174401
+	},
+	{
+		"n": "CAP LA HOUSSAYE",
+		"o": 55.2383369,
+		"a": -21.0183868
+	},
+	{
+		"n": "Pont de sarrance",
+		"o": -0.600912,
+		"a": 43.0500553
+	},
+	{
+		"n": "Calanque de cassis",
+		"o": 5.5093646,
+		"a": 43.20107
+	},
+	{
+		"n": "Pont gave d oloron",
+		"o": -0.833094,
+		"a": 43.369336
+	},
+	{
+		"n": "Pont de la Pyle",
+		"o": 5.67524282,
+		"a": 46.51595943
 	}
 ]
