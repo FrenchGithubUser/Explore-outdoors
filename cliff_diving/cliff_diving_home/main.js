@@ -149,7 +149,7 @@ function displaySpotInfo(name, lat, long) {
 	var spotInfoRequest = new XMLHttpRequest();
 	spotInfoRequest.open(
 		"GET",
-		"https://Explore-outdoors.org/cliff_diving/cliff_diving_spots/" +
+		"https://thomastraineau.github.io/Explore-outdoors/cliff_diving/cliff_diving_spots/" +
 		name +
 		"/spotInfo.json"
 	);
