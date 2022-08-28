@@ -4,6 +4,8 @@ The goal of this website is to provide an easy an bloat-free access to places th
 
 The website is currently hosted on github and uses some google services to handle a form but I am planning on moving to a more autonomus solution ASAP.
 
+### This project is discontinued, it is now [Session](https://app-session.com)
+
 # Currently supported sports
 
 Cliff diving, Street workout
